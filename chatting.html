@@ -1488,6 +1488,9 @@ html[lang|="ar"] .btn {
     .promise p { margin: 0; padding: 1.1rem 1.25rem; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--card); box-shadow: var(--shadow); font-size: clamp(1.15rem, 4vw, 1.45rem); line-height: 1.4; color: var(--text); }
     .promise__anon { margin-top: .75rem !important; border-color: var(--gold) !important; color: var(--gold) !important; font-weight: 600; font-size: clamp(1.05rem, 3.6vw, 1.25rem) !important; }
     .promise__privacy { margin-top: .75rem !important; font-size: .98rem !important; color: var(--text); }
+    .promise--close { padding-bottom: 2.5rem; }
+    .promise__anon a { color: inherit; text-underline-offset: 3px; }
+    .promise__more { margin-top: .75rem !important; font-size: clamp(1rem, 3.4vw, 1.15rem) !important; }
     .promise__privacy a { color: var(--gold); text-underline-offset: 2px; }
     .badge-11 { display: inline-flex; align-items: center; gap: .4rem; margin-top: 1rem; padding: .35rem .8rem; border: 1px solid var(--line); border-radius: 999px; color: var(--text); font-size: .9rem; font-weight: 500; }
     .phero__sub--days { margin-top: .9rem; color: var(--text); }
@@ -1523,7 +1526,7 @@ html[lang|="ar"] .btn {
           <a class="btn btn--dark" href="#courses">See courses</a>
         </p>
         <p class="badge-11">Paid service · 1:1 only · priced per client</p>
-        <p class="trust">Email only: <a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. We don't take calls or messages without a prior appointment.</p>
+        <p class="trust">Email only: <a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. Calls by appointment only.</p>
         <p class="trust">We never ask for or take your passwords, keys, or any sensitive data. You stay in control; we guide, you click.</p>
       </div>
       <aside class="phero__art phero__art--pillars" aria-label="The two things you leave with">
@@ -1541,6 +1544,8 @@ html[lang|="ar"] .btn {
     <section class="promise" aria-label="Our promise">
       <p>We teach you how to keep your secrets safe, and how to have your own private assistant.</p>
       <p class="promise__anon">You can work with us without anyone knowing who you are.</p>
+      <p class="promise__more">We don't need your details, just your routine. In return, we give you the easiest, smartest way to get 135% out of AI: fewer steps, fast, and above all secure.</p>
+      <p class="promise__more">You choose how you pay. You know the price before the course starts, and payment is made upfront, so everything is clear from day one.</p>
       <p class="promise__privacy">We deeply respect your privacy rights under the CCPA/CPRA. We collect the minimum (just your email and what kind of work you do), never sell or share your personal information, and you can ask us to delete it anytime at <a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. See our <a href="/privacy.html">privacy policy</a>.</p>
     </section>
 
@@ -1624,7 +1629,7 @@ html[lang|="ar"] .btn {
         </tbody>
       </table>
       <p class="note">We never take card details by email. Please do not send passwords, keys or card numbers to us at any point.</p>
-      <p class="note">Email only: <a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. We don't take calls or messages without a prior appointment.</p>
+      <p class="note">Email only: <a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. Calls by appointment only.</p>
       <p class="store">Ready to start? <a href="mailto:support@elghaly.dev?subject=Chatting%20quote%20request&amp;body=Hi%2C%0A%0AI%20would%20like%20a%20quote%20for%20Chatting.%0A%0AWhat%20I%20do%3A%20___%0A%28just%20the%20kind%20of%20work%20I%20do.%20No%20name%2C%20no%20company%20name%2C%20no%20details%20or%20confidential%20information%29%0A%0ASession%20language%20%28English%2C%20Arabic%2C%20Russian%20or%20Chinese%29%3A%20___%0A%0ACourse%3A%20Not%20sure%20yet%0A%0AI%20understand%20I%20should%20not%20send%20passwords%2C%20keys%20or%20card%20details%20by%20email.">Request a quote</a></p>
     </section>
 
@@ -1638,7 +1643,7 @@ html[lang|="ar"] .btn {
       </div>
       <ol class="steps">
         <li><div><b>Tell us what you do</b> <span>in one or two lines, by email. We don't need your name or your company's name. Just tell us what kind of work you do. No details or confidential information needed.</span></div></li>
-        <li><div><b>Get a quote</b> <span>with a fixed price for your course and suggested times, within one business day. After we agree, we email you the payment details. Nothing is booked until you say yes.</span></div></li>
+        <li><div><b>Get a quote</b> <span>with a fixed price for your course and suggested times, within one business day. You choose how you pay, and payment is made upfront, so you know the price before the course starts. Nothing is booked until you say yes.</span></div></li>
         <li><div><b>We learn your work</b> <span>in your first 1:1 session: what takes your time, and what you would hand to an assistant.</span></div></li>
         <li><div><b>We recommend the assistant that fits</b> <span>often Grok Bot, sometimes another tool. We are independent and recommend what suits you.</span></div></li>
         <li><div><b>We set it up and teach safe use</b> <span>on your own accounts, with you at the keyboard: what never to share, the right privacy settings, and asking before it acts. 35 days, and see the difference.</span></div></li>
@@ -1706,11 +1711,11 @@ html[lang|="ar"] .btn {
         </details>
         <details>
           <summary>How do I contact you?</summary>
-          <p>Email only: <a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. We don't take calls or messages without a prior appointment.</p>
+          <p>Email only: <a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. Calls by appointment only.</p>
         </details>
         <details>
           <summary>How do I pay?</summary>
-          <p>After we agree, we email you the payment details. We never take card details by email.</p>
+          <p>You choose how you pay. You know the price before the course starts, and payment is made upfront, so everything is clear from day one. After we agree, we send the details for the method you picked. We never take card details by email.</p>
         </details>
         <details>
           <summary>Can I get my money back?</summary>
@@ -1733,6 +1738,10 @@ html[lang|="ar"] .btn {
     <section class="section section--start" aria-labelledby="risk-heading">
       <h2 id="risk-heading" class="kicker">Good to know</h2>
       <p class="risk">We teach and set up; you stay in charge. AI tools can make mistakes, so check what your assistant writes or does before you rely on it. We make no promise of specific results.</p>
+    </section>
+
+    <section class="promise promise--close" aria-label="A last word">
+      <p class="promise__anon">Can't afford it right now? Just smile and email us at <a href="mailto:support@elghaly.dev?subject=Smile">support@elghaly.dev</a>. We'll reply. Your smile is enough.</p>
     </section>
   </main>
 
