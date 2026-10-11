@@ -30,7 +30,7 @@ CARD_LINE = (28, 24, 56)      # #1c1838
 CARD_2 = (23, 20, 47)         # #17142f
 QUIET = (46, 40, 86)          # lines on a card
 LAVENDER = (185, 179, 230)    # #b9b3e6
-GOLD = (245, 197, 66)         # #f5c542
+GOLD = (201, 194, 255)        # #c9c2ff, light indigo (was gold)
 SHADE = (16, 10, 58)
 
 
@@ -282,7 +282,6 @@ JOBS = [
     ("hero-wide", hero, (1920, 1080)),
     ("hero-tall", hero, (900, 1200)),
     ("svc-servers", servers, (1200, 750)),
-    ("svc-bots", bots, (1200, 750)),
     ("svc-tools", tools, (1200, 750)),
     ("plumb", plumb, (1200, 750)),
     ("quay", quay, (1200, 750)),
