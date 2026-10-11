@@ -26,7 +26,7 @@ FONT_BOLD = os.path.join(ROOT, "fonts", "outfit-latin-700-normal.woff2")
 
 CARD = (13, 11, 31)  # #0d0b1f
 SHIFT = 280  # px the og-* picture moves right
-GOLD = (245, 197, 66)  # #f5c542
+GOLD = (201, 194, 255)  # #c9c2ff, light indigo (was gold)
 LAVENDER = (185, 179, 230)  # #b9b3e6
 
 # name: (aspect w, aspect h, widths). Widths are what the pages' srcset lists.

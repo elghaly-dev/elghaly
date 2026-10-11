@@ -52,9 +52,9 @@
   --line-2: #2e2856;
   --text: #ffffff;
   --text-muted: #b9b3e6;
-  --gold: #f5c542;
-  --gold-2: #ffd45e;
-  --gold-ink: #1a1405;
+  --gold: #c9c2ff;
+  --gold-2: #e2deff;
+  --gold-ink: #17123d;
   /* The names the pages' own small style blocks use: links and focus
      rings are white, input borders a faint white. */
   --accent: var(--text);
