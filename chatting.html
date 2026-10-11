@@ -1475,6 +1475,10 @@ html[lang|="ar"] .btn {
   }
   </script>
   <style>
+    /* Chatting: no yellow. The gold tokens become light Sui indigo here only. */
+    :root { --gold: #c9c2ff; --gold-2: #e2deff; --gold-ink: #17123d; }
+    .eyebrow::before { box-shadow: 0 0 10px rgba(201, 194, 255, 0.6); }
+    .steps li::before { background: rgba(201, 194, 255, 0.16); }
     .phero__art--pillars { aspect-ratio: auto; padding: 1.4rem 1.3rem; display: grid; gap: 1rem; align-content: center; }
     .pillar { display: grid; grid-template-columns: 2.6rem 1fr; gap: .9rem; align-items: start; }
     .pillar svg { width: 2.6rem; height: 2.6rem; }
