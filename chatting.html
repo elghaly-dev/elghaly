@@ -1483,6 +1483,8 @@ html[lang|="ar"] .btn {
     .promise { max-width: var(--max); margin: 0 auto; padding: .5rem var(--gutter) 0; }
     .promise p { margin: 0; padding: 1.1rem 1.25rem; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--card); box-shadow: var(--shadow); font-size: clamp(1.15rem, 4vw, 1.45rem); line-height: 1.4; color: var(--text); }
     .promise__anon { margin-top: .75rem !important; border-color: var(--gold) !important; color: var(--gold) !important; font-weight: 600; font-size: clamp(1.05rem, 3.6vw, 1.25rem) !important; }
+    .promise__privacy { margin-top: .75rem !important; font-size: .98rem !important; color: var(--text); }
+    .promise__privacy a { color: var(--gold); text-underline-offset: 2px; }
     .badge-11 { display: inline-flex; align-items: center; gap: .4rem; margin-top: 1rem; padding: .35rem .8rem; border: 1px solid var(--line); border-radius: 999px; color: var(--text); font-size: .9rem; font-weight: 500; }
     .phero__sub--days { margin-top: .9rem; color: var(--gold); }
     .trust { margin: .9rem 0 0; max-width: 34rem; color: var(--text); font-size: .95rem; }
@@ -1535,6 +1537,7 @@ html[lang|="ar"] .btn {
     <section class="promise" aria-label="Our promise">
       <p>We teach you how to keep your secrets safe, and how to have your own private assistant.</p>
       <p class="promise__anon">You can work with us without anyone knowing who you are.</p>
+      <p class="promise__privacy">We deeply respect your privacy rights under the CCPA/CPRA. We collect the minimum (just your email and what kind of work you do), never sell or share your personal information, and you can ask us to delete it anytime at <a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. See our <a href="/privacy.html">privacy policy</a>.</p>
     </section>
 
     <section class="section section--start" aria-labelledby="safe-heading">
@@ -1680,6 +1683,10 @@ html[lang|="ar"] .btn {
         <details>
           <summary>Do I have to tell you who I am?</summary>
           <p>No. You can work with us without anyone knowing who you are. We don't need your name or your company's name. Just tell us what kind of work you do, and sessions can stay anonymous.</p>
+        </details>
+        <details>
+          <summary>What do you do with my information?</summary>
+          <p>We deeply respect your privacy rights under the CCPA/CPRA. We collect the minimum (just your email and what kind of work you do), never sell or share your personal information, and you can ask us to delete it anytime at <a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. See our <a href="/privacy.html">privacy policy</a>.</p>
         </details>
         <details>
           <summary>Do I need to be technical?</summary>
