@@ -1482,6 +1482,7 @@ html[lang|="ar"] .btn {
     .pillar span { color: var(--muted); font-size: .98rem; }
     .promise { max-width: var(--max); margin: 0 auto; padding: .5rem var(--gutter) 0; }
     .promise p { margin: 0; padding: 1.1rem 1.25rem; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--card); box-shadow: var(--shadow); font-size: clamp(1.15rem, 4vw, 1.45rem); line-height: 1.4; color: var(--text); }
+    .promise__anon { margin-top: .75rem !important; border-color: var(--gold) !important; color: var(--gold) !important; font-weight: 600; font-size: clamp(1.05rem, 3.6vw, 1.25rem) !important; }
     .badge-11 { display: inline-flex; align-items: center; gap: .4rem; margin-top: 1rem; padding: .35rem .8rem; border: 1px solid var(--line); border-radius: 999px; color: var(--text); font-size: .9rem; font-weight: 500; }
     .phero__sub--days { margin-top: .9rem; color: var(--gold); }
     .trust { margin: .9rem 0 0; max-width: 34rem; color: var(--text); font-size: .95rem; }
@@ -1512,7 +1513,7 @@ html[lang|="ar"] .btn {
         <p class="phero__sub">We help you choose, set up and train an AI assistant that works for you, the way you would hire a new employee. Then we teach you to use it safely. Every session is 1:1: just you and Wyndham Heaven, online, in English, Arabic, Russian or Chinese.</p>
         <p class="phero__sub phero__sub--days"><b>35 days, and see the difference.</b></p>
         <p class="phero__cta">
-          <a class="btn btn--primary" href="mailto:support@elghaly.dev?subject=Chatting%20quote%20request&amp;body=Hi%20elghaly%2C%0A%0AI%20would%20like%20a%20quote%20for%20Chatting.%0A%0AWhat%20I%20do%3A%20___%0A%28one%20or%20two%20lines%20about%20my%20business%20or%20job%2C%20no%20details%20or%20confidential%20information%29%0A%0ASession%20language%20%28English%2C%20Arabic%2C%20Russian%20or%20Chinese%29%3A%20___%0A%0ACourse%3A%20Not%20sure%20yet%0A%0AI%20understand%20I%20should%20not%20send%20passwords%2C%20keys%20or%20card%20details%20by%20email.">Request a quote<span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn--primary" href="mailto:support@elghaly.dev?subject=Chatting%20quote%20request&amp;body=Hi%2C%0A%0AI%20would%20like%20a%20quote%20for%20Chatting.%0A%0AWhat%20I%20do%3A%20___%0A%28just%20the%20kind%20of%20work%20I%20do.%20No%20name%2C%20no%20company%20name%2C%20no%20details%20or%20confidential%20information%29%0A%0ASession%20language%20%28English%2C%20Arabic%2C%20Russian%20or%20Chinese%29%3A%20___%0A%0ACourse%3A%20Not%20sure%20yet%0A%0AI%20understand%20I%20should%20not%20send%20passwords%2C%20keys%20or%20card%20details%20by%20email.">Request a quote<span class="btn__arrow" aria-hidden="true">→</span></a>
           <a class="btn btn--dark" href="#courses">See courses</a>
         </p>
         <p class="badge-11">Paid service · 1:1 only · priced per client</p>
@@ -1533,6 +1534,7 @@ html[lang|="ar"] .btn {
 
     <section class="promise" aria-label="Our promise">
       <p>We teach you how to keep your secrets safe, and how to have your own private assistant.</p>
+      <p class="promise__anon">You can work with us without anyone knowing who you are.</p>
     </section>
 
     <section class="section section--start" aria-labelledby="safe-heading">
@@ -1600,23 +1602,23 @@ html[lang|="ar"] .btn {
           <tr id="course-starter">
             <th scope="row">Starter<br><small>3 sessions</small></th>
             <td>Three 1:1 sessions within 35 days. Session 1: keep your secrets safe (what never to share, privacy settings, training opt-outs). Session 2: choose the assistant that fits (often Grok Bot) and set it up on your own accounts. Session 3: train it on how you work and give it its first daily tasks.</td>
-            <td class="plans__price"><a class="quote-link" href="mailto:support@elghaly.dev?subject=Chatting%20quote%20request%3A%20Starter&amp;body=Hi%20elghaly%2C%0A%0AI%20would%20like%20a%20quote%20for%20Chatting.%0A%0AWhat%20I%20do%3A%20___%0A%28one%20or%20two%20lines%20about%20my%20business%20or%20job%2C%20no%20details%20or%20confidential%20information%29%0A%0ASession%20language%20%28English%2C%20Arabic%2C%20Russian%20or%20Chinese%29%3A%20___%0A%0ACourse%3A%20Starter%20%283%20sessions%29%0A%0AI%20understand%20I%20should%20not%20send%20passwords%2C%20keys%20or%20card%20details%20by%20email.">Request a quote</a></td>
+            <td class="plans__price"><a class="quote-link" href="mailto:support@elghaly.dev?subject=Chatting%20quote%20request%3A%20Starter&amp;body=Hi%2C%0A%0AI%20would%20like%20a%20quote%20for%20Chatting.%0A%0AWhat%20I%20do%3A%20___%0A%28just%20the%20kind%20of%20work%20I%20do.%20No%20name%2C%20no%20company%20name%2C%20no%20details%20or%20confidential%20information%29%0A%0ASession%20language%20%28English%2C%20Arabic%2C%20Russian%20or%20Chinese%29%3A%20___%0A%0ACourse%3A%20Starter%20%283%20sessions%29%0A%0AI%20understand%20I%20should%20not%20send%20passwords%2C%20keys%20or%20card%20details%20by%20email.">Request a quote</a></td>
           </tr>
           <tr id="course-full">
             <th scope="row">Full<br><small>10 sessions</small></th>
             <td>Ten 1:1 sessions within 35 days. Everything in Starter, then deeper: train your assistant for several kinds of work, set its permissions so it asks before acting, connect the tools you already use, and build daily routines you check with us until they run smoothly.</td>
-            <td class="plans__price"><a class="quote-link" href="mailto:support@elghaly.dev?subject=Chatting%20quote%20request%3A%20Full&amp;body=Hi%20elghaly%2C%0A%0AI%20would%20like%20a%20quote%20for%20Chatting.%0A%0AWhat%20I%20do%3A%20___%0A%28one%20or%20two%20lines%20about%20my%20business%20or%20job%2C%20no%20details%20or%20confidential%20information%29%0A%0ASession%20language%20%28English%2C%20Arabic%2C%20Russian%20or%20Chinese%29%3A%20___%0A%0ACourse%3A%20Full%20%2810%20sessions%29%0A%0AI%20understand%20I%20should%20not%20send%20passwords%2C%20keys%20or%20card%20details%20by%20email.">Request a quote</a></td>
+            <td class="plans__price"><a class="quote-link" href="mailto:support@elghaly.dev?subject=Chatting%20quote%20request%3A%20Full&amp;body=Hi%2C%0A%0AI%20would%20like%20a%20quote%20for%20Chatting.%0A%0AWhat%20I%20do%3A%20___%0A%28just%20the%20kind%20of%20work%20I%20do.%20No%20name%2C%20no%20company%20name%2C%20no%20details%20or%20confidential%20information%29%0A%0ASession%20language%20%28English%2C%20Arabic%2C%20Russian%20or%20Chinese%29%3A%20___%0A%0ACourse%3A%20Full%20%2810%20sessions%29%0A%0AI%20understand%20I%20should%20not%20send%20passwords%2C%20keys%20or%20card%20details%20by%20email.">Request a quote</a></td>
           </tr>
           <tr id="course-flexible">
             <th scope="row">Flexible<br><small>As many sessions as you like</small></th>
             <td>1:1 sessions booked when you need them, inside 35 days or beyond. Pick the topics each time: safety check-ups, new tasks for your assistant, or a review of what it does.</td>
-            <td class="plans__price"><a class="quote-link" href="mailto:support@elghaly.dev?subject=Chatting%20quote%20request%3A%20Flexible&amp;body=Hi%20elghaly%2C%0A%0AI%20would%20like%20a%20quote%20for%20Chatting.%0A%0AWhat%20I%20do%3A%20___%0A%28one%20or%20two%20lines%20about%20my%20business%20or%20job%2C%20no%20details%20or%20confidential%20information%29%0A%0ASession%20language%20%28English%2C%20Arabic%2C%20Russian%20or%20Chinese%29%3A%20___%0A%0ACourse%3A%20Flexible%20%28As%20many%20sessions%20as%20you%20like%29%0A%0AI%20understand%20I%20should%20not%20send%20passwords%2C%20keys%20or%20card%20details%20by%20email.">Request a quote</a></td>
+            <td class="plans__price"><a class="quote-link" href="mailto:support@elghaly.dev?subject=Chatting%20quote%20request%3A%20Flexible&amp;body=Hi%2C%0A%0AI%20would%20like%20a%20quote%20for%20Chatting.%0A%0AWhat%20I%20do%3A%20___%0A%28just%20the%20kind%20of%20work%20I%20do.%20No%20name%2C%20no%20company%20name%2C%20no%20details%20or%20confidential%20information%29%0A%0ASession%20language%20%28English%2C%20Arabic%2C%20Russian%20or%20Chinese%29%3A%20___%0A%0ACourse%3A%20Flexible%20%28As%20many%20sessions%20as%20you%20like%29%0A%0AI%20understand%20I%20should%20not%20send%20passwords%2C%20keys%20or%20card%20details%20by%20email.">Request a quote</a></td>
           </tr>
         </tbody>
       </table>
       <p class="note">We never take card details by email. Please do not send passwords, keys or card numbers to us at any point.</p>
       <p class="note">Email only: <a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. We don't take calls or messages without a prior appointment.</p>
-      <p class="store">Ready to start? <a href="mailto:support@elghaly.dev?subject=Chatting%20quote%20request&amp;body=Hi%20elghaly%2C%0A%0AI%20would%20like%20a%20quote%20for%20Chatting.%0A%0AWhat%20I%20do%3A%20___%0A%28one%20or%20two%20lines%20about%20my%20business%20or%20job%2C%20no%20details%20or%20confidential%20information%29%0A%0ASession%20language%20%28English%2C%20Arabic%2C%20Russian%20or%20Chinese%29%3A%20___%0A%0ACourse%3A%20Not%20sure%20yet%0A%0AI%20understand%20I%20should%20not%20send%20passwords%2C%20keys%20or%20card%20details%20by%20email.">Request a quote</a></p>
+      <p class="store">Ready to start? <a href="mailto:support@elghaly.dev?subject=Chatting%20quote%20request&amp;body=Hi%2C%0A%0AI%20would%20like%20a%20quote%20for%20Chatting.%0A%0AWhat%20I%20do%3A%20___%0A%28just%20the%20kind%20of%20work%20I%20do.%20No%20name%2C%20no%20company%20name%2C%20no%20details%20or%20confidential%20information%29%0A%0ASession%20language%20%28English%2C%20Arabic%2C%20Russian%20or%20Chinese%29%3A%20___%0A%0ACourse%3A%20Not%20sure%20yet%0A%0AI%20understand%20I%20should%20not%20send%20passwords%2C%20keys%20or%20card%20details%20by%20email.">Request a quote</a></p>
     </section>
 
     <section class="section section--start" aria-labelledby="how-heading">
@@ -1624,11 +1626,11 @@ html[lang|="ar"] .btn {
         <p class="kicker">How it works</p>
         <h2 id="how-heading" class="section__title">From quote to your first session</h2>
         <div class="section__body">
-          <p class="section__lead">Before any call, we need one thing from you: a short line about what you do. Just tell us what you do. No details or confidential information needed.</p>
+          <p class="section__lead">Before any call, we need one thing from you: a short line about what you do. We don't need your name or your company's name. Just tell us what kind of work you do. No details or confidential information needed.</p>
         </div>
       </div>
       <ol class="steps">
-        <li><div><b>Tell us what you do</b> <span>in one or two lines, by email: your business or your job. Just tell us what you do. No details or confidential information needed.</span></div></li>
+        <li><div><b>Tell us what you do</b> <span>in one or two lines, by email. We don't need your name or your company's name. Just tell us what kind of work you do. No details or confidential information needed.</span></div></li>
         <li><div><b>Get a quote</b> <span>with a fixed price for your course and suggested times, within one business day. After we agree, we email you the payment details. Nothing is booked until you say yes.</span></div></li>
         <li><div><b>We learn your work</b> <span>in your first 1:1 session: what takes your time, and what you would hand to an assistant.</span></div></li>
         <li><div><b>We recommend the assistant that fits</b> <span>often Grok Bot, sometimes another tool. We are independent and recommend what suits you.</span></div></li>
@@ -1674,6 +1676,10 @@ html[lang|="ar"] .btn {
         <details>
           <summary>Which languages are sessions in?</summary>
           <p>English, Arabic, Russian or Chinese. Tell us which one when you request a quote.</p>
+        </details>
+        <details>
+          <summary>Do I have to tell you who I am?</summary>
+          <p>No. You can work with us without anyone knowing who you are. We don't need your name or your company's name. Just tell us what kind of work you do, and sessions can stay anonymous.</p>
         </details>
         <details>
           <summary>Do I need to be technical?</summary>
