@@ -32,12 +32,11 @@
   <link rel="preload" href="/fonts/outfit-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/outfit-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
   <!-- No analytics, no pixels, no third-party scripts on this page. -->
-  </style>
   <!-- inline:css/glass.css — edit css/glass.css, then: python3 tools/site-kit/sitekit.py inline chatting.html css/glass.css -->
   <style>
 /* elghaly.dev home, /plumb and /quay: palette 5b.
    A soft indigo-purple page, solid near-black cards, white bold headings,
-   lavender for the quieter text on cards, and gold for the one thing to
+   lavender for the quieter text on cards, and light indigo (token --gold, #c9c2ff) for the one thing to
    press on each screen. Lavender is for cards only: on the purple it is
    3.2:1, so text on the purple is white (5:1 or more).
    Phones first: everything below is the iPhone layout, and the
@@ -99,9 +98,9 @@
   --line-2: #2e2856;
   --text: #ffffff;
   --muted: #b9b3e6;
-  --gold: #f5c542;
-  --gold-2: #ffd45e;
-  --gold-ink: #1a1405;
+  --gold: #c9c2ff;
+  --gold-2: #e2deff;
+  --gold-ink: #17123d;
   --pos: #7be3b0; /* mint: small positive numbers only, and sparingly */
   --on-bg-line: rgba(255, 255, 255, 0.2);
   --shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 18px 40px -20px rgba(16, 10, 58, 0.6);
@@ -307,6 +306,32 @@ a {
   }
 }
 
+/* Home on phones: the links take a second row under the wordmark and languages. */
+@media (max-width: 899.98px) {
+  .nav__in--home {
+    flex-wrap: wrap;
+    row-gap: 0;
+  }
+
+  .nav__in--home .nav__links {
+    display: flex;
+    order: 3;
+    flex-basis: 100%;
+    margin-inline: -0.6rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .nav__in--home .nav__links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav__in--home .nav__links a {
+    flex: none;
+    padding: 0.5rem 0.6rem;
+  }
+}
+
 @media (min-width: 900px) {
   .nav__links {
     display: flex;
@@ -338,7 +363,7 @@ a {
   transition: transform 0.25s var(--ease), background-color 0.25s, border-color 0.25s, box-shadow 0.25s;
 }
 
-/* Gold is for the one thing to press on each screen. */
+/* Light indigo (token --gold) is for the one thing to press on each screen. */
 .btn--primary {
   background: var(--gold);
   color: var(--gold-ink);
@@ -474,7 +499,7 @@ a {
   height: 7px;
   border-radius: 50%;
   background: var(--gold);
-  box-shadow: 0 0 10px rgba(245, 197, 66, 0.6);
+  box-shadow: 0 0 10px rgba(201, 194, 255, 0.6);
 }
 
 .hero__title {
@@ -1179,7 +1204,7 @@ a.card:hover .card__media img {
   width: 2.4rem;
   height: 2.4rem;
   border-radius: 50%;
-  background: rgba(245, 197, 66, 0.14);
+  background: rgba(201, 194, 255, 0.14);
   color: var(--gold);
   font-weight: 700;
 }
@@ -1356,6 +1381,119 @@ a.card:hover .card__media img {
   vertical-align: middle;
 }
 
+/* ── sub-pages ───────────────────────────────────────────────────────── */
+/* About, Contact, Delivery, Refunds, Terms, Privacy, 404 and the Iris
+   policies: the same top bar, title and footer as Chatting, and each
+   part of the text on its own near-black card. Words on the card are
+   lavender (9.8:1), headings and links on it are white. */
+.page {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2.5rem var(--gutter) 3rem;
+}
+
+.page__head {
+  max-width: 46rem;
+}
+
+.page__date {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.page__menu {
+  display: flex;
+  min-height: 46px;
+  margin: 1rem 0 0;
+}
+
+.page__body {
+  display: grid;
+  gap: 1rem;
+  max-width: 46rem;
+  margin-top: 1.75rem;
+}
+
+.prose {
+  padding: 1.2rem 1.3rem 1.35rem;
+}
+
+.prose h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.prose p,
+.prose ul,
+.prose ol {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+}
+
+.prose ul,
+.prose ol {
+  padding-inline-start: 1.2rem;
+}
+
+.prose li + li {
+  margin-top: 0.35rem;
+}
+
+.prose strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.prose a:not(.btn) {
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+
+.prose .btn {
+  margin-top: 1rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 0.9rem;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  min-height: 48px;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--line-2);
+  border-radius: 12px;
+  background: var(--card-2);
+  color: var(--text);
+  font: inherit;
+}
+
+.contact-form textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.contact-form .hp {
+  position: absolute;
+  left: -9999px;
+}
+
+.contact-form button {
+  justify-self: start;
+}
+
 /* ── language details ────────────────────────────────────────────────── */
 /* Chinese has no spaces between words; keep runs whole. */
 html[lang|="zh"] .hero__title,
@@ -1475,10 +1613,7 @@ html[lang|="ar"] .btn {
   }
   </script>
   <style>
-    /* Chatting: no yellow. The gold tokens become light Sui indigo here only. */
-    :root { --gold: #c9c2ff; --gold-2: #e2deff; --gold-ink: #17123d; }
-    .eyebrow::before { box-shadow: 0 0 10px rgba(201, 194, 255, 0.6); }
-    .steps li::before { background: rgba(201, 194, 255, 0.16); }
+    /* Chatting-only parts. Colours, fonts, cards and buttons come from css/glass.css. */
     .phero__art--pillars { aspect-ratio: auto; padding: 1.4rem 1.3rem; display: grid; gap: 1rem; align-content: center; }
     .pillar { display: grid; grid-template-columns: 2.6rem 1fr; gap: .9rem; align-items: start; }
     .pillar svg { width: 2.6rem; height: 2.6rem; }
@@ -1526,7 +1661,7 @@ html[lang|="ar"] .btn {
           <a class="btn btn--dark" href="#courses">See courses</a>
         </p>
         <p class="badge-11">Paid service · 1:1 only · priced per client</p>
-        <p class="trust">Email only: <a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. Calls by appointment only.</p>
+        <p class="trust">Email first: <a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. Calls only by appointment.</p>
         <p class="trust">We never ask for or take your passwords, keys, or any sensitive data. You stay in control; we guide, you click.</p>
       </div>
       <aside class="phero__art phero__art--pillars" aria-label="The two things you leave with">
@@ -1629,7 +1764,7 @@ html[lang|="ar"] .btn {
         </tbody>
       </table>
       <p class="note">We never take card details by email. Please do not send passwords, keys or card numbers to us at any point.</p>
-      <p class="note">Email only: <a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. Calls by appointment only.</p>
+      <p class="note">Email first: <a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. Calls only by appointment.</p>
       <p class="store">Ready to start? <a href="mailto:support@elghaly.dev?subject=Chatting%20quote%20request&amp;body=Hi%2C%0A%0AI%20would%20like%20a%20quote%20for%20Chatting.%0A%0AWhat%20I%20do%3A%20___%0A%28just%20the%20kind%20of%20work%20I%20do.%20No%20name%2C%20no%20company%20name%2C%20no%20details%20or%20confidential%20information%29%0A%0ASession%20language%20%28English%2C%20Arabic%2C%20Russian%20or%20Chinese%29%3A%20___%0A%0ACourse%3A%20Not%20sure%20yet%0A%0AI%20understand%20I%20should%20not%20send%20passwords%2C%20keys%20or%20card%20details%20by%20email.">Request a quote</a></p>
     </section>
 
@@ -1711,7 +1846,7 @@ html[lang|="ar"] .btn {
         </details>
         <details>
           <summary>How do I contact you?</summary>
-          <p>Email only: <a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. Calls by appointment only.</p>
+          <p>Email first: <a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. Calls only by appointment.</p>
         </details>
         <details>
           <summary>How do I pay?</summary>
@@ -1747,7 +1882,7 @@ html[lang|="ar"] .btn {
 
   <footer class="footer">
     <p class="footer__nav"><a href="/">elghaly.dev</a> · <a href="/chatting">Chatting</a> · <a href="/plumb">Plumb</a> · <a href="/quay">QUAY</a> · <a href="/about.html">About</a> · <a href="/contact.html">Contact</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a></p>
-    <p>elghaly · <a href="mailto:support@elghaly.dev">support@elghaly.dev</a></p>
+    <p>elghaly · Email first: <a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. Calls only by appointment.</p>
     <p class="lic-badges"><a href="https://creativecommons.org/licenses/by/4.0/" rel="license">© elghaly · CC BY 4.0</a> <a href="https://github.com/Alarm2024/elghaly/blob/main/LICENSE">Code: MIT</a> <a href="https://github.com/Alarm2024">Open source</a></p>
   </footer>
 </body>
