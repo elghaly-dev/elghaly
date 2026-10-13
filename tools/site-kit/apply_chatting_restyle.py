@@ -74,7 +74,10 @@ def nav_html(lang: str, active: str) -> str:
     for code in LANGS:
         label, hreflang = LANG_LABELS[code]
         href = lang_href(code, page_suffix)
-        cur = ' aria-current="page"' if code == lang else ""
+        if page_suffix or active == "home":
+            cur = ' aria-current="page"' if code == lang else ""
+        else:
+            cur = ""
         lang_bits.append(
             f'        <a class="lang-btn" href="{href}" hreflang="{hreflang}" lang="{hreflang}"{cur}>{label}</a>'
         )
