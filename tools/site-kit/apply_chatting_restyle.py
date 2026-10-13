@@ -184,6 +184,34 @@ def load_home_translations() -> dict:
         return json.load(f)
 
 
+def load_english_home_strings() -> dict[str, str]:
+    """English defaults keyed like i18n-home.json (from main index data-i18n markers)."""
+    try:
+        main_html = subprocess.check_output(
+            ["git", "show", "main:index.html"],
+            cwd=ROOT,
+            text=True,
+            stderr=subprocess.DEVNULL,
+        )
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        return {}
+    strings = dict(re.findall(r'data-i18n="([^"]+)"[^>]*>([^<]*)<', main_html))
+    strings["prod_h"] = "Products"
+    return strings
+
+
+def apply_home_text_replace(html: str, lang: str, trans: dict) -> str:
+    en = load_english_home_strings()
+    pairs = sorted(
+        ((en[k], v) for k, v in trans[lang].items() if k != "__title" and k in en and en[k]),
+        key=lambda p: len(p[0]),
+        reverse=True,
+    )
+    for src, dst in pairs:
+        html = html.replace(src, dst)
+    return html
+
+
 def apply_data_i18n(html: str, trans: dict) -> str:
     for key, val in trans.items():
         if key == "__title":
@@ -200,7 +228,10 @@ def apply_data_i18n(html: str, trans: dict) -> str:
 
 def apply_home_lang(html: str, lang: str, trans: dict) -> str:
     if lang != "en":
-        html = apply_data_i18n(html, trans[lang])
+        if 'data-i18n="' in html:
+            html = apply_data_i18n(html, trans[lang])
+        else:
+            html = apply_home_text_replace(html, lang, trans)
         hreflang = LANG_LABELS[lang][1]
         html = re.sub(r"<html lang=\"en\">", f'<html lang="{hreflang}">', html, count=1)
         if lang == "ar":
@@ -236,6 +267,17 @@ def strip_home_i18n_script(html: str) -> str:
         r"  <script>\s*// Languages for the home page:.*?</script>\s*",
         "",
         html,
+        count=1,
+        flags=re.DOTALL,
+    )
+
+
+def header_scrub(text: str) -> str:
+    """Sitewide nav uses the elghaly brand only; never a Chatting subtitle in <header>."""
+    return re.sub(
+        r'(<header class="nav">.*?</header>)',
+        lambda m: m.group(1).replace("Chatting by elghaly", "elghaly"),
+        text,
         count=1,
         flags=re.DOTALL,
     )
@@ -285,9 +327,10 @@ def main() -> None:
         index_html = f.read()
     trans = load_home_translations()
     index_html = strip_home_i18n_script(index_html)
-    index_html = apply_home_lang(index_html, "en", trans)
+    index_html = header_scrub(index_html)
+    index_en = apply_home_lang(index_html, "en", trans)
     with open(index_path, "w", encoding="utf-8") as f:
-        f.write(index_html)
+        f.write(index_en)
 
     for lang in ("ar", "ru", "zh"):
         out_dir = os.path.join(ROOT, lang)
@@ -300,6 +343,7 @@ def main() -> None:
         path = os.path.join(ROOT, f"{product}.html")
         with open(path, encoding="utf-8") as f:
             html = f.read()
+        html = header_scrub(html)
         html = re.sub(
             r"<header class=\"nav\">.*?</header>",
             nav_html("en", product),
