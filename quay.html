@@ -394,10 +394,41 @@ a {
   unicode-bidi: isolate;
 }
 
+.nav__badge {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 36px;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--text);
+  font: 500 0.85rem/1 var(--font);
+  text-decoration: none;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+.nav__badge-dot {
+  color: var(--pos);
+  font-size: 0.55rem;
+  line-height: 1;
+}
+
 .nav__links {
   display: none;
-  gap: 0.25rem;
+  gap: 0.125rem;
   margin-inline-start: auto;
+}
+
+/* Dark pill: links sit on the near-black bar, like chatting.elghaly.dev. */
+.nav__pill {
+  padding: 0.2rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
 }
 
 .nav__links a {
@@ -411,7 +442,7 @@ a {
 
 .nav__links a:hover,
 .nav__links a[aria-current="page"] {
-  background: var(--card);
+  background: var(--card-2);
 }
 
 .nav__shop {
@@ -431,28 +462,32 @@ a {
   display: none;
 }
 
-.lang-btn {
+.lang-btn,
+a.lang-btn {
   flex: none;
-  min-width: 40px;
   min-height: 36px;
-  padding: 4px 8px;
+  padding: 4px 10px;
   border: 1px solid transparent;
   border-radius: 999px;
   background: transparent;
   color: var(--text);
-  font: 500 12px var(--font);
+  font: 500 0.75rem var(--font);
   cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-.lang-btn[aria-pressed="true"] {
+.lang-btn[aria-pressed="true"],
+a.lang-btn[aria-current="page"] {
   border-color: var(--line);
   background: var(--card);
 }
 
-/* Phones: the wordmark and all six languages fit on one line at 360px. */
+/* Phones: badge, pill nav and four languages share one row. */
 @media (max-width: 420px) {
   .nav__in {
-    gap: 0.5rem;
+    gap: 0.4rem;
+    flex-wrap: wrap;
   }
 
   .brand {
@@ -460,13 +495,26 @@ a {
     letter-spacing: 0.14em;
   }
 
-  .lang-switch {
-    gap: 2px;
+  .nav__badge {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
   }
 
-  .lang-btn {
-    min-width: 34px;
-    padding: 4px 5px;
+  .nav__links--always {
+    order: 3;
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+
+  .lang-switch {
+    gap: 2px;
+    margin-inline-start: auto;
+  }
+
+  .lang-btn,
+  a.lang-btn {
+    padding: 4px 6px;
+    font-size: 0.7rem;
   }
 }
 
@@ -1628,6 +1676,103 @@ html[lang|="ar"] .btn {
     transform: none;
   }
 }
+
+/* ── About, contact, legal sub-pages ─────────────────────────────────── */
+.page-head {
+  width: 100%;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2.5rem var(--gutter) 1.25rem;
+  text-align: center;
+}
+
+.page-head__title {
+  margin: 0;
+  font: 700 clamp(2rem, 7vw, 2.75rem) / 1.08 var(--font);
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+.page-head__tag {
+  margin: 0.65rem 0 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+main.policy {
+  width: calc(100% - 2rem);
+  max-width: 44rem;
+  margin: 0 auto 3rem;
+  padding: 1.75rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+main.policy .section {
+  text-align: center;
+}
+
+main.policy .section__label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+main.policy .build__text {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--muted);
+  max-width: 32rem;
+  margin-inline: auto;
+}
+
+main.policy .build__text + .build__text,
+main.policy ul + .build__text {
+  margin-top: 0.75rem;
+}
+
+main.policy ul {
+  max-width: 32rem;
+  margin: 0.5rem auto 0;
+  padding-inline-start: 1.2rem;
+  text-align: start;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+main.policy li + li {
+  margin-top: 0.35rem;
+}
+
+main.policy a {
+  color: var(--text);
+}
+
+main.policy strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.footer__contact {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.footer__contact a {
+  color: var(--text);
+}
   </style>
   <!-- /inline:css/glass.css -->
   <script type="application/ld+json">
@@ -1855,13 +2000,22 @@ html[lang|="ar"] .btn {
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="nav">
+                    <header class="nav">
     <div class="nav__in">
       <a class="brand" href="/" aria-label="elghaly home">elghaly</a>
-      <nav class="nav__links nav__links--always" aria-label="Main">
+      <a class="nav__badge" href="https://35.elghaly.dev/" rel="noopener noreferrer" title="35 desk"><span class="nav__badge-dot" aria-hidden="true">●</span> 35</a>
+      <nav class="nav__links nav__links--always nav__pill" aria-label="Main">
+        <a href="/#products">Products</a>
+        <a href="/chatting">Chatting</a>
         <a href="/plumb">Plumb</a>
         <a href="/quay" aria-current="page">QUAY</a>
         <a href="/contact.html">Contact</a>
+      </nav>
+      <nav class="lang-switch" aria-label="Language">
+        <a class="lang-btn" href="/" hreflang="en" lang="en" aria-current="page">English</a>
+        <a class="lang-btn" href="/ar/" hreflang="ar" lang="ar">العربية</a>
+        <a class="lang-btn" href="/ru/" hreflang="ru" lang="ru">Русский</a>
+        <a class="lang-btn" href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
       </nav>
     </div>
   </header>
@@ -2037,7 +2191,7 @@ html[lang|="ar"] .btn {
 
   <footer class="footer">
     <p class="footer__nav"><a href="/">elghaly.dev</a> · <a href="/chatting">Chatting</a> · <a href="/plumb">Plumb</a> · <a href="/quay">QUAY</a> · <a href="/about.html">About</a> · <a href="/contact.html">Contact</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a></p>
-    <p>elghaly · <a href="mailto:support@elghaly.dev">support@elghaly.dev</a></p>
+    <p class="footer__contact">elghaly, LLC · Email first: <a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. Calls only by appointment.</p>
     <p class="lic-badges"><a href="https://creativecommons.org/licenses/by/4.0/" rel="license">© elghaly · CC BY 4.0</a> <a href="https://github.com/Alarm2024/elghaly/blob/main/LICENSE">Code: MIT</a> <a href="https://github.com/Alarm2024">Open source</a></p>
   </footer>
 </body>
