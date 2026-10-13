@@ -1,0 +1,1856 @@
+{
+  "ar": {
+    "about.html": {
+      "title": "من نحن",
+      "tag": "آخر تحديث: 8 أكتوبر 2026",
+      "replace": [
+        [
+          ">About</a>",
+          ">من نحن</a>"
+        ],
+        [
+          ">Contact</a>",
+          ">تواصل</a>"
+        ],
+        [
+          ">Refunds</a>",
+          ">الاسترداد</a>"
+        ],
+        [
+          ">Delivery</a>",
+          ">التسليم</a>"
+        ],
+        [
+          ">Terms</a>",
+          ">الشروط</a>"
+        ],
+        [
+          ">Privacy</a>",
+          ">الخصوصية</a>"
+        ],
+        [
+          "elghaly, LLC · Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
+          "elghaly, LLC · البريد أولاً: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. المكالمات بالموعد فقط."
+        ],
+        [
+          ">Open source</a>",
+          ">مفتوح المصدر</a>"
+        ],
+        [
+          "<title>About · elghaly</title>",
+          "<title>من نحن · elghaly</title>"
+        ],
+        [
+          "Who we are",
+          "من نحن"
+        ],
+        [
+          "<strong>elghaly</strong> was founded in 2022 by Wyndham Heaven, who runs it day to day. We have built software under the elghaly name since 2022.",
+          "<strong>elghaly</strong> تأسست عام 2022 على يد Wyndham Heaven، الذي يديرها يومياً. نبني برمجيات تحت اسم elghaly منذ 2022."
+        ],
+        [
+          "We are a small remote team. Support is by email at <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>.",
+          "نحن فريق صغير يعمل عن بُعد. الدعم عبر البريد على <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>."
+        ],
+        [
+          "What we build",
+          "ماذا نبني"
+        ],
+        [
+          "<li><a href=\"/plumb\">Plumb</a> — self-hosted desk software for Solana, sold as a one-time seat (Starter US$350, Pro US$699, Source US$1,999). You run it on your own server with your own keys; we never hold your keys or your funds.</li>",
+          "<li><a href=\"/plumb\">Plumb</a> — برنامج مكتب ذاتي الاستضافة لـ Solana، يُباع كمقعد بدفعة واحدة (Starter US$350، Pro US$699، Source US$1,999). تشغّله على خادمك بمفاتيحك؛ لا نحتفظ بمفاتيحك أو أموالك.</li>"
+        ],
+        [
+          "<li><a href=\"/quay\">QUAY</a> — for people who run Solana bots. One-time: a Fee review (US$199, your priority-fee and tip settings read against what your public transactions paid and landed at), a Score report (US$49, a read-only note on one mint) and a Flex card pack (US$29, image cards made from text you send). Monthly: QUAY Land (US$149 a month, a written report every week for one bot: landed vs failed, and where tips are wasted) and Node Watch (US$79 a month, an alert message when an RPC or gRPC feed you name goes quiet). The shop charges one month at a time and does not renew automatically.</li>",
+          "<li><a href=\"/quay\">QUAY</a> — لمن يشغّل بوتات Solana. بدفعة واحدة: مراجعة رسوم (US$199، إعدادات رسوم الأولوية والإكراميات مقارنة بما دفعته معاملاتك العامة وأين نُفّذت)، تقرير Score (US$49، ملاحظة للقراءة فقط عن mint واحد) وحزمة Flex card (US$29، بطاقات صور من النص الذي ترسله). شهرياً: QUAY Land (US$149 شهرياً، تقرير مكتوب أسبوعياً لبوت واحد: نُفّذ مقابل فشل، وأين تُهدر الإكراميات) وNode Watch (US$79 شهرياً، رسالة تنبيه عندما يصمت feed RPC أو gRPC تحدده). المتجر يخصم شهراً واحداً في كل مرة ولا يجدّد تلقائياً.</li>"
+        ],
+        [
+          "<li><a href=\"https://glance.elghaly.dev/\">Glance</a> and <a href=\"https://stale.elghaly.dev/\">stale</a> — free, open-source checks for developers: honest status cards for bots, and how far an RPC endpoint is behind.</li>",
+          "<li><a href=\"https://glance.elghaly.dev/\">Glance</a> و<a href=\"https://stale.elghaly.dev/\">stale</a> — فحوص مجانية مفتوحة المصدر للمطوّرين: بطاقات حالة صادقة للبوتات، ومدى تأخر نقطة RPC.</li>"
+        ],
+        [
+          "<li><a href=\"https://iris-35.elghaly.dev/\">Iris 35</a> — a free help page for people who think their wallet was compromised. No wallet connect.</li>",
+          "<li><a href=\"https://iris-35.elghaly.dev/\">Iris 35</a> — صفحة مساعدة مجانية لمن يظن أن محفظته اخترقت. بدون ربط محفظة.</li>"
+        ],
+        [
+          "How we sell",
+          "كيف نبيع"
+        ],
+        [
+          "Everything we sell is digital and delivered by email or transfer. Prices are in US dollars and are the same on our pages and at checkout. Payment is by card or PayPal at the shop checkout only.",
+          "كل ما نبيعه رقمي ويُسلَّم بالبريد أو بالنقل. الأسعار بالدولار الأمريكي وهي نفسها على صفحاتنا وعند الدفع. الدفع بالبطاقة أو PayPal في متجر الدفع فقط."
+        ],
+        [
+          "Refunds are given on request, with no time limit. We make no promise of results from any product, and we never hold customer funds or keys.",
+          "الاسترداد عند الطلب، بلا مهلة. لا نعد بنتائج من أي منتج، ولا نحتفظ بأموال أو مفاتيح العملاء."
+        ]
+      ]
+    },
+    "contact.html": {
+      "title": "تواصل",
+      "tag": "آخر تحديث: 8 أكتوبر 2026",
+      "replace": [
+        [
+          ">About</a>",
+          ">من نحن</a>"
+        ],
+        [
+          ">Contact</a>",
+          ">تواصل</a>"
+        ],
+        [
+          ">Refunds</a>",
+          ">الاسترداد</a>"
+        ],
+        [
+          ">Delivery</a>",
+          ">التسليم</a>"
+        ],
+        [
+          ">Terms</a>",
+          ">الشروط</a>"
+        ],
+        [
+          ">Privacy</a>",
+          ">الخصوصية</a>"
+        ],
+        [
+          "elghaly, LLC · Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
+          "elghaly, LLC · البريد أولاً: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. المكالمات بالموعد فقط."
+        ],
+        [
+          ">Open source</a>",
+          ">مفتوح المصدر</a>"
+        ],
+        [
+          "<title>Contact · elghaly</title>",
+          "<title>تواصل · elghaly</title>"
+        ],
+        [
+          "Business",
+          "العمل"
+        ],
+        [
+          "Founded 2022 by Wyndham Heaven.",
+          "تأسست عام 2022 على يد Wyndham Heaven."
+        ],
+        [
+          "Email",
+          "البريد"
+        ],
+        [
+          "Write to <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a> for sales, orders, refunds and support. We reply by email.",
+          "راسل <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a> للمبيعات والطلبات والاسترداد والدعم. نرد بالبريد."
+        ],
+        [
+          "Contact form",
+          "نموذج التواصل"
+        ],
+        [
+          "Your name ",
+          "اسمك "
+        ],
+        [
+          "Your email ",
+          "بريدك "
+        ],
+        [
+          "Order number (if you have one) ",
+          "رقم الطلب (إن وُجد) "
+        ],
+        [
+          "Message ",
+          "الرسالة "
+        ],
+        [
+          "Send",
+          "إرسال"
+        ],
+        [
+          "Thank you, your message was sent. We reply by email.",
+          "شكراً، أُرسلت رسالتك. نرد بالبريد."
+        ],
+        [
+          "The form sends your message to our inbox through FormSubmit (formsubmit.co). See the <a href=\"/privacy.html\">privacy policy</a>.",
+          "يرسل النموذج رسالتك إلى صندوق الوارد عبر FormSubmit (formsubmit.co). راجع <a href=\"/privacy.html\">سياسة الخصوصية</a>."
+        ],
+        [
+          "Help with an order",
+          "مساعدة في طلب"
+        ],
+        [
+          "Tell us what you bought, the email you used at checkout and what went wrong. Refunds are covered by the <a href=\"/refund.html\">refund policy</a>; how and when each product arrives is on the <a href=\"/delivery.html\">delivery page</a>.",
+          "أخبرنا ماذا اشتريت، والبريد الذي استخدمته عند الدفع، وما الذي حدث. الاسترداد في <a href=\"/refund.html\">سياسة الاسترداد</a>؛ كيف ومتى يصل كل منتج في <a href=\"/delivery.html\">صفحة التسليم</a>."
+        ]
+      ]
+    },
+    "delivery.html": {
+      "title": "التسليم",
+      "tag": "آخر تحديث: 8 أكتوبر 2026",
+      "replace": [
+        [
+          ">About</a>",
+          ">من نحن</a>"
+        ],
+        [
+          ">Contact</a>",
+          ">تواصل</a>"
+        ],
+        [
+          ">Refunds</a>",
+          ">الاسترداد</a>"
+        ],
+        [
+          ">Delivery</a>",
+          ">التسليم</a>"
+        ],
+        [
+          ">Terms</a>",
+          ">الشروط</a>"
+        ],
+        [
+          ">Privacy</a>",
+          ">الخصوصية</a>"
+        ],
+        [
+          "elghaly, LLC · Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
+          "elghaly, LLC · البريد أولاً: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. المكالمات بالموعد فقط."
+        ],
+        [
+          ">Open source</a>",
+          ">مفتوح المصدر</a>"
+        ],
+        [
+          "<title>Delivery policy · elghaly</title>",
+          "<title>سياسة التسليم · elghaly</title>"
+        ],
+        [
+          "Digital delivery",
+          "التسليم الرقمي"
+        ],
+        [
+          "Everything we sell is digital. Nothing is shipped and there are no shipping charges. After you pay, the checkout emails your order confirmation.",
+          "كل ما نبيعه رقمي. لا شحن ولا رسوم شحن. بعد الدفع، يرسل الدفع تأكيد طلبك بالبريد."
+        ],
+        [
+          "Plumb seats (one-time)",
+          "مقاعد Plumb (بدفعة واحدة)"
+        ],
+        [
+          "Plumb Starter US$350 · Plumb Pro US$699 · Plumb Source US$1,999. All seats are on <a href=\"/plumb\">elghaly.dev/plumb</a>; checkout is on our store at plumb-shop.elghaly.dev.",
+          "Plumb Starter US$350 · Plumb Pro US$699 · Plumb Source US$1,999. كل المقاعد على <a href=\"/plumb\">elghaly.dev/plumb</a>؛ الدفع في متجرنا plumb-shop.elghaly.dev."
+        ],
+        [
+          "<strong>When:</strong> within 3.35 hours of two things: your payment is confirmed, and your brief has reached us (seat tier, the pairs you name, and an email we can reach).",
+          "<strong>متى:</strong> خلال 3.35 ساعة من أمرين: تأكيد الدفع، ووصول الملخص إلينا (مستوى المقعد، الأزواج التي تسميها، وبريد نستطيع الوصول إليه)."
+        ],
+        [
+          "<strong>How:</strong> the software configured for your brief is transferred to your server, or sent to you as a download to install yourself.",
+          "<strong>كيف:</strong> يُنقل البرنامج المُعدّ لملخصك إلى خادمك، أو يُرسل لك كتنزيل لتثبته بنفسك."
+        ],
+        [
+          "<strong>Then:</strong> a handover call is scheduled within 24 hours of delivery. The software starts in dry mode (HOLD) and stays there until you, the owner, switch it on.",
+          "<strong>ثم:</strong> يُحدَّد اتصال تسليم خلال 24 ساعة من التسليم. يبدأ البرنامج في وضع dry (HOLD) ويبقى كذلك حتى تفعّله أنت كمالك."
+        ],
+        [
+          "QUAY (one-time and monthly)",
+          "QUAY (بدفعة واحدة وشهري)"
+        ],
+        [
+          "All QUAY plans are on <a href=\"/quay\">elghaly.dev/quay</a>; checkout is on our store at quay-shop.elghaly.dev. The Fee review, Score report and Flex card pack are one-time purchases. QUAY Land and Node Watch are priced per month: the shop checkout charges one month and does not renew automatically, so you order again for each further month.",
+          "كل خطط QUAY على <a href=\"/quay\">elghaly.dev/quay</a>؛ الدفع في متجرنا quay-shop.elghaly.dev. Fee review وScore report وFlex card pack مشتريات لمرة واحدة. QUAY Land وNode Watch بسعر شهري: الدفع يخصم شهراً واحداً ولا يجدّد تلقائياً، فتطلب مجدداً لكل شهر إضافي."
+        ],
+        [
+          "<strong>Fee review (US$199):</strong> one written page on your priority-fee and tip settings, read against what your public transactions paid and landed at, by email within 48 hours of a complete brief.",
+          "<strong>Fee review (US$199):</strong> صفحة مكتوبة واحدة عن إعدادات رسوم الأولوية والإكراميات، مقارنة بما دفعته معاملاتك العامة وأين نُفّذت، بالبريد خلال 48 ساعة من ملخص كامل."
+        ],
+        [
+          "<strong>Node Watch (US$79 a month):</strong> an alert message when an RPC or gRPC feed you name goes quiet. Watching starts once you have sent us the feed.",
+          "<strong>Node Watch (US$79 شهرياً):</strong> رسالة تنبيه عندما يصمت feed RPC أو gRPC تحدده. يبدأ المراقبة بعد أن ترسل لنا الـ feed."
+        ],
+        [
+          "<strong>Score report (US$49):</strong> a read-only note on one mint, from public on-chain data, by email. Anything that cannot be read is marked UNKNOWN. The delivery time is confirmed in our reply to your order.",
+          "<strong>Score report (US$49):</strong> ملاحظة للقراءة فقط عن mint واحد، من بيانات on-chain العامة، بالبريد. ما لا يمكن قراءته يُوسَم UNKNOWN. يُؤكَّد وقت التسليم في ردّنا على طلبك."
+        ],
+        [
+          "<strong>Flex card pack (US$29):</strong> image cards made from the text you send, by email. The delivery time is confirmed in our reply to your order.",
+          "<strong>Flex card pack (US$29):</strong> بطاقات صور من النص الذي ترسله، بالبريد. يُؤكَّد وقت التسليم في ردّنا على طلبك."
+        ],
+        [
+          "<strong>QUAY Land (US$149 a month):</strong> a written report every week for one bot, by email: landed vs failed, and where tips are wasted. You send transaction hashes; you keep the wallet. The start date is confirmed by email after your order.",
+          "<strong>QUAY Land (US$149 شهرياً):</strong> تقرير مكتوب أسبوعياً لبوت واحد، بالبريد: نُفّذ مقابل فشل، وأين تُهدر الإكراميات. ترسل transaction hashes؛ تحتفظ بالمحفظة. يُؤكَّد تاريخ البدء بالبريد بعد طلبك."
+        ],
+        [
+          "If something is late",
+          "إذا تأخر شيء"
+        ],
+        [
+          "Write to <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a> with your order number. If we cannot deliver, or you no longer want the product, the <a href=\"/refund.html\">refund policy</a> applies: your money back, no reason needed.",
+          "اكتب إلى <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a> مع رقم طلبك. إن لم نستطع التسليم، أو لم تعد تريد المنتج، تنطبق <a href=\"/refund.html\">سياسة الاسترداد</a>: استرداد المبلغ دون حاجة لسبب."
+        ]
+      ]
+    },
+    "refund.html": {
+      "title": "الاسترداد",
+      "tag": "آخر تحديث: 8 أكتوبر 2026",
+      "replace": [
+        [
+          ">About</a>",
+          ">من نحن</a>"
+        ],
+        [
+          ">Contact</a>",
+          ">تواصل</a>"
+        ],
+        [
+          ">Refunds</a>",
+          ">الاسترداد</a>"
+        ],
+        [
+          ">Delivery</a>",
+          ">التسليم</a>"
+        ],
+        [
+          ">Terms</a>",
+          ">الشروط</a>"
+        ],
+        [
+          ">Privacy</a>",
+          ">الخصوصية</a>"
+        ],
+        [
+          "elghaly, LLC · Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
+          "elghaly, LLC · البريد أولاً: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. المكالمات بالموعد فقط."
+        ],
+        [
+          ">Open source</a>",
+          ">مفتوح المصدر</a>"
+        ],
+        [
+          "<title>Refund policy · elghaly</title>",
+          "<title>سياسة الاسترداد · elghaly</title>"
+        ],
+        [
+          "What we sell",
+          "ماذا نبيع"
+        ],
+        [
+          "elghaly sells digital products: software seats (<a href=\"/plumb\">Plumb</a>), and written reviews, notes, image cards and feed alerts (<a href=\"/quay\">QUAY</a>; QUAY Land and Node Watch are priced per month). There is nothing physical to send back.",
+          "تبيع elghaly منتجات رقمية: مقاعد برمجيات (<a href=\"/plumb\">Plumb</a>)، ومراجعات مكتوبة وملاحظات وبطاقات صور وتنبيهات feeds (<a href=\"/quay\">QUAY</a>؛ QUAY Land وNode Watch بسعر شهري). لا يوجد شيء مادي لإرجاعه."
+        ],
+        [
+          "The policy",
+          "السياسة"
+        ],
+        [
+          "If you want your money back, you get it. You do not need to give a reason and there is no form. There is no time limit: before delivery, after delivery, a week later or a month later.",
+          "إن أردت استرداد مبلغك، تحصل عليه. لا حاجة لسبب ولا نموذج. بلا مهلة: قبل التسليم أو بعده، بعد أسبوع أو شهر."
+        ],
+        [
+          "You get back what you paid, once per purchase, in the same currency you paid in. A monthly plan is charged one month at a time and does not renew automatically, so nothing more is charged unless you order again; a refund request can cover any payment.",
+          "تسترد ما دفعته، مرة لكل شراء، بنفس العملة. الخطة الشهرية تُخصم شهراً واحداً ولا تتجدّد تلقائياً، فلا يُخصم المزيد إلا إذا طلبت مجدداً؛ طلب الاسترداد يمكن أن يشمل أي دفعة."
+        ],
+        [
+          "How to ask",
+          "كيف تطلب"
+        ],
+        [
+          "Email <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a> from the address you used at checkout. One line is enough; add the order number if you have it. We reply to say when it is done.",
+          "راسل <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a> من البريد الذي استخدمته عند الدفع. سطر واحد يكفي؛ أضف رقم الطلب إن وُجد. نرد لنخبرك متى اكتمل."
+        ],
+        [
+          "How the money comes back",
+          "كيف يعود المال"
+        ],
+        [
+          "All payments are made by card or PayPal at the shop checkout, and refunds go back the same way: to the same card or PayPal account, never to a different one. The checkout sends it the same day; your bank or PayPal decides when it lands, usually 5–10 business days.",
+          "كل المدفوعات بالبطاقة أو PayPal في متجر الدفع، والاسترداد بنفس الطريق: إلى نفس البطاقة أو حساب PayPal، لا إلى حساب آخر. يرسل الدفع في اليوم نفسه؛ بنكك أو PayPal يحدد متى يصل، عادة 5–10 أيام عمل."
+        ],
+        [
+          "What a refund ends",
+          "ما ينهيه الاسترداد"
+        ],
+        [
+          "A refund ends your licence or service for that purchase: updates, follow-up and support for it stop. It does not delete anything you built, and you can buy again later.",
+          "ينهي الاسترداد ترخيصك أو خدمتك لذلك الشراء: تتوقف التحديثات والمتابعة والدعم. لا يحذف ما بنيته، ويمكنك الشراء مجدداً لاحقاً."
+        ],
+        [
+          "What this page is not",
+          "ما ليست هذه الصفحة"
+        ],
+        [
+          "This is a refund policy, not a promise about results. Our software and reports are sold as they are, and nothing on our sites promises income or performance. See the <a href=\"/terms.html\">terms</a>.",
+          "هذه سياسة استرداد، لا وعداً بالنتائج. برمجياتنا وتقاريرنا تُباع كما هي، ولا شيء على مواقعنا يعد بدخل أو أداء. راجع <a href=\"/terms.html\">الشروط</a>."
+        ]
+      ]
+    },
+    "terms.html": {
+      "title": "شروط الخدمة",
+      "tag": "آخر تحديث: 8 أكتوبر 2026",
+      "replace": [
+        [
+          ">About</a>",
+          ">من نحن</a>"
+        ],
+        [
+          ">Contact</a>",
+          ">تواصل</a>"
+        ],
+        [
+          ">Refunds</a>",
+          ">الاسترداد</a>"
+        ],
+        [
+          ">Delivery</a>",
+          ">التسليم</a>"
+        ],
+        [
+          ">Terms</a>",
+          ">الشروط</a>"
+        ],
+        [
+          ">Privacy</a>",
+          ">الخصوصية</a>"
+        ],
+        [
+          "elghaly, LLC · Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
+          "elghaly, LLC · البريد أولاً: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. المكالمات بالموعد فقط."
+        ],
+        [
+          ">Open source</a>",
+          ">مفتوح المصدر</a>"
+        ],
+        [
+          "<title>Terms of service · elghaly</title>",
+          "<title>شروط الخدمة · elghaly</title>"
+        ],
+        [
+          "Who we are",
+          "من نحن"
+        ],
+        [
+          "elghaly.dev and elghaly products are run by <strong>elghaly</strong>, founded in 2022 by Wyndham Heaven. Questions about these terms: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>.",
+          "يدير elghaly.dev ومنتجات elghaly <strong>elghaly</strong>، تأسست عام 2022 على يد Wyndham Heaven. أسئلة عن هذه الشروط: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>."
+        ],
+        [
+          "What we offer",
+          "ما نقدّم"
+        ],
+        [
+          "elghaly offers digital software, written reviews and reports, image cards and feed alerts, some of them priced per month and charged one month at a time, with no automatic renewal. By using this site or buying a product, you agree to these terms.",
+          "تقدّم elghaly برمجيات رقمية ومراجعات وتقارير مكتوبة وبطاقات صور وتنبيهات feeds، بعضها بسعر شهري يُخصم شهراً واحداً دون تجديد تلقائي. باستخدام هذا الموقع أو شراء منتج، توافق على هذه الشروط."
+        ],
+        [
+          "Prices and payment",
+          "الأسعار والدفع"
+        ],
+        [
+          "Prices are in US dollars (USD) and are the same on the product page and at checkout. Payment is by card or PayPal at the shop checkout only; we do not take payment any other way. Taxes, if any, are shown at checkout before you pay.",
+          "الأسعار بالدولار الأمريكي (USD) وهي نفسها في صفحة المنتج وعند الدفع. الدفع بالبطاقة أو PayPal في متجر الدفع فقط؛ لا نقبل دفعاً بطريقة أخرى. الضرائب إن وُجدت تظهر عند الدفع قبل أن تدفع."
+        ],
+        [
+          "Delivery",
+          "التسليم"
+        ],
+        [
+          "How and when each product arrives is set out on the <a href=\"/delivery.html\">delivery page</a>.",
+          "كيف ومتى يصل كل منتج مبيّن في <a href=\"/delivery.html\">صفحة التسليم</a>."
+        ],
+        [
+          "Use of products",
+          "استخدام المنتجات"
+        ],
+        [
+          "When you buy a product, you get a personal licence to use it. Please do not resell or redistribute paid products unless the product says otherwise. Open-source software is covered by its own licence.",
+          "عند شراء منتج، تحصل على ترخيص شخصي لاستخدامه. لا تعيد بيع المنتجات المدفوعة أو توزيعها ما لم ينص المنتج على غير ذلك. البرمجيات مفتوحة المصدر تخضع لترخيصها."
+        ],
+        [
+          "No promise of results",
+          "لا وعد بالنتائج"
+        ],
+        [
+          "Our software and reports are provided as is. We make no promises or warranties about results, income or performance, and you are responsible for how you use them.",
+          "برمجياتنا وتقاريرنا كما هي. لا نقدّم وعوداً أو ضمانات عن النتائج أو الدخل أو الأداء، وأنت مسؤول عن كيفية استخدامها."
+        ],
+        [
+          "Limitation of liability",
+          "تحديد المسؤولية"
+        ],
+        [
+          "To the extent the law allows, elghaly is not liable for indirect or consequential losses from using this site or our products. If something goes wrong, our total liability is limited to the amount you paid for the product.",
+          "في حدود ما يسمح به القانون، elghaly غير مسؤولة عن خسائر غير مباشرة أو تبعية من استخدام هذا الموقع أو منتجاتنا. إن حدث خطأ، تُحدَّد مسؤوليتنا الإجمالية بما دفعته للمنتج."
+        ],
+        [
+          "Refunds",
+          "الاسترداد"
+        ],
+        [
+          "Refunds are covered by our <a href=\"/refund.html\">refund policy</a>: money back on request, no reason, no time limit.",
+          "الاسترداد في <a href=\"/refund.html\">سياسة الاسترداد</a>: استرداد المبلغ عند الطلب، بلا سبب، بلا مهلة."
+        ],
+        [
+          "Governing law",
+          "القانون الحاكم"
+        ],
+        [
+          "Changes",
+          "التغييرات"
+        ],
+        [
+          "If these terms change, we will update this page and the date above.",
+          "إن تغيّرت هذه الشروط، سنحدّث هذه الصفحة والتاريخ أعلاه."
+        ]
+      ]
+    },
+    "privacy.html": {
+      "title": "سياسة الخصوصية",
+      "tag": "آخر تحديث: 8 أكتوبر 2026",
+      "replace": [
+        [
+          ">About</a>",
+          ">من نحن</a>"
+        ],
+        [
+          ">Contact</a>",
+          ">تواصل</a>"
+        ],
+        [
+          ">Refunds</a>",
+          ">الاسترداد</a>"
+        ],
+        [
+          ">Delivery</a>",
+          ">التسليم</a>"
+        ],
+        [
+          ">Terms</a>",
+          ">الشروط</a>"
+        ],
+        [
+          ">Privacy</a>",
+          ">الخصوصية</a>"
+        ],
+        [
+          "elghaly, LLC · Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
+          "elghaly, LLC · البريد أولاً: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. المكالمات بالموعد فقط."
+        ],
+        [
+          ">Open source</a>",
+          ">مفتوح المصدر</a>"
+        ],
+        [
+          "<title>Privacy policy · elghaly</title>",
+          "<title>سياسة الخصوصية · elghaly</title>"
+        ],
+        [
+          "Who we are",
+          "من نحن"
+        ],
+        [
+          "elghaly.dev is the website of <strong>elghaly</strong>, founded in 2022 by Wyndham Heaven. Questions about this policy: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>.",
+          "elghaly.dev هو موقع <strong>elghaly</strong>، تأسست عام 2022 على يد Wyndham Heaven. أسئلة عن هذه السياسة: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>."
+        ],
+        [
+          "What this site collects",
+          "ما يجمعه هذا الموقع"
+        ],
+        [
+          "This site has no user accounts and no sign-in. It does not hold funds or assets for anyone, and no payments are taken on elghaly.dev itself.",
+          "لا حسابات مستخدم ولا تسجيل دخول. لا يحتفظ بأموال أو أصول لأحد، ولا تُؤخذ مدفوعات على elghaly.dev نفسه."
+        ],
+        [
+          "We use Google Analytics (GA4) to see how many people visit and which pages they view. Google Analytics uses cookies and collects standard data such as pages visited, approximate location, device and browser type, and referring site. We do not use it to identify you personally. You can learn how Google handles this data at <a href=\"https://policies.google.com/technologies/partner-sites\">policies.google.com/technologies/partner-sites</a>, and opt out with the <a href=\"https://tools.google.com/dlpage/gaoptout\">Google Analytics opt-out add-on</a>.",
+          "نستخدم Google Analytics (GA4) لمعرفة عدد الزوار والصفحات التي يشاهدونها. يستخدم Google Analytics ملفات تعريف ارتباط ويجمع بيانات قياسية مثل الصفحات الزائرة، الموقع التقريبي، نوع الجهاز والمتصفح، والموقع المُحيل. لا نستخدمه للتعرف عليك شخصياً. تعرّف كيف تتعامل Google مع البيانات على <a href=\"https://policies.google.com/technologies/partner-sites\">policies.google.com/technologies/partner-sites</a>، ويمكنك إلغاء الاشتراك عبر <a href=\"https://tools.google.com/dlpage/gaoptout\">إضافة Google Analytics opt-out</a>."
+        ],
+        [
+          "Fonts are served from this site. The home page also loads an event registration button from Luma, which may receive connection details when the page loads. If you register for an event, that happens on Luma under Luma's own privacy policy.",
+          "الخطوط تُقدَّم من هذا الموقع. تحمّل الصفحة الرئيسية أيضاً زر تسجيل فعالية من Luma، وقد يستقبل تفاصيل اتصال عند تحميل الصفحة. إن سجّلت في فعالية، يحدث ذلك على Luma بسياسة خصوصية Luma."
+        ],
+        [
+          "Contact form",
+          "نموذج التواصل"
+        ],
+        [
+          "If you use the <a href=\"/contact.html\">contact form</a>, the name, email, order number and message you type are sent to our inbox through FormSubmit (formsubmit.co), which handles them under its own privacy policy. We use them to reply to you.",
+          "إن استخدمت <a href=\"/contact.html\">نموذج التواصل</a>، يُرسل الاسم والبريد ورقم الطلب والرسالة إلى صندوق الوارد عبر FormSubmit (formsubmit.co) بسياسة خصوصيتها. نستخدمها للرد عليك."
+        ],
+        [
+          "Purchases",
+          "المشتريات"
+        ],
+        [
+          "Purchases happen in the shop checkout, run by Shopify, with payment by PayPal or card. Shopify and PayPal process your order and payment details under their own privacy policies; the shop's privacy policy is linked at checkout. We receive what we need to deliver the order and to refund it.",
+          "تتم المشتريات في متجر الدفع عبر Shopify، بالدفع PayPal أو البطاقة. Shopify وPayPal يعالجان تفاصيل الطلب والدفع بسياسات خصوصيتهما؛ رابط سياسة المتجر عند الدفع. نستلم ما نحتاجه للتسليم والاسترداد."
+        ],
+        [
+          "Email",
+          "البريد"
+        ],
+        [
+          "If you email us, we keep your message to reply to you. We do not sell or rent your information.",
+          "إن راسلتنا بالبريد، نحتفظ برسالتك للرد. لا نبيع أو نؤجر معلوماتك."
+        ],
+        [
+          "Other elghaly sites",
+          "مواقع elghaly الأخرى"
+        ],
+        [
+          "Links on this site lead to other elghaly projects and to outside services. Each of those may have its own terms and privacy notice.",
+          "روابط هذا الموقع تقود إلى مشاريع elghaly أخرى وخدمات خارجية. لكل منها قد تكون شروط وسياسة خصوصية خاصة."
+        ],
+        [
+          "Your choices",
+          "خياراتك"
+        ],
+        [
+          "You can block or delete cookies in your browser settings. To ask about or remove any messages we hold, write to <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>.",
+          "يمكنك حظر أو حذف ملفات تعريف الارتباط في إعدادات المتصفح. للسؤال عن الرسائل المحفوظة أو حذفها، اكتب إلى <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>."
+        ],
+        [
+          "Changes",
+          "التغييرات"
+        ],
+        [
+          "If this policy changes, we will update this page and the date above.",
+          "إن تغيّرت هذه السياسة، سنحدّث هذه الصفحة والتاريخ أعلاه."
+        ]
+      ]
+    }
+  },
+  "ru": {
+    "about.html": {
+      "title": "О нас",
+      "tag": "Обновлено: 8 октября 2026",
+      "replace": [
+        [
+          ">About</a>",
+          ">О нас</a>"
+        ],
+        [
+          ">Contact</a>",
+          ">Контакты</a>"
+        ],
+        [
+          ">Refunds</a>",
+          ">Возвраты</a>"
+        ],
+        [
+          ">Delivery</a>",
+          ">Доставка</a>"
+        ],
+        [
+          ">Terms</a>",
+          ">Условия</a>"
+        ],
+        [
+          ">Privacy</a>",
+          ">Конфиденциальность</a>"
+        ],
+        [
+          "elghaly, LLC · Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
+          "elghaly, LLC · Сначала email: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Звонки только по записи."
+        ],
+        [
+          ">Open source</a>",
+          ">Открытый код</a>"
+        ],
+        [
+          "<title>About · elghaly</title>",
+          "<title>О нас · elghaly</title>"
+        ],
+        [
+          "Who we are",
+          "Кто мы"
+        ],
+        [
+          "<strong>elghaly</strong> was founded in 2022 by Wyndham Heaven, who runs it day to day. We have built software under the elghaly name since 2022.",
+          "<strong>elghaly</strong> основана в 2022 году Wyndham Heaven, который ведёт её изо дня в день. Под именем elghaly мы делаем софт с 2022 года."
+        ],
+        [
+          "We are a small remote team. Support is by email at <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>.",
+          "Мы небольшая удалённая команда. Поддержка по email: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>."
+        ],
+        [
+          "What we build",
+          "Что мы делаем"
+        ],
+        [
+          "<li><a href=\"/plumb\">Plumb</a> — self-hosted desk software for Solana, sold as a one-time seat (Starter US$350, Pro US$699, Source US$1,999). You run it on your own server with your own keys; we never hold your keys or your funds.</li>",
+          "<li><a href=\"/plumb\">Plumb</a> — self-hosted desk-софт для Solana, разовое место (Starter US$350, Pro US$699, Source US$1,999). Вы запускаете его на своём сервере со своими ключами; мы не храним ваши ключи и средства.</li>"
+        ],
+        [
+          "<li><a href=\"/quay\">QUAY</a> — for people who run Solana bots. One-time: a Fee review (US$199, your priority-fee and tip settings read against what your public transactions paid and landed at), a Score report (US$49, a read-only note on one mint) and a Flex card pack (US$29, image cards made from text you send). Monthly: QUAY Land (US$149 a month, a written report every week for one bot: landed vs failed, and where tips are wasted) and Node Watch (US$79 a month, an alert message when an RPC or gRPC feed you name goes quiet). The shop charges one month at a time and does not renew automatically.</li>",
+          "<li><a href=\"/quay\">QUAY</a> — для тех, кто запускает ботов Solana. Разово: Fee review (US$199, ваши priority-fee и чаевые сопоставляются с тем, что платили и куда попали публичные транзакции), Score report (US$49, read-only заметка по одному mint) и Flex card pack (US$29, карточки-картинки из вашего текста). Ежемесячно: QUAY Land (US$149 в месяц, письменный отчёт каждую неделю по одному боту: landed vs failed и где теряются чаевые) и Node Watch (US$79 в месяц, alert, когда указанный RPC или gRPC feed замолкает). Магазин списывает по одному месяцу и не продлевает автоматически.</li>"
+        ],
+        [
+          "<li><a href=\"https://glance.elghaly.dev/\">Glance</a> and <a href=\"https://stale.elghaly.dev/\">stale</a> — free, open-source checks for developers: honest status cards for bots, and how far an RPC endpoint is behind.</li>",
+          "<li><a href=\"https://glance.elghaly.dev/\">Glance</a> и <a href=\"https://stale.elghaly.dev/\">stale</a> — бесплатные open-source проверки для разработчиков: честные status cards для ботов и насколько отстаёт RPC endpoint.</li>"
+        ],
+        [
+          "<li><a href=\"https://iris-35.elghaly.dev/\">Iris 35</a> — a free help page for people who think their wallet was compromised. No wallet connect.</li>",
+          "<li><a href=\"https://iris-35.elghaly.dev/\">Iris 35</a> — бесплатная страница помощи, если кажется, что кошелёк скомпрометирован. Без wallet connect.</li>"
+        ],
+        [
+          "How we sell",
+          "Как мы продаём"
+        ],
+        [
+          "Everything we sell is digital and delivered by email or transfer. Prices are in US dollars and are the same on our pages and at checkout. Payment is by card or PayPal at the shop checkout only.",
+          "Всё, что мы продаём, цифровое и доставляется по email или transfer. Цены в US dollars, одинаковые на страницах и в checkout. Оплата картой или PayPal только в магазине."
+        ],
+        [
+          "Refunds are given on request, with no time limit. We make no promise of results from any product, and we never hold customer funds or keys.",
+          "Возврат по запросу, без срока. Мы не обещаем результатов от продуктов и не храним средства или ключи клиентов."
+        ]
+      ]
+    },
+    "contact.html": {
+      "title": "Контакты",
+      "tag": "Обновлено: 8 октября 2026",
+      "replace": [
+        [
+          ">About</a>",
+          ">О нас</a>"
+        ],
+        [
+          ">Contact</a>",
+          ">Контакты</a>"
+        ],
+        [
+          ">Refunds</a>",
+          ">Возвраты</a>"
+        ],
+        [
+          ">Delivery</a>",
+          ">Доставка</a>"
+        ],
+        [
+          ">Terms</a>",
+          ">Условия</a>"
+        ],
+        [
+          ">Privacy</a>",
+          ">Конфиденциальность</a>"
+        ],
+        [
+          "elghaly, LLC · Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
+          "elghaly, LLC · Сначала email: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Звонки только по записи."
+        ],
+        [
+          ">Open source</a>",
+          ">Открытый код</a>"
+        ],
+        [
+          "<title>Contact · elghaly</title>",
+          "<title>Контакты · elghaly</title>"
+        ],
+        [
+          "Business",
+          "Компания"
+        ],
+        [
+          "Founded 2022 by Wyndham Heaven.",
+          "Основана в 2022 году Wyndham Heaven."
+        ],
+        [
+          "Email",
+          "Email"
+        ],
+        [
+          "Write to <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a> for sales, orders, refunds and support. We reply by email.",
+          "Пишите на <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a> по продажам, заказам, возвратам и поддержке. Отвечаем по email."
+        ],
+        [
+          "Contact form",
+          "Форма связи"
+        ],
+        [
+          "Your name ",
+          "Ваше имя "
+        ],
+        [
+          "Your email ",
+          "Ваш email "
+        ],
+        [
+          "Order number (if you have one) ",
+          "Номер заказа (если есть) "
+        ],
+        [
+          "Message ",
+          "Сообщение "
+        ],
+        [
+          "Send",
+          "Отправить"
+        ],
+        [
+          "Thank you, your message was sent. We reply by email.",
+          "Спасибо, сообщение отправлено. Ответим по email."
+        ],
+        [
+          "The form sends your message to our inbox through FormSubmit (formsubmit.co). See the <a href=\"/privacy.html\">privacy policy</a>.",
+          "Форма отправляет сообщение в наш inbox через FormSubmit (formsubmit.co). См. <a href=\"/privacy.html\">политику конфиденциальности</a>."
+        ],
+        [
+          "Help with an order",
+          "Помощь с заказом"
+        ],
+        [
+          "Tell us what you bought, the email you used at checkout and what went wrong. Refunds are covered by the <a href=\"/refund.html\">refund policy</a>; how and when each product arrives is on the <a href=\"/delivery.html\">delivery page</a>.",
+          "Напишите, что купили, email при checkout и что пошло не так. Возвраты — в <a href=\"/refund.html\">политике возвратов</a>; сроки доставки — на <a href=\"/delivery.html\">странице доставки</a>."
+        ]
+      ]
+    },
+    "delivery.html": {
+      "title": "Доставка",
+      "tag": "Обновлено: 8 октября 2026",
+      "replace": [
+        [
+          ">About</a>",
+          ">О нас</a>"
+        ],
+        [
+          ">Contact</a>",
+          ">Контакты</a>"
+        ],
+        [
+          ">Refunds</a>",
+          ">Возвраты</a>"
+        ],
+        [
+          ">Delivery</a>",
+          ">Доставка</a>"
+        ],
+        [
+          ">Terms</a>",
+          ">Условия</a>"
+        ],
+        [
+          ">Privacy</a>",
+          ">Конфиденциальность</a>"
+        ],
+        [
+          "elghaly, LLC · Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
+          "elghaly, LLC · Сначала email: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Звонки только по записи."
+        ],
+        [
+          ">Open source</a>",
+          ">Открытый код</a>"
+        ],
+        [
+          "<title>Delivery policy · elghaly</title>",
+          "<title>Политика доставки · elghaly</title>"
+        ],
+        [
+          "Digital delivery",
+          "Цифровая доставка"
+        ],
+        [
+          "Everything we sell is digital. Nothing is shipped and there are no shipping charges. After you pay, the checkout emails your order confirmation.",
+          "Всё, что мы продаём, цифровое. Ничего не отправляется почтой, платы за доставку нет. После оплаты checkout присылает подтверждение заказа на email."
+        ],
+        [
+          "Plumb seats (one-time)",
+          "Места Plumb (разово)"
+        ],
+        [
+          "Plumb Starter US$350 · Plumb Pro US$699 · Plumb Source US$1,999. All seats are on <a href=\"/plumb\">elghaly.dev/plumb</a>; checkout is on our store at plumb-shop.elghaly.dev.",
+          "Plumb Starter US$350 · Plumb Pro US$699 · Plumb Source US$1,999. Все места на <a href=\"/plumb\">elghaly.dev/plumb</a>; checkout в магазине plumb-shop.elghaly.dev."
+        ],
+        [
+          "<strong>When:</strong> within 3.35 hours of two things: your payment is confirmed, and your brief has reached us (seat tier, the pairs you name, and an email we can reach).",
+          "<strong>Когда:</strong> в течение 3.35 часов после двух условий: оплата подтверждена и brief дошёл до нас (tier места, указанные пары и email для связи)."
+        ],
+        [
+          "<strong>How:</strong> the software configured for your brief is transferred to your server, or sent to you as a download to install yourself.",
+          "<strong>Как:</strong> софт под ваш brief передаётся на ваш сервер или отправляется загрузкой для самостоятельной установки."
+        ],
+        [
+          "<strong>Then:</strong> a handover call is scheduled within 24 hours of delivery. The software starts in dry mode (HOLD) and stays there until you, the owner, switch it on.",
+          "<strong>Далее:</strong> звонок передачи назначается в течение 24 часов после доставки. Софт стартует в dry mode (HOLD) и остаётся так, пока вы, владелец, не включите его."
+        ],
+        [
+          "QUAY (one-time and monthly)",
+          "QUAY (разово и ежемесячно)"
+        ],
+        [
+          "All QUAY plans are on <a href=\"/quay\">elghaly.dev/quay</a>; checkout is on our store at quay-shop.elghaly.dev. The Fee review, Score report and Flex card pack are one-time purchases. QUAY Land and Node Watch are priced per month: the shop checkout charges one month and does not renew automatically, so you order again for each further month.",
+          "Все планы QUAY на <a href=\"/quay\">elghaly.dev/quay</a>; checkout в quay-shop.elghaly.dev. Fee review, Score report и Flex card pack — разово. QUAY Land и Node Watch — помесячно: checkout списывает один месяц без автопродления, дальше заказываете снова."
+        ],
+        [
+          "<strong>Fee review (US$199):</strong> one written page on your priority-fee and tip settings, read against what your public transactions paid and landed at, by email within 48 hours of a complete brief.",
+          "<strong>Fee review (US$199):</strong> одна письменная страница о priority-fee и чаевых, сопоставленная с оплатой и landing публичных транзакций, по email в течение 48 часов после полного brief."
+        ],
+        [
+          "<strong>Node Watch (US$79 a month):</strong> an alert message when an RPC or gRPC feed you name goes quiet. Watching starts once you have sent us the feed.",
+          "<strong>Node Watch (US$79 в месяц):</strong> alert, когда указанный RPC или gRPC feed замолкает. Мониторинг начинается после того, как вы прислали feed."
+        ],
+        [
+          "<strong>Score report (US$49):</strong> a read-only note on one mint, from public on-chain data, by email. Anything that cannot be read is marked UNKNOWN. The delivery time is confirmed in our reply to your order.",
+          "<strong>Score report (US$49):</strong> read-only заметка по одному mint из публичных on-chain данных, по email. Нечитаемое помечается UNKNOWN. Срок доставки подтверждаем в ответе на заказ."
+        ],
+        [
+          "<strong>Flex card pack (US$29):</strong> image cards made from the text you send, by email. The delivery time is confirmed in our reply to your order.",
+          "<strong>Flex card pack (US$29):</strong> карточки-картинки из вашего текста, по email. Срок доставки подтверждаем в ответе на заказ."
+        ],
+        [
+          "<strong>QUAY Land (US$149 a month):</strong> a written report every week for one bot, by email: landed vs failed, and where tips are wasted. You send transaction hashes; you keep the wallet. The start date is confirmed by email after your order.",
+          "<strong>QUAY Land (US$149 в месяц):</strong> письменный отчёт каждую неделю по одному боту, по email: landed vs failed и где теряются чаевые. Вы присылаете transaction hashes; кошелёк остаётся у вас. Дату старта подтверждаем по email после заказа."
+        ],
+        [
+          "If something is late",
+          "Если что-то задерживается"
+        ],
+        [
+          "Write to <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a> with your order number. If we cannot deliver, or you no longer want the product, the <a href=\"/refund.html\">refund policy</a> applies: your money back, no reason needed.",
+          "Напишите на <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a> с номером заказа. Если не можем доставить или продукт больше не нужен — <a href=\"/refund.html\">политика возвратов</a>: деньги назад без объяснений."
+        ]
+      ]
+    },
+    "refund.html": {
+      "title": "Возвраты",
+      "tag": "Обновлено: 8 октября 2026",
+      "replace": [
+        [
+          ">About</a>",
+          ">О нас</a>"
+        ],
+        [
+          ">Contact</a>",
+          ">Контакты</a>"
+        ],
+        [
+          ">Refunds</a>",
+          ">Возвраты</a>"
+        ],
+        [
+          ">Delivery</a>",
+          ">Доставка</a>"
+        ],
+        [
+          ">Terms</a>",
+          ">Условия</a>"
+        ],
+        [
+          ">Privacy</a>",
+          ">Конфиденциальность</a>"
+        ],
+        [
+          "elghaly, LLC · Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
+          "elghaly, LLC · Сначала email: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Звонки только по записи."
+        ],
+        [
+          ">Open source</a>",
+          ">Открытый код</a>"
+        ],
+        [
+          "<title>Refund policy · elghaly</title>",
+          "<title>Политика возвратов · elghaly</title>"
+        ],
+        [
+          "What we sell",
+          "Что мы продаём"
+        ],
+        [
+          "elghaly sells digital products: software seats (<a href=\"/plumb\">Plumb</a>), and written reviews, notes, image cards and feed alerts (<a href=\"/quay\">QUAY</a>; QUAY Land and Node Watch are priced per month). There is nothing physical to send back.",
+          "elghaly продаёт цифровые продукты: места софта (<a href=\"/plumb\">Plumb</a>), письменные разборы, заметки, карточки и feed alerts (<a href=\"/quay\">QUAY</a>; QUAY Land и Node Watch — помесячно). Нечего физически возвращать."
+        ],
+        [
+          "The policy",
+          "Политика"
+        ],
+        [
+          "If you want your money back, you get it. You do not need to give a reason and there is no form. There is no time limit: before delivery, after delivery, a week later or a month later.",
+          "Хотите деньги назад — получите. Без причины и без формы. Без срока: до доставки, после, через неделю или месяц."
+        ],
+        [
+          "You get back what you paid, once per purchase, in the same currency you paid in. A monthly plan is charged one month at a time and does not renew automatically, so nothing more is charged unless you order again; a refund request can cover any payment.",
+          "Возвращаем уплаченное, один раз на покупку, в той же валюте. Месячный план списывается по одному месяцу без автопродления; запрос на возврат может касаться любого платежа."
+        ],
+        [
+          "How to ask",
+          "Как запросить"
+        ],
+        [
+          "Email <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a> from the address you used at checkout. One line is enough; add the order number if you have it. We reply to say when it is done.",
+          "Email на <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a> с адреса checkout. Достаточно одной строки; добавьте номер заказа, если есть. Ответим, когда готово."
+        ],
+        [
+          "How the money comes back",
+          "Как вернутся деньги"
+        ],
+        [
+          "All payments are made by card or PayPal at the shop checkout, and refunds go back the same way: to the same card or PayPal account, never to a different one. The checkout sends it the same day; your bank or PayPal decides when it lands, usually 5–10 business days.",
+          "Оплата картой или PayPal в магазине; возврат тем же путём: на ту же карту или PayPal, не на другой счёт. Checkout отправляет в тот же день; банк или PayPal решает срок зачисления, обычно 5–10 рабочих дней."
+        ],
+        [
+          "What a refund ends",
+          "Что прекращает возврат"
+        ],
+        [
+          "A refund ends your licence or service for that purchase: updates, follow-up and support for it stop. It does not delete anything you built, and you can buy again later.",
+          "Возврат прекращает лицензию или услугу по этой покупке: обновления, сопровождение и поддержка прекращаются. Ваши наработки не удаляются; можно купить снова."
+        ],
+        [
+          "What this page is not",
+          "Чем эта страница не является"
+        ],
+        [
+          "This is a refund policy, not a promise about results. Our software and reports are sold as they are, and nothing on our sites promises income or performance. See the <a href=\"/terms.html\">terms</a>.",
+          "Это политика возвратов, а не обещание результатов. Софт и отчёты продаются as is; сайты не обещают доход или performance. См. <a href=\"/terms.html\">условия</a>."
+        ]
+      ]
+    },
+    "terms.html": {
+      "title": "Условия обслуживания",
+      "tag": "Обновлено: 8 октября 2026",
+      "replace": [
+        [
+          ">About</a>",
+          ">О нас</a>"
+        ],
+        [
+          ">Contact</a>",
+          ">Контакты</a>"
+        ],
+        [
+          ">Refunds</a>",
+          ">Возвраты</a>"
+        ],
+        [
+          ">Delivery</a>",
+          ">Доставка</a>"
+        ],
+        [
+          ">Terms</a>",
+          ">Условия</a>"
+        ],
+        [
+          ">Privacy</a>",
+          ">Конфиденциальность</a>"
+        ],
+        [
+          "elghaly, LLC · Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
+          "elghaly, LLC · Сначала email: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Звонки только по записи."
+        ],
+        [
+          ">Open source</a>",
+          ">Открытый код</a>"
+        ],
+        [
+          "<title>Terms of service · elghaly</title>",
+          "<title>Условия обслуживания · elghaly</title>"
+        ],
+        [
+          "Who we are",
+          "Кто мы"
+        ],
+        [
+          "elghaly.dev and elghaly products are run by <strong>elghaly</strong>, founded in 2022 by Wyndham Heaven. Questions about these terms: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>.",
+          "elghaly.dev и продукты elghaly ведёт <strong>elghaly</strong>, основанная в 2022 году Wyndham Heaven. Вопросы по условиям: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>."
+        ],
+        [
+          "What we offer",
+          "Что мы предлагаем"
+        ],
+        [
+          "elghaly offers digital software, written reviews and reports, image cards and feed alerts, some of them priced per month and charged one month at a time, with no automatic renewal. By using this site or buying a product, you agree to these terms.",
+          "elghaly предлагает цифровой софт, письменные разборы и отчёты, карточки и feed alerts, часть — помесячно, списание по одному месяцу без автопродления. Используя сайт или покупая продукт, вы соглашаетесь с условиями."
+        ],
+        [
+          "Prices and payment",
+          "Цены и оплата"
+        ],
+        [
+          "Prices are in US dollars (USD) and are the same on the product page and at checkout. Payment is by card or PayPal at the shop checkout only; we do not take payment any other way. Taxes, if any, are shown at checkout before you pay.",
+          "Цены в US dollars (USD), одинаковые на странице продукта и в checkout. Оплата картой или PayPal только в магазине; иначе не принимаем. Налоги, если есть, показываются в checkout до оплаты."
+        ],
+        [
+          "Delivery",
+          "Доставка"
+        ],
+        [
+          "How and when each product arrives is set out on the <a href=\"/delivery.html\">delivery page</a>.",
+          "Сроки и способ доставки каждого продукта — на <a href=\"/delivery.html\">странице доставки</a>."
+        ],
+        [
+          "Use of products",
+          "Использование продуктов"
+        ],
+        [
+          "When you buy a product, you get a personal licence to use it. Please do not resell or redistribute paid products unless the product says otherwise. Open-source software is covered by its own licence.",
+          "При покупке вы получаете личную лицензию. Не перепродавайте и не распространяйте платные продукты, если иное не указано. Open-source — по своей лицензии."
+        ],
+        [
+          "No promise of results",
+          "Без обещаний результатов"
+        ],
+        [
+          "Our software and reports are provided as is. We make no promises or warranties about results, income or performance, and you are responsible for how you use them.",
+          "Софт и отчёты предоставляются as is. Без обещаний или гарантий дохода, результатов или performance; ответственность за использование на вас."
+        ],
+        [
+          "Limitation of liability",
+          "Ограничение ответственности"
+        ],
+        [
+          "To the extent the law allows, elghaly is not liable for indirect or consequential losses from using this site or our products. If something goes wrong, our total liability is limited to the amount you paid for the product.",
+          "В пределах закона elghaly не отвечает за косвенные или последующие убытки от использования сайта или продуктов. При проблемах ответственность ограничена суммой, уплаченной за продукт."
+        ],
+        [
+          "Refunds",
+          "Возвраты"
+        ],
+        [
+          "Refunds are covered by our <a href=\"/refund.html\">refund policy</a>: money back on request, no reason, no time limit.",
+          "Возвраты — в нашей <a href=\"/refund.html\">политике возвратов</a>: деньги по запросу, без причины и срока."
+        ],
+        [
+          "Governing law",
+          "Применимое право"
+        ],
+        [
+          "Changes",
+          "Изменения"
+        ],
+        [
+          "If these terms change, we will update this page and the date above.",
+          "При изменении условий обновим эту страницу и дату выше."
+        ]
+      ]
+    },
+    "privacy.html": {
+      "title": "Политика конфиденциальности",
+      "tag": "Обновлено: 8 октября 2026",
+      "replace": [
+        [
+          ">About</a>",
+          ">О нас</a>"
+        ],
+        [
+          ">Contact</a>",
+          ">Контакты</a>"
+        ],
+        [
+          ">Refunds</a>",
+          ">Возвраты</a>"
+        ],
+        [
+          ">Delivery</a>",
+          ">Доставка</a>"
+        ],
+        [
+          ">Terms</a>",
+          ">Условия</a>"
+        ],
+        [
+          ">Privacy</a>",
+          ">Конфиденциальность</a>"
+        ],
+        [
+          "elghaly, LLC · Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
+          "elghaly, LLC · Сначала email: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Звонки только по записи."
+        ],
+        [
+          ">Open source</a>",
+          ">Открытый код</a>"
+        ],
+        [
+          "<title>Privacy policy · elghaly</title>",
+          "<title>Политика конфиденциальности · elghaly</title>"
+        ],
+        [
+          "Who we are",
+          "Кто мы"
+        ],
+        [
+          "elghaly.dev is the website of <strong>elghaly</strong>, founded in 2022 by Wyndham Heaven. Questions about this policy: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>.",
+          "elghaly.dev — сайт <strong>elghaly</strong>, основанной в 2022 году Wyndham Heaven. Вопросы по политике: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>."
+        ],
+        [
+          "What this site collects",
+          "Что собирает сайт"
+        ],
+        [
+          "This site has no user accounts and no sign-in. It does not hold funds or assets for anyone, and no payments are taken on elghaly.dev itself.",
+          "Нет аккаунтов и входа. Сайт не хранит средства или активы и не принимает оплату на elghaly.dev."
+        ],
+        [
+          "We use Google Analytics (GA4) to see how many people visit and which pages they view. Google Analytics uses cookies and collects standard data such as pages visited, approximate location, device and browser type, and referring site. We do not use it to identify you personally. You can learn how Google handles this data at <a href=\"https://policies.google.com/technologies/partner-sites\">policies.google.com/technologies/partner-sites</a>, and opt out with the <a href=\"https://tools.google.com/dlpage/gaoptout\">Google Analytics opt-out add-on</a>.",
+          "Мы используем Google Analytics (GA4), чтобы видеть посещаемость и страницы. GA использует cookies и стандартные данные: страницы, примерное местоположение, устройство, браузер, referrer. Мы не идентифицируем вас лично. Подробнее: <a href=\"https://policies.google.com/technologies/partner-sites\">policies.google.com/technologies/partner-sites</a>; отказ — <a href=\"https://tools.google.com/dlpage/gaoptout\">Google Analytics opt-out add-on</a>."
+        ],
+        [
+          "Fonts are served from this site. The home page also loads an event registration button from Luma, which may receive connection details when the page loads. If you register for an event, that happens on Luma under Luma's own privacy policy.",
+          "Шрифты с этого сайта. На главной кнопка регистрации Luma может получать connection details при загрузке. Регистрация на событие — на Luma по их политике конфиденциальности."
+        ],
+        [
+          "Contact form",
+          "Форма связи"
+        ],
+        [
+          "If you use the <a href=\"/contact.html\">contact form</a>, the name, email, order number and message you type are sent to our inbox through FormSubmit (formsubmit.co), which handles them under its own privacy policy. We use them to reply to you.",
+          "Если используете <a href=\"/contact.html\">форму связи</a>, имя, email, номер заказа и сообщение отправляются в inbox через FormSubmit (formsubmit.co) по их политике. Мы используем их для ответа."
+        ],
+        [
+          "Purchases",
+          "Покупки"
+        ],
+        [
+          "Purchases happen in the shop checkout, run by Shopify, with payment by PayPal or card. Shopify and PayPal process your order and payment details under their own privacy policies; the shop's privacy policy is linked at checkout. We receive what we need to deliver the order and to refund it.",
+          "Покупки в checkout магазина на Shopify, оплата PayPal или картой. Shopify и PayPal обрабатывают данные по своим политикам; политика магазина — в checkout. Мы получаем данные, нужные для доставки и возврата."
+        ],
+        [
+          "Email",
+          "Email"
+        ],
+        [
+          "If you email us, we keep your message to reply to you. We do not sell or rent your information.",
+          "Если пишете нам, храним сообщение для ответа. Не продаём и не сдаём в аренду ваши данные."
+        ],
+        [
+          "Other elghaly sites",
+          "Другие сайты elghaly"
+        ],
+        [
+          "Links on this site lead to other elghaly projects and to outside services. Each of those may have its own terms and privacy notice.",
+          "Ссылки ведут на другие проекты elghaly и внешние сервисы. У каждого могут быть свои условия и privacy notice."
+        ],
+        [
+          "Your choices",
+          "Ваш выбор"
+        ],
+        [
+          "You can block or delete cookies in your browser settings. To ask about or remove any messages we hold, write to <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>.",
+          "Cookies можно заблокировать или удалить в браузере. По хранимым сообщениям или их удалению — <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>."
+        ],
+        [
+          "Changes",
+          "Изменения"
+        ],
+        [
+          "If this policy changes, we will update this page and the date above.",
+          "При изменении политики обновим страницу и дату выше."
+        ]
+      ]
+    }
+  },
+  "zh": {
+    "about.html": {
+      "title": "关于我们",
+      "tag": "最后更新：2026 年 10 月 8 日",
+      "replace": [
+        [
+          ">About</a>",
+          ">关于</a>"
+        ],
+        [
+          ">Contact</a>",
+          ">联系</a>"
+        ],
+        [
+          ">Refunds</a>",
+          ">退款</a>"
+        ],
+        [
+          ">Delivery</a>",
+          ">交付</a>"
+        ],
+        [
+          ">Terms</a>",
+          ">条款</a>"
+        ],
+        [
+          ">Privacy</a>",
+          ">隐私</a>"
+        ],
+        [
+          "elghaly, LLC · Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
+          "elghaly, LLC · 优先邮件：<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。通话仅限预约。"
+        ],
+        [
+          ">Open source</a>",
+          ">开源</a>"
+        ],
+        [
+          "<title>About · elghaly</title>",
+          "<title>关于 · elghaly</title>"
+        ],
+        [
+          "Who we are",
+          "我们是谁"
+        ],
+        [
+          "<strong>elghaly</strong> was founded in 2022 by Wyndham Heaven, who runs it day to day. We have built software under the elghaly name since 2022.",
+          "<strong>elghaly</strong> 由 Wyndham Heaven 于 2022 年创立，并由其日常运营。自 2022 年起我们以 elghaly 之名构建软件。"
+        ],
+        [
+          "We are a small remote team. Support is by email at <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>.",
+          "我们是一支小型远程团队。支持请发邮件至 <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。"
+        ],
+        [
+          "What we build",
+          "我们构建什么"
+        ],
+        [
+          "<li><a href=\"/plumb\">Plumb</a> — self-hosted desk software for Solana, sold as a one-time seat (Starter US$350, Pro US$699, Source US$1,999). You run it on your own server with your own keys; we never hold your keys or your funds.</li>",
+          "<li><a href=\"/plumb\">Plumb</a> — 自托管 Solana 桌面软件，一次性席位（Starter US$350、Pro US$699、Source US$1,999）。你在自己的服务器上用自有密钥运行；我们从不持有你的密钥或资金。</li>"
+        ],
+        [
+          "<li><a href=\"/quay\">QUAY</a> — for people who run Solana bots. One-time: a Fee review (US$199, your priority-fee and tip settings read against what your public transactions paid and landed at), a Score report (US$49, a read-only note on one mint) and a Flex card pack (US$29, image cards made from text you send). Monthly: QUAY Land (US$149 a month, a written report every week for one bot: landed vs failed, and where tips are wasted) and Node Watch (US$79 a month, an alert message when an RPC or gRPC feed you name goes quiet). The shop charges one month at a time and does not renew automatically.</li>",
+          "<li><a href=\"/quay\">QUAY</a> — 面向运行 Solana 机器人的人。一次性：Fee review（US$199，将你的 priority-fee 与小费设置对照公开交易的支付与落地情况）、Score report（US$49，针对一个 mint 的只读说明）和 Flex card pack（US$29，根据你发送的文本生成的图片卡片）。按月：QUAY Land（US$149/月，每周一份书面报告，针对一个机器人：成功 vs 失败，以及小费浪费之处）和 Node Watch（US$79/月，当你指定的 RPC 或 gRPC feed 静默时发送提醒）。商店每次只扣一个月，不会自动续费。</li>"
+        ],
+        [
+          "<li><a href=\"https://glance.elghaly.dev/\">Glance</a> and <a href=\"https://stale.elghaly.dev/\">stale</a> — free, open-source checks for developers: honest status cards for bots, and how far an RPC endpoint is behind.</li>",
+          "<li><a href=\"https://glance.elghaly.dev/\">Glance</a> 与 <a href=\"https://stale.elghaly.dev/\">stale</a> — 面向开发者的免费开源检查：诚实的机器人状态卡片，以及 RPC 端点落后多少。</li>"
+        ],
+        [
+          "<li><a href=\"https://iris-35.elghaly.dev/\">Iris 35</a> — a free help page for people who think their wallet was compromised. No wallet connect.</li>",
+          "<li><a href=\"https://iris-35.elghaly.dev/\">Iris 35</a> — 为怀疑钱包被盗的人提供的免费帮助页。无需连接钱包。</li>"
+        ],
+        [
+          "How we sell",
+          "我们如何销售"
+        ],
+        [
+          "Everything we sell is digital and delivered by email or transfer. Prices are in US dollars and are the same on our pages and at checkout. Payment is by card or PayPal at the shop checkout only.",
+          "我们销售的一切均为数字产品，通过电子邮件或传输交付。价格为 US dollars，在页面与结账处一致。仅可在商店结账时用卡或 PayPal 支付。"
+        ],
+        [
+          "Refunds are given on request, with no time limit. We make no promise of results from any product, and we never hold customer funds or keys.",
+          "应要求退款，无时间限制。我们不对任何产品的结果作出承诺，也从不代管客户资金或密钥。"
+        ]
+      ]
+    },
+    "contact.html": {
+      "title": "联系",
+      "tag": "最后更新：2026 年 10 月 8 日",
+      "replace": [
+        [
+          ">About</a>",
+          ">关于</a>"
+        ],
+        [
+          ">Contact</a>",
+          ">联系</a>"
+        ],
+        [
+          ">Refunds</a>",
+          ">退款</a>"
+        ],
+        [
+          ">Delivery</a>",
+          ">交付</a>"
+        ],
+        [
+          ">Terms</a>",
+          ">条款</a>"
+        ],
+        [
+          ">Privacy</a>",
+          ">隐私</a>"
+        ],
+        [
+          "elghaly, LLC · Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
+          "elghaly, LLC · 优先邮件：<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。通话仅限预约。"
+        ],
+        [
+          ">Open source</a>",
+          ">开源</a>"
+        ],
+        [
+          "<title>Contact · elghaly</title>",
+          "<title>联系 · elghaly</title>"
+        ],
+        [
+          "Business",
+          "公司"
+        ],
+        [
+          "Founded 2022 by Wyndham Heaven.",
+          "由 Wyndham Heaven 于 2022 年创立。"
+        ],
+        [
+          "Email",
+          "电子邮件"
+        ],
+        [
+          "Write to <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a> for sales, orders, refunds and support. We reply by email.",
+          "销售、订单、退款和支持请写信至 <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。我们通过邮件回复。"
+        ],
+        [
+          "Contact form",
+          "联系表单"
+        ],
+        [
+          "Your name ",
+          "你的姓名 "
+        ],
+        [
+          "Your email ",
+          "你的邮箱 "
+        ],
+        [
+          "Order number (if you have one) ",
+          "订单号（如有） "
+        ],
+        [
+          "Message ",
+          "消息 "
+        ],
+        [
+          "Send",
+          "发送"
+        ],
+        [
+          "Thank you, your message was sent. We reply by email.",
+          "谢谢，你的消息已发送。我们会通过邮件回复。"
+        ],
+        [
+          "The form sends your message to our inbox through FormSubmit (formsubmit.co). See the <a href=\"/privacy.html\">privacy policy</a>.",
+          "表单通过 FormSubmit (formsubmit.co) 将消息发送到我们的收件箱。请参阅<a href=\"/privacy.html\">隐私政策</a>。"
+        ],
+        [
+          "Help with an order",
+          "订单帮助"
+        ],
+        [
+          "Tell us what you bought, the email you used at checkout and what went wrong. Refunds are covered by the <a href=\"/refund.html\">refund policy</a>; how and when each product arrives is on the <a href=\"/delivery.html\">delivery page</a>.",
+          "请说明购买了什么、结账时使用的邮箱以及出了什么问题。退款见<a href=\"/refund.html\">退款政策</a>；各产品的交付方式与时间见<a href=\"/delivery.html\">交付页面</a>。"
+        ]
+      ]
+    },
+    "delivery.html": {
+      "title": "交付",
+      "tag": "最后更新：2026 年 10 月 8 日",
+      "replace": [
+        [
+          ">About</a>",
+          ">关于</a>"
+        ],
+        [
+          ">Contact</a>",
+          ">联系</a>"
+        ],
+        [
+          ">Refunds</a>",
+          ">退款</a>"
+        ],
+        [
+          ">Delivery</a>",
+          ">交付</a>"
+        ],
+        [
+          ">Terms</a>",
+          ">条款</a>"
+        ],
+        [
+          ">Privacy</a>",
+          ">隐私</a>"
+        ],
+        [
+          "elghaly, LLC · Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
+          "elghaly, LLC · 优先邮件：<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。通话仅限预约。"
+        ],
+        [
+          ">Open source</a>",
+          ">开源</a>"
+        ],
+        [
+          "<title>Delivery policy · elghaly</title>",
+          "<title>交付政策 · elghaly</title>"
+        ],
+        [
+          "Digital delivery",
+          "数字交付"
+        ],
+        [
+          "Everything we sell is digital. Nothing is shipped and there are no shipping charges. After you pay, the checkout emails your order confirmation.",
+          "我们销售的一切均为数字产品。无实体发货，无运费。付款后，结账流程会通过邮件发送订单确认。"
+        ],
+        [
+          "Plumb seats (one-time)",
+          "Plumb 席位（一次性）"
+        ],
+        [
+          "Plumb Starter US$350 · Plumb Pro US$699 · Plumb Source US$1,999. All seats are on <a href=\"/plumb\">elghaly.dev/plumb</a>; checkout is on our store at plumb-shop.elghaly.dev.",
+          "Plumb Starter US$350 · Plumb Pro US$699 · Plumb Source US$1,999。所有席位见 <a href=\"/plumb\">elghaly.dev/plumb</a>；结账在 plumb-shop.elghaly.dev。"
+        ],
+        [
+          "<strong>When:</strong> within 3.35 hours of two things: your payment is confirmed, and your brief has reached us (seat tier, the pairs you name, and an email we can reach).",
+          "<strong>时间：</strong>在以下两项都满足后的 3.35 小时内：付款已确认，且你的 brief 已送达我们（席位档位、你指定的交易对，以及可联系到的邮箱）。"
+        ],
+        [
+          "<strong>How:</strong> the software configured for your brief is transferred to your server, or sent to you as a download to install yourself.",
+          "<strong>方式：</strong>按你的 brief 配置的软件会传输到你的服务器，或作为下载包供你自行安装。"
+        ],
+        [
+          "<strong>Then:</strong> a handover call is scheduled within 24 hours of delivery. The software starts in dry mode (HOLD) and stays there until you, the owner, switch it on.",
+          "<strong>随后：</strong>交付后 24 小时内安排交接通话。软件以 dry mode（HOLD）启动，直到你作为所有者将其开启。"
+        ],
+        [
+          "QUAY (one-time and monthly)",
+          "QUAY（一次性与按月）"
+        ],
+        [
+          "All QUAY plans are on <a href=\"/quay\">elghaly.dev/quay</a>; checkout is on our store at quay-shop.elghaly.dev. The Fee review, Score report and Flex card pack are one-time purchases. QUAY Land and Node Watch are priced per month: the shop checkout charges one month and does not renew automatically, so you order again for each further month.",
+          "所有 QUAY 方案见 <a href=\"/quay\">elghaly.dev/quay</a>；结账在 quay-shop.elghaly.dev。Fee review、Score report 和 Flex card pack 为一次性购买。QUAY Land 与 Node Watch 按月计价：商店每次只扣一个月，不会自动续费，后续月份需再次下单。"
+        ],
+        [
+          "<strong>Fee review (US$199):</strong> one written page on your priority-fee and tip settings, read against what your public transactions paid and landed at, by email within 48 hours of a complete brief.",
+          "<strong>Fee review（US$199）：</strong>关于 priority-fee 与小费设置的一页书面说明，对照公开交易的支付与落地情况，在完整 brief 送达后 48 小时内通过邮件交付。"
+        ],
+        [
+          "<strong>Node Watch (US$79 a month):</strong> an alert message when an RPC or gRPC feed you name goes quiet. Watching starts once you have sent us the feed.",
+          "<strong>Node Watch（US$79/月）：</strong>当你指定的 RPC 或 gRPC feed 静默时发送提醒。收到你提供的 feed 后开始监控。"
+        ],
+        [
+          "<strong>Score report (US$49):</strong> a read-only note on one mint, from public on-chain data, by email. Anything that cannot be read is marked UNKNOWN. The delivery time is confirmed in our reply to your order.",
+          "<strong>Score report（US$49）：</strong>基于公开链上数据、针对一个 mint 的只读说明，通过邮件发送。无法读取的内容标记为 UNKNOWN。交付时间在我们回复订单时确认。"
+        ],
+        [
+          "<strong>Flex card pack (US$29):</strong> image cards made from the text you send, by email. The delivery time is confirmed in our reply to your order.",
+          "<strong>Flex card pack（US$29）：</strong>根据你发送的文本生成的图片卡片，通过邮件发送。交付时间在我们回复订单时确认。"
+        ],
+        [
+          "<strong>QUAY Land (US$149 a month):</strong> a written report every week for one bot, by email: landed vs failed, and where tips are wasted. You send transaction hashes; you keep the wallet. The start date is confirmed by email after your order.",
+          "<strong>QUAY Land（US$149/月）：</strong>每周一份针对一个机器人的书面报告，通过邮件：成功 vs 失败，以及小费浪费之处。你发送 transaction hashes；钱包仍由你保管。开始日期在下单后通过邮件确认。"
+        ],
+        [
+          "If something is late",
+          "如有延迟"
+        ],
+        [
+          "Write to <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a> with your order number. If we cannot deliver, or you no longer want the product, the <a href=\"/refund.html\">refund policy</a> applies: your money back, no reason needed.",
+          "请致信 <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a> 并附上订单号。若无法交付或你不再需要该产品，适用<a href=\"/refund.html\">退款政策</a>：退款无需说明理由。"
+        ]
+      ]
+    },
+    "refund.html": {
+      "title": "退款",
+      "tag": "最后更新：2026 年 10 月 8 日",
+      "replace": [
+        [
+          ">About</a>",
+          ">关于</a>"
+        ],
+        [
+          ">Contact</a>",
+          ">联系</a>"
+        ],
+        [
+          ">Refunds</a>",
+          ">退款</a>"
+        ],
+        [
+          ">Delivery</a>",
+          ">交付</a>"
+        ],
+        [
+          ">Terms</a>",
+          ">条款</a>"
+        ],
+        [
+          ">Privacy</a>",
+          ">隐私</a>"
+        ],
+        [
+          "elghaly, LLC · Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
+          "elghaly, LLC · 优先邮件：<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。通话仅限预约。"
+        ],
+        [
+          ">Open source</a>",
+          ">开源</a>"
+        ],
+        [
+          "<title>Refund policy · elghaly</title>",
+          "<title>退款政策 · elghaly</title>"
+        ],
+        [
+          "What we sell",
+          "我们销售什么"
+        ],
+        [
+          "elghaly sells digital products: software seats (<a href=\"/plumb\">Plumb</a>), and written reviews, notes, image cards and feed alerts (<a href=\"/quay\">QUAY</a>; QUAY Land and Node Watch are priced per month). There is nothing physical to send back.",
+          "elghaly 销售数字产品：软件席位（<a href=\"/plumb\">Plumb</a>），以及书面审查、说明、图片卡片与 feed 提醒（<a href=\"/quay\">QUAY</a>；QUAY Land 与 Node Watch 按月计价）。无需退回实物。"
+        ],
+        [
+          "The policy",
+          "政策"
+        ],
+        [
+          "If you want your money back, you get it. You do not need to give a reason and there is no form. There is no time limit: before delivery, after delivery, a week later or a month later.",
+          "若要退款，即可获得。无需理由，也无需填表。无时间限制：交付前、交付后、一周或一个月后均可。"
+        ],
+        [
+          "You get back what you paid, once per purchase, in the same currency you paid in. A monthly plan is charged one month at a time and does not renew automatically, so nothing more is charged unless you order again; a refund request can cover any payment.",
+          "按每次购买退还你支付的金额，币种不变。按月方案每次只扣一个月，不会自动续费；除非再次下单，否则不会继续扣款；退款请求可涵盖任意一笔付款。"
+        ],
+        [
+          "How to ask",
+          "如何申请"
+        ],
+        [
+          "Email <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a> from the address you used at checkout. One line is enough; add the order number if you have it. We reply to say when it is done.",
+          "请用结账时的邮箱致信 <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。一行即可；如有订单号请附上。我们会回复告知何时完成。"
+        ],
+        [
+          "How the money comes back",
+          "退款如何到账"
+        ],
+        [
+          "All payments are made by card or PayPal at the shop checkout, and refunds go back the same way: to the same card or PayPal account, never to a different one. The checkout sends it the same day; your bank or PayPal decides when it lands, usually 5–10 business days.",
+          "所有付款在商店结账时用卡或 PayPal 完成，退款原路返回：至同一张卡或同一 PayPal 账户，不会转到其他账户。结账系统当天发起退款；到账时间由银行或 PayPal 决定，通常 5–10 个工作日。"
+        ],
+        [
+          "What a refund ends",
+          "退款会终止什么"
+        ],
+        [
+          "A refund ends your licence or service for that purchase: updates, follow-up and support for it stop. It does not delete anything you built, and you can buy again later.",
+          "退款会终止该次购买的许可或服务：更新、后续跟进与支持随之停止。不会删除你已构建的内容，之后仍可再次购买。"
+        ],
+        [
+          "What this page is not",
+          "本页不是什么"
+        ],
+        [
+          "This is a refund policy, not a promise about results. Our software and reports are sold as they are, and nothing on our sites promises income or performance. See the <a href=\"/terms.html\">terms</a>.",
+          "这是退款政策，而非对结果的承诺。软件与报告按现状出售，网站内容不承诺收入或表现。请参阅<a href=\"/terms.html\">条款</a>。"
+        ]
+      ]
+    },
+    "terms.html": {
+      "title": "服务条款",
+      "tag": "最后更新：2026 年 10 月 8 日",
+      "replace": [
+        [
+          ">About</a>",
+          ">关于</a>"
+        ],
+        [
+          ">Contact</a>",
+          ">联系</a>"
+        ],
+        [
+          ">Refunds</a>",
+          ">退款</a>"
+        ],
+        [
+          ">Delivery</a>",
+          ">交付</a>"
+        ],
+        [
+          ">Terms</a>",
+          ">条款</a>"
+        ],
+        [
+          ">Privacy</a>",
+          ">隐私</a>"
+        ],
+        [
+          "elghaly, LLC · Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
+          "elghaly, LLC · 优先邮件：<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。通话仅限预约。"
+        ],
+        [
+          ">Open source</a>",
+          ">开源</a>"
+        ],
+        [
+          "<title>Terms of service · elghaly</title>",
+          "<title>服务条款 · elghaly</title>"
+        ],
+        [
+          "Who we are",
+          "我们是谁"
+        ],
+        [
+          "elghaly.dev and elghaly products are run by <strong>elghaly</strong>, founded in 2022 by Wyndham Heaven. Questions about these terms: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>.",
+          "elghaly.dev 与 elghaly 产品由 <strong>elghaly</strong> 运营，由 Wyndham Heaven 于 2022 年创立。有关本条款的问题：<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。"
+        ],
+        [
+          "What we offer",
+          "我们提供什么"
+        ],
+        [
+          "elghaly offers digital software, written reviews and reports, image cards and feed alerts, some of them priced per month and charged one month at a time, with no automatic renewal. By using this site or buying a product, you agree to these terms.",
+          "elghaly 提供数字软件、书面审查与报告、图片卡片及 feed 提醒，部分按月计价且每次只扣一个月，不会自动续费。使用本网站或购买产品即表示同意这些条款。"
+        ],
+        [
+          "Prices and payment",
+          "价格与付款"
+        ],
+        [
+          "Prices are in US dollars (USD) and are the same on the product page and at checkout. Payment is by card or PayPal at the shop checkout only; we do not take payment any other way. Taxes, if any, are shown at checkout before you pay.",
+          "价格为 US dollars (USD)，在产品页与结账处一致。仅可在商店结账时用卡或 PayPal 付款；不接受其他付款方式。如有税费，会在付款前于结账处显示。"
+        ],
+        [
+          "Delivery",
+          "交付"
+        ],
+        [
+          "How and when each product arrives is set out on the <a href=\"/delivery.html\">delivery page</a>.",
+          "各产品的交付方式与时间见<a href=\"/delivery.html\">交付页面</a>。"
+        ],
+        [
+          "Use of products",
+          "产品使用"
+        ],
+        [
+          "When you buy a product, you get a personal licence to use it. Please do not resell or redistribute paid products unless the product says otherwise. Open-source software is covered by its own licence.",
+          "购买产品后，你获得个人使用许可。请勿转售或再分发付费产品，除非产品另有说明。开源软件适用其自身许可证。"
+        ],
+        [
+          "No promise of results",
+          "不承诺结果"
+        ],
+        [
+          "Our software and reports are provided as is. We make no promises or warranties about results, income or performance, and you are responsible for how you use them.",
+          "软件与报告按现状提供。我们不对结果、收入或表现作出任何承诺或保证，你须自行对使用方式负责。"
+        ],
+        [
+          "Limitation of liability",
+          "责任限制"
+        ],
+        [
+          "To the extent the law allows, elghaly is not liable for indirect or consequential losses from using this site or our products. If something goes wrong, our total liability is limited to the amount you paid for the product.",
+          "在法律允许范围内，elghaly 不对因使用本网站或产品造成的间接或 consequential 损失负责。若出现问题，我们的总责任以你为该产品支付的金额为上限。"
+        ],
+        [
+          "Refunds",
+          "退款"
+        ],
+        [
+          "Refunds are covered by our <a href=\"/refund.html\">refund policy</a>: money back on request, no reason, no time limit.",
+          "退款见我们的<a href=\"/refund.html\">退款政策</a>：应要求退款，无需理由，无时间限制。"
+        ],
+        [
+          "Governing law",
+          "适用法律"
+        ],
+        [
+          "Changes",
+          "变更"
+        ],
+        [
+          "If these terms change, we will update this page and the date above.",
+          "若条款变更，我们将更新本页及上方日期。"
+        ]
+      ]
+    },
+    "privacy.html": {
+      "title": "隐私政策",
+      "tag": "最后更新：2026 年 10 月 8 日",
+      "replace": [
+        [
+          ">About</a>",
+          ">关于</a>"
+        ],
+        [
+          ">Contact</a>",
+          ">联系</a>"
+        ],
+        [
+          ">Refunds</a>",
+          ">退款</a>"
+        ],
+        [
+          ">Delivery</a>",
+          ">交付</a>"
+        ],
+        [
+          ">Terms</a>",
+          ">条款</a>"
+        ],
+        [
+          ">Privacy</a>",
+          ">隐私</a>"
+        ],
+        [
+          "elghaly, LLC · Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
+          "elghaly, LLC · 优先邮件：<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。通话仅限预约。"
+        ],
+        [
+          ">Open source</a>",
+          ">开源</a>"
+        ],
+        [
+          "<title>Privacy policy · elghaly</title>",
+          "<title>隐私政策 · elghaly</title>"
+        ],
+        [
+          "Who we are",
+          "我们是谁"
+        ],
+        [
+          "elghaly.dev is the website of <strong>elghaly</strong>, founded in 2022 by Wyndham Heaven. Questions about this policy: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>.",
+          "elghaly.dev 是 <strong>elghaly</strong> 的网站，由 Wyndham Heaven 于 2022 年创立。有关本政策的问题：<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。"
+        ],
+        [
+          "What this site collects",
+          "本网站收集什么"
+        ],
+        [
+          "This site has no user accounts and no sign-in. It does not hold funds or assets for anyone, and no payments are taken on elghaly.dev itself.",
+          "本网站没有用户账户或登录。不为任何人代管资金或资产，elghaly.dev 本身也不接受付款。"
+        ],
+        [
+          "We use Google Analytics (GA4) to see how many people visit and which pages they view. Google Analytics uses cookies and collects standard data such as pages visited, approximate location, device and browser type, and referring site. We do not use it to identify you personally. You can learn how Google handles this data at <a href=\"https://policies.google.com/technologies/partner-sites\">policies.google.com/technologies/partner-sites</a>, and opt out with the <a href=\"https://tools.google.com/dlpage/gaoptout\">Google Analytics opt-out add-on</a>.",
+          "我们使用 Google Analytics (GA4) 了解访问人数与浏览页面。GA 使用 Cookie 并收集常规数据，如访问页面、大致位置、设备与浏览器类型、来源网站。我们不用于个人识别。Google 如何处理数据见 <a href=\"https://policies.google.com/technologies/partner-sites\">policies.google.com/technologies/partner-sites</a>；可通过 <a href=\"https://tools.google.com/dlpage/gaoptout\">Google Analytics 退出插件</a> 选择退出。"
+        ],
+        [
+          "Fonts are served from this site. The home page also loads an event registration button from Luma, which may receive connection details when the page loads. If you register for an event, that happens on Luma under Luma's own privacy policy.",
+          "字体由本网站提供。首页还会加载 Luma 的活动报名按钮，页面加载时可能收到连接详情。若在 Luma 报名，则适用 Luma 自身的隐私政策。"
+        ],
+        [
+          "Contact form",
+          "联系表单"
+        ],
+        [
+          "If you use the <a href=\"/contact.html\">contact form</a>, the name, email, order number and message you type are sent to our inbox through FormSubmit (formsubmit.co), which handles them under its own privacy policy. We use them to reply to you.",
+          "若使用<a href=\"/contact.html\">联系表单</a>，你填写的姓名、邮箱、订单号与消息会通过 FormSubmit (formsubmit.co) 发送到我们的收件箱，由其隐私政策管辖。我们仅用于回复你。"
+        ],
+        [
+          "Purchases",
+          "购买"
+        ],
+        [
+          "Purchases happen in the shop checkout, run by Shopify, with payment by PayPal or card. Shopify and PayPal process your order and payment details under their own privacy policies; the shop's privacy policy is linked at checkout. We receive what we need to deliver the order and to refund it.",
+          "购买在 Shopify 运营的商店结账中完成，可用 PayPal 或卡支付。Shopify 与 PayPal 按各自隐私政策处理订单与支付信息；商店隐私政策链接在结账处。我们仅接收交付与退款所需的信息。"
+        ],
+        [
+          "Email",
+          "电子邮件"
+        ],
+        [
+          "If you email us, we keep your message to reply to you. We do not sell or rent your information.",
+          "若你发邮件给我们，我们会保留消息以便回复。不出售或出租你的信息。"
+        ],
+        [
+          "Other elghaly sites",
+          "其他 elghaly 站点"
+        ],
+        [
+          "Links on this site lead to other elghaly projects and to outside services. Each of those may have its own terms and privacy notice.",
+          "本网站链接指向其他 elghaly 项目及外部服务。各自可能有独立的条款与隐私说明。"
+        ],
+        [
+          "Your choices",
+          "你的选择"
+        ],
+        [
+          "You can block or delete cookies in your browser settings. To ask about or remove any messages we hold, write to <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>.",
+          "可在浏览器设置中阻止或删除 Cookie。如需查询或删除我们保存的消息，请致信 <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。"
+        ],
+        [
+          "Changes",
+          "变更"
+        ],
+        [
+          "If this policy changes, we will update this page and the date above.",
+          "若政策变更，我们将更新本页及上方日期。"
+        ]
+      ]
+    }
+  }
+}
