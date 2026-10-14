@@ -182,6 +182,10 @@
       color: #b9b3e6;
     }
     #elghaly-consent .ec-text a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 0.25rem;
       color: #ffffff;
       text-underline-offset: 2px;
     }
@@ -399,6 +403,9 @@ a {
 
 .brand {
   flex: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-family: "Cinzel Wordmark", Georgia, serif;
   font-size: 1.05rem;
   font-weight: 500;
@@ -414,8 +421,10 @@ a {
   flex: none;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.35rem;
-  min-height: 36px;
+  min-width: 44px;
+  min-height: 44px;
   padding: 0.25rem 0.65rem;
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -448,6 +457,9 @@ a {
 }
 
 .nav__links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   padding: 0.5rem 0.8rem;
   border-radius: 999px;
   color: var(--text);
@@ -481,7 +493,11 @@ a {
 .lang-btn,
 a.lang-btn {
   flex: none;
-  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
   padding: 4px 10px;
   border: 1px solid transparent;
   border-radius: 999px;
@@ -616,7 +632,7 @@ a.lang-btn[aria-current="page"] {
 }
 
 .btn--sm {
-  min-height: 40px;
+  min-height: 44px;
   padding: 0 1rem;
   font-size: 0.95rem;
 }
@@ -887,6 +903,13 @@ a.lang-btn[aria-current="page"] {
   line-height: 1.15;
   letter-spacing: -0.02em;
   text-wrap: balance;
+}
+
+.section__lead a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.2rem 0;
 }
 
 .section__lead {
@@ -1563,6 +1586,10 @@ a.card:hover .card__media img {
 }
 
 .footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.2rem 0.35rem;
   color: var(--text);
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.45);
@@ -1573,8 +1600,10 @@ a.card:hover .card__media img {
 }
 
 .footer__nav a {
-  display: inline-block;
-  padding: 0.35rem 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.35rem 0.5rem;
 }
 
 .lic-badges {
@@ -1586,9 +1615,10 @@ a.card:hover .card__media img {
 .lic-badges > a {
   display: inline-flex;
   align-items: center;
-  min-height: 24px;
+  box-sizing: border-box;
+  min-height: 44px;
   margin: 0.2rem 0.15rem;
-  padding: 0 0.6rem;
+  padding: 0.35rem 0.65rem;
   border: 1px solid currentColor;
   border-radius: 999px;
   vertical-align: middle;
@@ -1783,11 +1813,17 @@ main.policy strong {
 .footer__contact {
   margin-top: 0.35rem;
   font-size: 0.9rem;
-  color: var(--muted);
+  /* Muted lavender fails 4.5:1 on --bg; footer sits on the page gradient. */
+  color: var(--text);
 }
 
 .footer__contact a {
   color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 0.2rem;
+  margin: -0.5rem 0;
 }
   </style>
   <!-- /inline:css/glass.css -->
@@ -1817,7 +1853,7 @@ main.policy strong {
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-                        <header class="nav">
+                                  <header class="nav">
     <div class="nav__in">
       <a class="brand" href="/" aria-label="elghaly home">elghaly</a>
       <a class="nav__badge" href="https://35.elghaly.dev/" rel="noopener noreferrer" title="35 desk"><span class="nav__badge-dot" aria-hidden="true">●</span> 35</a>

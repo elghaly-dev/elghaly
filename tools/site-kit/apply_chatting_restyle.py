@@ -283,6 +283,26 @@ def header_scrub(text: str) -> str:
     )
 
 
+CONSENT_LINK_OLD = """    #elghaly-consent .ec-text a {
+      color: #ffffff;
+      text-underline-offset: 2px;
+    }"""
+CONSENT_LINK_NEW = """    #elghaly-consent .ec-text a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 0.25rem;
+      color: #ffffff;
+      text-underline-offset: 2px;
+    }"""
+
+
+def patch_consent_tap_targets(text: str) -> str:
+    if CONSENT_LINK_OLD in text:
+        return text.replace(CONSENT_LINK_OLD, CONSENT_LINK_NEW)
+    return text
+
+
 def legal_scrub(text: str) -> str:
     text = re.sub(
         r"<p class=\"build__text\">These terms are governed by the laws of the United Arab Emirates as applied in the Emirate of Dubai\.</p>\s*",
@@ -426,6 +446,29 @@ def main() -> None:
             p = os.path.join(ROOT, lang, name)
             if os.path.isfile(p):
                 inline_glass(p)
+
+    for rel in (*GLASS_PAGES, "404.html", "consult.html"):
+        p = os.path.join(ROOT, rel)
+        if os.path.isfile(p):
+            with open(p, encoding="utf-8") as f:
+                html = patch_consent_tap_targets(f.read())
+            with open(p, "w", encoding="utf-8") as f:
+                f.write(html)
+    for lang in ("ar", "ru", "zh"):
+        for name in ("index.html", *SUBPAGES):
+            p = os.path.join(ROOT, lang, name)
+            if os.path.isfile(p):
+                with open(p, encoding="utf-8") as f:
+                    html = patch_consent_tap_targets(f.read())
+                with open(p, "w", encoding="utf-8") as f:
+                    f.write(html)
+    for product in ("chatting", "plumb", "quay"):
+        p = os.path.join(ROOT, f"{product}.html")
+        if os.path.isfile(p):
+            with open(p, encoding="utf-8") as f:
+                html = patch_consent_tap_targets(f.read())
+            with open(p, "w", encoding="utf-8") as f:
+                f.write(html)
 
     print("Restyle applied.")
 
