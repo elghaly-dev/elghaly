@@ -99,7 +99,8 @@ def footer_contact() -> str:
     return (
         '<p class="footer__contact">Email first: '
         '<a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. '
-        "Calls only by appointment.</p>"
+        "Calls only by appointment.</p>\n"
+        "    <p>elghaly, LLC</p>"
     )
 
 
