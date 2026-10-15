@@ -17,6 +17,8 @@ FOOTER_URLS = [
     'href="/privacy.html"',
 ]
 
+FOOTER_BLOCK = re.compile(r"<footer\b[^>]*>(.*?)</footer>", re.I | re.S)
+
 FORBIDDEN_WORDS = re.compile(r"\b(live|profit|guarantee|audit|launched)\b", re.I)
 FORBIDDEN = [
     (re.compile(r"qq\.com", re.I), "qq.com"),
@@ -84,6 +86,13 @@ def is_full_page(path: pathlib.Path, raw: str) -> bool:
     return True
 
 
+def footer_has_llc(raw: str) -> bool:
+    block = FOOTER_BLOCK.search(raw)
+    if block:
+        return "elghaly, LLC" in block.group(1)
+    return False
+
+
 def html_pages():
     for path in sorted(ROOT.rglob("*.html")):
         if any(part in SKIP for part in path.parts):
@@ -111,8 +120,8 @@ def main():
     for path in html_pages():
         rel = path.relative_to(ROOT)
         raw = path.read_text(encoding="utf-8")
-        if is_full_page(path, raw) and "elghaly, LLC" not in raw:
-            errors.append("%s: missing elghaly, LLC" % rel)
+        if is_full_page(path, raw) and not footer_has_llc(raw):
+            errors.append("%s: footer missing elghaly, LLC" % rel)
         if path.name == "index.html" and path.parent == ROOT:
             continue
         if rel.parts[0] in ("ar", "ru", "zh") and len(rel.parts) == 2 and rel.name == "index.html":
