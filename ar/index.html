@@ -35,12 +35,12 @@
 
   <!-- The hero picture is the largest thing on the first screen: fetch it
        first, the tall cut on phones and the wide one elsewhere. -->
-  <link rel="preload" as="image" type="image/avif" media="(max-width: 699px)" fetchpriority="high"
-        href="/assets/art/hero-tall-600.avif"
-        imagesrcset="/assets/art/hero-tall-600.avif 600w, /assets/art/hero-tall-900.avif 900w" imagesizes="100vw">
-  <link rel="preload" as="image" type="image/avif" media="(min-width: 700px)" fetchpriority="high"
-        href="/assets/art/hero-wide-1280.avif"
-        imagesrcset="/assets/art/hero-wide-1280.avif 1280w, /assets/art/hero-wide-1920.avif 1920w" imagesizes="100vw">
+  <link rel="preload" as="image" type="image/webp" media="(max-width: 699px)" fetchpriority="high"
+        href="/assets/art/hero-tall-600.webp"
+        imagesrcset="/assets/art/hero-tall-600.webp 600w, /assets/art/hero-tall-900.webp 900w" imagesizes="100vw">
+  <link rel="preload" as="image" type="image/webp" media="(min-width: 700px)" fetchpriority="high"
+        href="/assets/art/hero-wide-1280.webp"
+        imagesrcset="/assets/art/hero-wide-1280.webp 1280w, /assets/art/hero-wide-1920.webp 1920w" imagesizes="100vw">
   <link rel="preload" href="/fonts/outfit-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/outfit-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/outfit-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -1878,9 +1878,7 @@ main.policy strong {
       <div class="hero__bg" aria-hidden="true">
         <!-- ART PLACEHOLDER: hero-wide + hero-tall. Swap with tools/art/build_art.py; prompts in tools/art/PROMPTS.md -->
         <picture>
-          <source media="(min-width: 700px)" type="image/avif" srcset="/assets/art/hero-wide-1280.avif 1280w, /assets/art/hero-wide-1920.avif 1920w" sizes="100vw">
           <source media="(min-width: 700px)" type="image/webp" srcset="/assets/art/hero-wide-1280.webp 1280w, /assets/art/hero-wide-1920.webp 1920w" sizes="100vw">
-          <source type="image/avif" srcset="/assets/art/hero-tall-600.avif 600w, /assets/art/hero-tall-900.avif 900w" sizes="100vw">
           <img src="/assets/art/hero-tall-600.webp" srcset="/assets/art/hero-tall-600.webp 600w, /assets/art/hero-tall-900.webp 900w" sizes="100vw" width="900" height="1200" alt="" fetchpriority="high">
         </picture>
       </div>
@@ -1909,7 +1907,6 @@ main.policy strong {
           <div class="card__media">
             <!-- ART PLACEHOLDER: svc-servers -->
             <picture>
-              <source type="image/avif" srcset="/assets/art/svc-servers-400.avif 400w, /assets/art/svc-servers-800.avif 800w" sizes="(min-width: 640px) calc(50vw - 24px), calc(100vw - 32px)">
               <img src="/assets/art/svc-servers-400.webp" srcset="/assets/art/svc-servers-400.webp 400w, /assets/art/svc-servers-800.webp 800w" sizes="(min-width: 640px) calc(50vw - 24px), calc(100vw - 32px)" width="800" height="500" alt="" loading="lazy" decoding="async">
             </picture>
           </div>
@@ -1922,7 +1919,6 @@ main.policy strong {
           <div class="card__media">
             <!-- ART PLACEHOLDER: svc-tools -->
             <picture>
-              <source type="image/avif" srcset="/assets/art/svc-tools-400.avif 400w, /assets/art/svc-tools-800.avif 800w" sizes="(min-width: 640px) calc(50vw - 24px), calc(100vw - 32px)">
               <img src="/assets/art/svc-tools-400.webp" srcset="/assets/art/svc-tools-400.webp 400w, /assets/art/svc-tools-800.webp 800w" sizes="(min-width: 640px) calc(50vw - 24px), calc(100vw - 32px)" width="800" height="500" alt="" loading="lazy" decoding="async">
             </picture>
           </div>
@@ -1952,7 +1948,6 @@ main.policy strong {
           <span class="card__media">
             <!-- ART PLACEHOLDER: plumb -->
             <picture>
-              <source type="image/avif" srcset="/assets/art/plumb-400.avif 400w, /assets/art/plumb-800.avif 800w, /assets/art/plumb-1200.avif 1200w" sizes="(min-width: 960px) 560px, (min-width: 640px) calc(50vw - 24px), calc(100vw - 32px)">
               <img src="/assets/art/plumb-400.webp" srcset="/assets/art/plumb-400.webp 400w, /assets/art/plumb-800.webp 800w, /assets/art/plumb-1200.webp 1200w" sizes="(min-width: 960px) 560px, (min-width: 640px) calc(50vw - 24px), calc(100vw - 32px)" width="1200" height="750" alt="" loading="lazy" decoding="async">
             </picture>
           </span>
@@ -1970,7 +1965,6 @@ main.policy strong {
           <span class="card__media">
             <!-- ART PLACEHOLDER: quay -->
             <picture>
-              <source type="image/avif" srcset="/assets/art/quay-400.avif 400w, /assets/art/quay-800.avif 800w, /assets/art/quay-1200.avif 1200w" sizes="(min-width: 960px) 560px, (min-width: 640px) calc(50vw - 24px), calc(100vw - 32px)">
               <img src="/assets/art/quay-400.webp" srcset="/assets/art/quay-400.webp 400w, /assets/art/quay-800.webp 800w, /assets/art/quay-1200.webp 1200w" sizes="(min-width: 960px) 560px, (min-width: 640px) calc(50vw - 24px), calc(100vw - 32px)" width="1200" height="750" alt="" loading="lazy" decoding="async">
             </picture>
           </span>
