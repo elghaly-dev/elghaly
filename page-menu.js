@@ -1,7 +1,7 @@
 /* page-menu.js — the "Ask ChatGPT | ⌄" button at the top of a content page.
  *
  * One split button: the main half opens this page in ChatGPT; the ⌄ half
- * opens a menu with Open in Cursor and Copy page. Plain JS. No tracking, no
+ * opens a menu with Copy page. Plain JS. No tracking, no
  * cookies, no network calls: the Markdown is built from the page in this tab,
  * so it is always the page as it is now.
  *
@@ -436,9 +436,8 @@
   // ── render ──────────────────────────────────────────────────────────────
   function chatgptUrl(q) { return "https://chatgpt.com/?q=" + q; }
 
-  // The ⌄ menu: Cursor, then Copy. ChatGPT is the button itself.
+  // The ⌄ menu: Copy. ChatGPT is the button itself.
   var ITEMS = [
-    { href: function (q) { return "https://cursor.com/link/prompt?text=" + q; }, label: "Open in Cursor" },
     { act: "copy", label: "Copy page", sub: "Markdown for AI tools" }
   ];
 
@@ -459,7 +458,7 @@
     var details = document.createElement("details");
     details.className = "pm-more";
     var summary = document.createElement("summary");
-    summary.setAttribute("aria-label", "More AI options: open in Cursor, copy page");
+    summary.setAttribute("aria-label", "More options: copy page");
     summary.innerHTML = CHEV;
     var panel = document.createElement("div");
     panel.className = "pm-panel";

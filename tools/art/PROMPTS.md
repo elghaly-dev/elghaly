@@ -84,4 +84,7 @@ These files are in `assets/`, byte-identical to PR #26:
 - `35-card-192.webp`
 - `plumb-card-192.webp`
 - `quay-card-192.webp`
+- `iris-card-192.webp` (from `iris-card.svg` via `tools/art/build_link_card_icons.py`)
+- `stale-card-192.webp` (from `stale-card.svg`)
+- `glance-card-192.webp` (from `glance-card.svg`)
 - `elghaly-lock-192.webp`
