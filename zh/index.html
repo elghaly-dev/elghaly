@@ -2051,51 +2051,6 @@ main.policy strong {
       </div>
     </section>
 
-    <section class="section event" id="event" aria-labelledby="event-heading" data-hide-after="2026-10-11T00:00:00+03:00">
-      <div class="card panel reveal">
-        <div>
-          <p class="kicker">线上 · 免费</p>
-          <h2 id="event-heading" class="section__title">在线讲解：在 Solana 上更安全地构建</h2>
-          <p class="section__lead">2026 年 10 月 10 日（周六）· 16:00–17:00 UTC · 线上 · 免费</p>
-        </div>
-        <p class="event__cta"><a href="https://luma.com/9s4dyiji?utm_source=elghaly.dev" class="luma-checkout--button event__btn" data-luma-action="checkout" data-luma-event-id="evt-HeNTVErAKqa0LUn" data-luma-utm-source="elghaly.dev" rel="noopener noreferrer">在 Luma 报名</a></p>
-      </div>
-    </section>
-    <script>
-      // The walk-through is Sat Oct 10 2026, 16:00-17:00 UTC. From Oct 10 21:00 UTC
-      // the block is removed. Until then the Luma script loads when the block
-      // comes near the screen; the link works without it.
-      (function () {
-        var ev = document.getElementById('event');
-        if (!ev) return;
-        if (Date.now() >= Date.parse(ev.getAttribute('data-hide-after'))) {
-          ev.remove();
-          return;
-        }
-        function loadLuma() {
-          if (document.getElementById('luma-checkout')) return;
-          var s = document.createElement('script');
-          s.id = 'luma-checkout';
-          s.src = 'https://embed.lu.ma/checkout-button.js';
-          s.async = true;
-          document.body.appendChild(s);
-        }
-        if (!('IntersectionObserver' in window)) {
-          window.addEventListener('load', loadLuma);
-          return;
-        }
-        var io = new IntersectionObserver(function (entries) {
-          for (var i = 0; i < entries.length; i++) {
-            if (entries[i].isIntersecting) {
-              io.disconnect();
-              loadLuma();
-              return;
-            }
-          }
-        });
-        io.observe(ev);
-      })();
-    </script>
 
     <section class="section" id="about" aria-labelledby="who-heading">
       <div class="card panel reveal">
