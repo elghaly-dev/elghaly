@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Terms of service for elghaly.dev and products sold by elghaly.">
-  <meta name="theme-color" content="#352373">
+  <meta name="theme-color" content="#07080c">
   <title>Terms of service · elghaly</title>
   <link rel="canonical" href="https://elghaly.dev/terms.html">
   <!-- Google tag (gtag.js) — elghaly.dev GA4 + Consent Mode v2 (free, self-hosted) -->
@@ -121,7 +121,7 @@
       font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
       font-size: 0.95rem;
       line-height: 1.5;
-      box-shadow: 0 -12px 32px rgba(16, 10, 58, 0.45);
+      box-shadow: 0 -12px 32px rgba(0, 0, 0, 0.45);
     }
     #elghaly-consent .ec-inner {
       max-width: 40rem;
@@ -135,7 +135,7 @@
     #elghaly-consent .ec-text {
       flex: 1 1 16rem;
       margin: 0;
-      color: #b9b3e6;
+      color: #a39b88;
     }
     #elghaly-consent .ec-text a {
       display: inline-flex;
@@ -162,13 +162,13 @@
       transition: background 0.25s ease, color 0.25s ease;
     }
     #elghaly-consent .ec-btn--primary {
-      background: #c9c2ff;
-      border-color: #c9c2ff;
-      color: #17123d;
+      background: #d4af5a;
+      border-color: #d4af5a;
+      color: #07080c;
     }
     #elghaly-consent .ec-btn--primary:hover,
     #elghaly-consent .ec-btn--primary:focus-visible {
-      background: #e2deff;
+      background: #ecd9a0;
     }
     #elghaly-consent .ec-btn--ghost {
       background: #17142f;
@@ -194,11 +194,11 @@
   <link rel="preload" href="/fonts/outfit-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
   <!-- inline:css/glass.css — edit css/glass.css, then: python3 tools/site-kit/sitekit.py inline terms.html css/glass.css -->
   <style>
-/* elghaly.dev home, /plumb and /quay: palette 5b.
-   A soft indigo-purple page, solid near-black cards, white bold headings,
-   lavender for the quieter text on cards, and light indigo (token --gold, #c9c2ff) for the one thing to
-   press on each screen. Lavender is for cards only: on the purple it is
-   3.2:1, so text on the purple is white (5:1 or more).
+/* elghaly.dev pages: night and gold, the palette of the home page.
+   A near-black night, dark lapis cards, ivory headings and text, warm grey
+   for the quieter text, and gold (token --gold, #d4af5a) for the one thing
+   to press on each screen. Ivory on the night is 16:1, warm grey 7:1,
+   gold 9:1.
    Phones first: everything below is the iPhone layout, and the
    min-width queries widen it. Inlined into each page by
    tools/site-kit/sitekit.py, so this file is the one to edit. */
@@ -250,21 +250,21 @@
 
 :root {
   color-scheme: dark;
-  --bg: #5a4fc0;
-  --bg-2: #6a5fd0;
-  --card: #0d0b1f;
-  --card-2: #17142f;
-  --line: #1c1838;
-  --line-2: #2e2856;
-  --text: #ffffff;
-  --muted: #b9b3e6;
-  --gold: #c9c2ff;
-  --gold-2: #e2deff;
-  --gold-ink: #17123d;
+  --bg: #07080c;
+  --bg-2: #0d1120;
+  --card: #10131f;
+  --card-2: #161a2a;
+  --line: #1c2030;
+  --line-2: #2b2f40;
+  --text: #efe8d8;
+  --muted: #a39b88;
+  --gold: #d4af5a;
+  --gold-2: #ecd9a0;
+  --gold-ink: #07080c;
   --pos: #7be3b0; /* mint: small positive numbers only, and sparingly */
-  --on-bg-line: rgba(255, 255, 255, 0.2);
-  --shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 18px 40px -20px rgba(16, 10, 58, 0.6);
-  --shadow-hi: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 26px 52px -22px rgba(16, 10, 58, 0.75);
+  --on-bg-line: rgba(212, 175, 90, 0.22);
+  --shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 18px 40px -20px rgba(0, 0, 0, 0.6);
+  --shadow-hi: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 26px 52px -22px rgba(0, 0, 0, 0.75);
   --radius: 22px;
   --radius-sm: 20px;
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
@@ -344,13 +344,13 @@ a {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(90, 79, 192, 0.94);
+  background: rgba(7, 8, 12, 0.94);
   border-bottom: 1px solid var(--on-bg-line);
 }
 
 @supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
   .nav {
-    background: rgba(90, 79, 192, 0.78);
+    background: rgba(7, 8, 12, 0.78);
     -webkit-backdrop-filter: saturate(160%) blur(16px);
     backdrop-filter: saturate(160%) blur(16px);
   }
@@ -575,7 +575,7 @@ a.lang-btn[aria-current="page"] {
   background: var(--card);
   border-color: var(--line);
   color: var(--text);
-  box-shadow: 0 12px 26px -16px rgba(16, 10, 58, 0.7);
+  box-shadow: 0 12px 26px -16px rgba(0, 0, 0, 0.7);
 }
 
 .btn--dark:hover {
@@ -592,8 +592,8 @@ a.lang-btn[aria-current="page"] {
 }
 
 .card .btn--dark:hover {
-  background: #201c3e;
-  border-color: #3b3470;
+  background: #161a2a;
+  border-color: #3a3424;
 }
 
 .btn--sm {
@@ -658,7 +658,7 @@ a.lang-btn[aria-current="page"] {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(90, 79, 192, 0.2) 0%, rgba(90, 79, 192, 0.45) 60%);
+  background: linear-gradient(180deg, rgba(7, 8, 12, 0.2) 0%, rgba(7, 8, 12, 0.45) 60%);
 }
 
 .hero__in {
@@ -693,7 +693,7 @@ a.lang-btn[aria-current="page"] {
   height: 7px;
   border-radius: 50%;
   background: var(--gold);
-  box-shadow: 0 0 10px rgba(201, 194, 255, 0.6);
+  box-shadow: 0 0 10px rgba(212, 175, 90, 0.6);
 }
 
 .hero__title {
@@ -729,7 +729,7 @@ a.lang-btn[aria-current="page"] {
   border: 1px solid var(--line);
   border-radius: 24px;
   background: var(--card);
-  box-shadow: 0 30px 70px -30px rgba(16, 10, 58, 0.8);
+  box-shadow: 0 30px 70px -30px rgba(0, 0, 0, 0.8);
 }
 
 .hero__shot img {
@@ -751,7 +751,7 @@ a.lang-btn[aria-current="page"] {
   border-color: var(--line);
   background: var(--card);
   color: var(--text);
-  box-shadow: 0 12px 26px -16px rgba(16, 10, 58, 0.7);
+  box-shadow: 0 12px 26px -16px rgba(0, 0, 0, 0.7);
 }
 
 .hero__ask .pm-more {
@@ -1031,8 +1031,8 @@ a.card:hover .card__media img {
 }
 
 .event a.event__btn:hover {
-  background: #201c3e;
-  border-color: #3b3470;
+  background: #161a2a;
+  border-color: #3a3424;
 }
 
 /* Links: a picture or a letter, the name, and the address. */
@@ -1060,7 +1060,7 @@ a.card:hover .card__media img {
   background: var(--card-2);
 }
 
-/* A letter on a small tile of the page purple: white on #5a4fc0 is 6.3:1. */
+/* A letter on a small tile of the page night: ivory on #0d1120 is 15:1. */
 .link__thumb--letter {
   display: grid;
   place-items: center;
@@ -1405,7 +1405,7 @@ a.card:hover .card__media img {
   width: 2.4rem;
   height: 2.4rem;
   border-radius: 50%;
-  background: rgba(201, 194, 255, 0.14);
+  background: rgba(212, 175, 90, 0.14);
   color: var(--gold);
   font-weight: 700;
 }
