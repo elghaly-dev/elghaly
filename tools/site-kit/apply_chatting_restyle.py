@@ -97,9 +97,8 @@ def nav_html(lang: str, active: str) -> str:
 
 def footer_contact() -> str:
     return (
-        '<p class="footer__contact">Email first: '
-        '<a href="mailto:support@elghaly.dev">support@elghaly.dev</a>. '
-        "Calls only by appointment.</p>\n"
+        '<p class="footer__mail">'
+        '<a href="mailto:support@elghaly.dev">support@elghaly.dev</a></p>\n'
         "    <p>elghaly, LLC</p>"
     )
 
