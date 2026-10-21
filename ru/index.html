@@ -496,6 +496,36 @@ img { display: block; max-width: 100%; }
 .ask .pm-main { white-space: normal; text-align: center; padding-block: 10px; }
 .ask .pm-more { border-color: rgba(212, 175, 90, .55); }
 
+/* The team, under the button. */
+.team {
+  margin-top: 34px;
+  text-align: center;
+}
+.team__title {
+  margin: 0;
+  color: var(--gold);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.3rem, 5.5vw, 1.7rem);
+}
+html[lang="ar"] .team__title,
+html[lang="zh-Hans"] .team__title { font-family: inherit; font-style: normal; font-weight: 500; }
+.team__names {
+  margin: 10px 0 0;
+  color: var(--ivory);
+  font-size: 1rem;
+  letter-spacing: .02em;
+}
+/* The signs read left to right on the Arabic page too. */
+.signs,
+.team__signs { direction: ltr; unicode-bidi: isolate; }
+.team__signs {
+  margin: 10px 0 0;
+  font-size: 1.15rem;
+  letter-spacing: .12em;
+}
+
 .footer {
   margin-top: 44px;
   padding: 26px 16px calc(28px + env(safe-area-inset-bottom));
@@ -574,6 +604,12 @@ img { display: block; max-width: 100%; }
         <li><a class="tile tile--made" href="https://glance.elghaly.dev/" rel="noopener noreferrer" aria-label="Glance"><img class="tile__img" src="/assets/glance-card.svg" width="192" height="192" alt="" loading="lazy" decoding="async"><span class="tile__brand" lang="en" dir="ltr" aria-hidden="true">elghaly.dev</span><span class="tile__rule" aria-hidden="true"></span><span class="tile__sub" lang="en" dir="ltr" aria-hidden="true">glance</span></a></li>
       </ol>
       <div class="ask page-menu" data-page-menu data-label="Спросите ИИ, кто мы" data-prompt="Прочитай https://elghaly.dev/ru/ и расскажи, кто такие elghaly."></div>
+    </section>
+
+    <section class="team wrap" aria-labelledby="team-title">
+      <h2 id="team-title" class="team__title">Наша команда</h2>
+      <p class="team__names" lang="en" dir="ltr">Claude · Gemini · Cursor · Grok · Instinct</p>
+      <p class="team__signs">3️⃣🧿5️⃣ 3️⃣💡5️⃣</p>
     </section>
   </main>
 
