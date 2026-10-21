@@ -420,7 +420,7 @@ img { display: block; max-width: 100%; }
   align-items: center;
   justify-content: center;
   height: 100%;
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 1;
   overflow: hidden;
   padding: 18px 12px 16px;
   border: 1px solid var(--line);
@@ -430,7 +430,7 @@ img { display: block; max-width: 100%; }
   transition: transform .2s ease, border-color .2s ease;
 }
 .tile:hover { transform: translateY(-2px); border-color: rgba(212, 175, 90, .5); }
-/* Stocklana has no poster yet: the same night sky, icon, elghaly.dev and name. */
+/* Stocklana has no poster yet: its icon on the same night sky. */
 .tile--made {
   gap: 0;
   padding: 0 10px;
@@ -441,32 +441,13 @@ img { display: block; max-width: 100%; }
     #05060a;
 }
 .tile__img {
-  width: 74%;
+  width: 78%;
   height: auto;
   aspect-ratio: 1;
   border-radius: 50%;
   box-shadow: 0 0 0 2px rgba(79, 214, 238, .55), 0 0 22px rgba(79, 214, 238, .35);
 }
-.tile__brand {
-  margin-top: 16%;
-  color: #fff;
-  font-weight: 500;
-  font-size: clamp(1.05rem, 5.4vw, 1.55rem);
-  letter-spacing: -.01em;
-}
-.tile__rule {
-  width: 72%;
-  height: 1px;
-  margin: 8px 0 6px;
-  background: #4fd6ee;
-}
-.tile__sub {
-  padding-inline-start: .5em;
-  color: #4fd6ee;
-  font-size: .82rem;
-  letter-spacing: .5em;
-}
-/* Posters fill the tile; Anubis adds elghaly.dev under the picture. */
+/* Pictures fill the tile. */
 .tile--picture { padding: 0; }
 .tile--picture .tile__photo {
   position: absolute;
@@ -475,16 +456,6 @@ img { display: block; max-width: 100%; }
   height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
-}
-.tile--picture .tile__url {
-  position: absolute;
-  bottom: 12px;
-  inset-inline-start: 12px;
-  margin: 0;
-  color: var(--ivory);
-  font-size: .8rem;
-  letter-spacing: .02em;
-  text-shadow: 0 1px 8px #000;
 }
 
 /* Ask AI. */
@@ -603,14 +574,14 @@ html[lang="zh-Hans"] .team__title { font-family: inherit; font-style: normal; fo
     <section class="heard wrap" aria-labelledby="heard-title">
       <h2 id="heard-title" class="heard__title">هل سمعتَ عنّا؟</h2>
       <ol class="tiles" aria-label="مشاريعنا">
-        <li><a class="tile tile--picture" href="https://35.elghaly.dev/" rel="noopener noreferrer" aria-label="35"><img class="tile__photo" src="/assets/poster-35-480x720.webp" width="480" height="720" alt="35" loading="lazy" decoding="async"></a></li>
-        <li><a class="tile tile--picture" href="https://plumb-35.elghaly.dev/" rel="noopener noreferrer" aria-label="Plumb"><img class="tile__photo" src="/assets/poster-plumb-480x720.webp" width="480" height="720" alt="Plumb" loading="lazy" decoding="async"></a></li>
-        <li><a class="tile tile--picture" href="https://quay-35.elghaly.dev/" rel="noopener noreferrer" aria-label="QUAY"><img class="tile__photo" src="/assets/poster-quay-480x720.webp" width="480" height="720" alt="QUAY" loading="lazy" decoding="async"></a></li>
-        <li><a class="tile tile--picture" href="https://anubis.elghaly.dev/" rel="noopener noreferrer" aria-label="Anubis"><img class="tile__photo" src="/assets/anubis-480x720.webp" width="480" height="720" alt="Anubis" loading="lazy" decoding="async"><span class="tile__url" lang="en" dir="ltr">elghaly.dev</span></a></li>
-        <li><a class="tile tile--picture" href="https://stale.elghaly.dev/" rel="noopener noreferrer" aria-label="Stale"><img class="tile__photo" src="/assets/poster-stale-480x720.webp" width="480" height="720" alt="Stale" loading="lazy" decoding="async"></a></li>
-        <li><a class="tile tile--picture" href="https://glance.elghaly.dev/" rel="noopener noreferrer" aria-label="Glance"><img class="tile__photo" src="/assets/poster-glance-480x720.webp" width="480" height="720" alt="Glance" loading="lazy" decoding="async"></a></li>
-        <li><a class="tile tile--picture" href="https://iris-35.elghaly.dev/" rel="noopener noreferrer" aria-label="Iris"><img class="tile__photo" src="/assets/poster-iris-480x720.webp" width="480" height="720" alt="Iris" loading="lazy" decoding="async"></a></li>
-        <li><a class="tile tile--made" href="https://stocklana.elghaly.dev/" rel="noopener noreferrer" aria-label="Stocklana"><img class="tile__img" src="/assets/stocklana-card.svg" width="192" height="192" alt="" loading="lazy" decoding="async"><span class="tile__brand" lang="en" dir="ltr" aria-hidden="true">elghaly.dev</span><span class="tile__rule" aria-hidden="true"></span><span class="tile__sub" lang="en" dir="ltr" aria-hidden="true">stocklana</span></a></li>
+        <li><a class="tile tile--picture" href="https://35.elghaly.dev/" rel="noopener noreferrer" aria-label="35"><img class="tile__photo" src="/assets/emblem-35-480.webp" width="480" height="480" alt="35" loading="lazy" decoding="async"></a></li>
+        <li><a class="tile tile--picture" href="https://plumb-35.elghaly.dev/" rel="noopener noreferrer" aria-label="Plumb"><img class="tile__photo" src="/assets/emblem-plumb-480.webp" width="480" height="480" alt="Plumb" loading="lazy" decoding="async"></a></li>
+        <li><a class="tile tile--picture" href="https://quay-35.elghaly.dev/" rel="noopener noreferrer" aria-label="QUAY"><img class="tile__photo" src="/assets/emblem-quay-480.webp" width="480" height="480" alt="QUAY" loading="lazy" decoding="async"></a></li>
+        <li><a class="tile tile--picture" href="https://anubis.elghaly.dev/" rel="noopener noreferrer" aria-label="Anubis"><img class="tile__photo" src="/assets/anubis-480.webp" width="480" height="480" alt="Anubis" loading="lazy" decoding="async"></a></li>
+        <li><a class="tile tile--picture" href="https://stale.elghaly.dev/" rel="noopener noreferrer" aria-label="Stale"><img class="tile__photo" src="/assets/emblem-stale-480.webp" width="480" height="480" alt="Stale" loading="lazy" decoding="async"></a></li>
+        <li><a class="tile tile--picture" href="https://glance.elghaly.dev/" rel="noopener noreferrer" aria-label="Glance"><img class="tile__photo" src="/assets/emblem-glance-480.webp" width="480" height="480" alt="Glance" loading="lazy" decoding="async"></a></li>
+        <li><a class="tile tile--picture" href="https://iris-35.elghaly.dev/" rel="noopener noreferrer" aria-label="Iris"><img class="tile__photo" src="/assets/emblem-iris-480.webp" width="480" height="480" alt="Iris" loading="lazy" decoding="async"></a></li>
+        <li><a class="tile tile--made" href="https://stocklana.elghaly.dev/" rel="noopener noreferrer" aria-label="Stocklana"><img class="tile__img" src="/assets/stocklana-card.svg" width="192" height="192" alt="" loading="lazy" decoding="async"></a></li>
       </ol>
       <div class="ask page-menu" data-page-menu data-label="جرّب أن تسأل الذكاء الاصطناعي: مَن نحن؟" data-prompt="اقرأ https://elghaly.dev/ar/ وأخبرني مَن هم elghaly."></div>
     </section>
