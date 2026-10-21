@@ -423,25 +423,43 @@ img { display: block; max-width: 100%; }
   transition: transform .2s ease, border-color .2s ease;
 }
 .tile:hover { transform: translateY(-2px); border-color: rgba(212, 175, 90, .5); }
+/* Glance has no poster yet: the same night sky, icon, elghaly.dev and name. */
+.tile--made {
+  gap: 0;
+  padding: 0 10px;
+  border-color: rgba(79, 214, 238, .28);
+  background:
+    radial-gradient(55% 35% at 12% 72%, rgba(40, 130, 210, .22), transparent 70%),
+    radial-gradient(55% 35% at 88% 28%, rgba(140, 80, 230, .22), transparent 70%),
+    #05060a;
+}
 .tile__img {
-  width: min(100%, 150px);
+  width: 74%;
   height: auto;
   aspect-ratio: 1;
   border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(79, 214, 238, .55), 0 0 22px rgba(79, 214, 238, .35);
 }
-.tile__name {
-  margin-top: 18px;
+.tile__brand {
+  margin-top: 16%;
+  color: #fff;
   font-weight: 500;
-  font-size: 1.05rem;
+  font-size: clamp(1.05rem, 5.4vw, 1.55rem);
+  letter-spacing: -.01em;
 }
-.tile__url {
-  margin-top: 2px;
-  color: var(--muted);
-  font-size: .78rem;
-  word-break: break-all;
-  text-align: center;
+.tile__rule {
+  width: 72%;
+  height: 1px;
+  margin: 8px 0 6px;
+  background: #4fd6ee;
 }
-/* Anubis: the picture only, and elghaly.dev. */
+.tile__sub {
+  padding-inline-start: .5em;
+  color: #4fd6ee;
+  font-size: .82rem;
+  letter-spacing: .5em;
+}
+/* Posters fill the tile; Anubis adds elghaly.dev under the picture. */
 .tile--picture { padding: 0; }
 .tile--picture .tile__photo {
   position: absolute;
@@ -548,12 +566,12 @@ img { display: block; max-width: 100%; }
     <section class="heard wrap" aria-labelledby="heard-title">
       <h2 id="heard-title" class="heard__title">هل سمعتَ عنّا؟</h2>
       <ol class="tiles" aria-label="مشاريعنا">
-        <li><a class="tile" href="https://35.elghaly.dev/" rel="noopener noreferrer"><img class="tile__img" src="/assets/35-card-192.webp?v=5b" width="192" height="192" alt="" loading="lazy" decoding="async"><span class="tile__name" lang="en" dir="ltr">35</span><span class="tile__url" lang="en" dir="ltr">35.elghaly.dev</span></a></li>
-        <li><a class="tile" href="https://plumb-35.elghaly.dev/" rel="noopener noreferrer"><img class="tile__img" src="/assets/plumb-card-192.webp?v=5b" width="192" height="192" alt="" loading="lazy" decoding="async"><span class="tile__name" lang="en" dir="ltr">Plumb</span><span class="tile__url" lang="en" dir="ltr">plumb-35.elghaly.dev</span></a></li>
-        <li><a class="tile" href="https://quay-35.elghaly.dev/" rel="noopener noreferrer"><img class="tile__img" src="/assets/quay-card-192.webp?v=5b" width="192" height="192" alt="" loading="lazy" decoding="async"><span class="tile__name" lang="en" dir="ltr">QUAY</span><span class="tile__url" lang="en" dir="ltr">quay-35.elghaly.dev</span></a></li>
+        <li><a class="tile tile--picture" href="https://35.elghaly.dev/" rel="noopener noreferrer" aria-label="35"><img class="tile__photo" src="/assets/poster-35-480x720.webp" width="480" height="720" alt="35" loading="lazy" decoding="async"></a></li>
+        <li><a class="tile tile--picture" href="https://plumb-35.elghaly.dev/" rel="noopener noreferrer" aria-label="Plumb"><img class="tile__photo" src="/assets/poster-plumb-480x720.webp" width="480" height="720" alt="Plumb" loading="lazy" decoding="async"></a></li>
+        <li><a class="tile tile--picture" href="https://quay-35.elghaly.dev/" rel="noopener noreferrer" aria-label="QUAY"><img class="tile__photo" src="/assets/poster-quay-480x720.webp" width="480" height="720" alt="QUAY" loading="lazy" decoding="async"></a></li>
         <li><a class="tile tile--picture" href="https://anubis.elghaly.dev/" rel="noopener noreferrer" aria-label="Anubis"><img class="tile__photo" src="/assets/anubis-480x720.webp" width="480" height="720" alt="Anubis" loading="lazy" decoding="async"><span class="tile__url" lang="en" dir="ltr">elghaly.dev</span></a></li>
-        <li><a class="tile" href="https://stale.elghaly.dev/" rel="noopener noreferrer"><img class="tile__img" src="/assets/stale-card.svg" width="192" height="192" alt="" loading="lazy" decoding="async"><span class="tile__name" lang="en" dir="ltr">Stale</span><span class="tile__url" lang="en" dir="ltr">stale.elghaly.dev</span></a></li>
-        <li><a class="tile" href="https://glance.elghaly.dev/" rel="noopener noreferrer"><img class="tile__img" src="/assets/glance-card.svg" width="192" height="192" alt="" loading="lazy" decoding="async"><span class="tile__name" lang="en" dir="ltr">Glance</span><span class="tile__url" lang="en" dir="ltr">glance.elghaly.dev</span></a></li>
+        <li><a class="tile tile--picture" href="https://stale.elghaly.dev/" rel="noopener noreferrer" aria-label="Stale"><img class="tile__photo" src="/assets/poster-stale-480x720.webp" width="480" height="720" alt="Stale" loading="lazy" decoding="async"></a></li>
+        <li><a class="tile tile--made" href="https://glance.elghaly.dev/" rel="noopener noreferrer" aria-label="Glance"><img class="tile__img" src="/assets/glance-card.svg" width="192" height="192" alt="" loading="lazy" decoding="async"><span class="tile__brand" lang="en" dir="ltr" aria-hidden="true">elghaly.dev</span><span class="tile__rule" aria-hidden="true"></span><span class="tile__sub" lang="en" dir="ltr" aria-hidden="true">glance</span></a></li>
       </ol>
       <div class="ask page-menu" data-page-menu data-label="جرّب أن تسأل الذكاء الاصطناعي: مَن نحن؟" data-prompt="اقرأ https://elghaly.dev/ar/ وأخبرني مَن هم elghaly."></div>
     </section>
