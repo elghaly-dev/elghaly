@@ -3,7 +3,7 @@
   "short_name": "elghaly",
   "start_url": "/",
   "scope": "/",
-  "display": "browser",
+  "display": "standalone",
   "background_color": "#5a4fc0",
   "theme_color": "#352373",
   "icons": [
