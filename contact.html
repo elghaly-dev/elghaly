@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact elghaly: email and a contact form.">
+  <meta name="description" content="Contact elghaly by email.">
   <meta name="theme-color" content="#352373">
   <title>Contact · elghaly</title>
   <link rel="canonical" href="https://elghaly.dev/contact.html">
@@ -1800,14 +1800,6 @@ main.policy strong {
     .policy strong { color: var(--text); font-weight: 600; }
     .policy a { color: var(--accent); text-underline-offset: 2px; }
     .footer__biz { margin-top: .4rem; font-size: .85rem; }
-    .contact-form { display: grid; gap: .9rem; max-width: 32rem; margin: .75rem auto 0; text-align: left; }
-    .contact-form label { display: grid; gap: .35rem; font-size: .9rem; color: var(--text); }
-    .contact-form input, .contact-form textarea { font: inherit; color: var(--text); background: rgba(255,255,255,.04); border: 1px solid var(--accent-dim); border-radius: 10px; padding: .65rem .8rem; }
-    .contact-form textarea { min-height: 8rem; resize: vertical; }
-    .contact-form input:focus-visible, .contact-form textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-    .contact-form .hp { position: absolute; left: -9999px; }
-    .contact-form button { justify-self: start; }
-    .sent { color: var(--accent); }
   </style>
 <style id="lic-badges-css">.lic-badges{margin:.75rem 0 0;font-size:.75rem;line-height:1.2}.lic-badges>a,.lic-badges>span{display:inline-flex;align-items:center;min-height:24px;margin:.2rem .15rem;padding:0 .6rem;border:1px solid currentColor;border-radius:999px;color:inherit;vertical-align:middle}.lic-badges>a{text-decoration:underline;text-underline-offset:2px}.lic-badges>span{text-decoration:none}</style>
 </head>
@@ -1851,22 +1843,6 @@ main.policy strong {
       <p class="build__text">Write to <a href="mailto:support@elghaly.dev">support@elghaly.dev</a> for sales, orders, refunds and support. We reply by email.</p>
     </section>
 
-    <section class="section">
-      <h2 class="section__label">Contact form</h2>
-      <form class="contact-form" action="https://formsubmit.co/support@elghaly.dev" method="POST">
-        <input type="hidden" name="_subject" value="elghaly.dev contact form">
-        <input type="hidden" name="_next" value="https://elghaly.dev/contact.html?sent=1">
-        <input type="hidden" name="_template" value="table">
-        <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <label>Your name <input type="text" name="name" autocomplete="name" required></label>
-        <label>Your email <input type="email" name="email" autocomplete="email" required></label>
-        <label>Order number (if you have one) <input type="text" name="order"></label>
-        <label>Message <textarea name="message" required></textarea></label>
-        <button class="btn btn--primary" type="submit">Send</button>
-      </form>
-      <p class="build__text sent" id="sent" hidden>Thank you, your message was sent. We reply by email.</p>
-      <p class="build__text">The form sends your message to our inbox through FormSubmit (formsubmit.co). See the <a href="/privacy.html">privacy policy</a>.</p>
-    </section>
 
     <section class="section">
       <h2 class="section__label">Help with an order</h2>
@@ -1880,8 +1856,5 @@ main.policy strong {
     <p>elghaly, LLC</p>
     <p class="lic-badges"><a href="https://creativecommons.org/licenses/by/4.0/" rel="license">© elghaly · CC BY 4.0</a> <a href="https://github.com/Alarm2024/elghaly/blob/main/LICENSE">Code: MIT</a> <a href="https://github.com/Alarm2024">Open source</a></p>
   </footer>
-  <script>
-    if (/[?&]sent=1/.test(location.search)) document.getElementById('sent').hidden = false;
-  </script>
 </body>
 </html>
