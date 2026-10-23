@@ -29,8 +29,8 @@
           ">الخصوصية</a>"
         ],
         [
-          "Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
-          "البريد أولاً: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. المكالمات بالموعد فقط."
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>",
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>"
         ],
         [
           ">Open source</a>",
@@ -115,8 +115,8 @@
           ">الخصوصية</a>"
         ],
         [
-          "Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
-          "البريد أولاً: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. المكالمات بالموعد فقط."
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>",
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>"
         ],
         [
           ">Open source</a>",
@@ -143,8 +143,8 @@
           "راسل <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a> للمبيعات والطلبات والاسترداد والدعم. نرد بالبريد."
         ],
         [
-          "Contact form",
-          "نموذج التواصل"
+          "Email",
+          "البريد"
         ],
         [
           "Your name ",
@@ -171,8 +171,8 @@
           "شكراً، أُرسلت رسالتك. نرد بالبريد."
         ],
         [
-          "The form sends your message to our inbox through FormSubmit (formsubmit.co). See the <a href=\"/privacy.html\">privacy policy</a>.",
-          "يرسل النموذج رسالتك إلى صندوق الوارد عبر FormSubmit (formsubmit.co). راجع <a href=\"/privacy.html\">سياسة الخصوصية</a>."
+          "Email <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>.",
+          "راسلنا على <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>."
         ],
         [
           "Help with an order",
@@ -213,8 +213,8 @@
           ">الخصوصية</a>"
         ],
         [
-          "Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
-          "البريد أولاً: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. المكالمات بالموعد فقط."
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>",
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>"
         ],
         [
           ">Open source</a>",
@@ -319,8 +319,8 @@
           ">الخصوصية</a>"
         ],
         [
-          "Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
-          "البريد أولاً: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. المكالمات بالموعد فقط."
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>",
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>"
         ],
         [
           ">Open source</a>",
@@ -413,8 +413,8 @@
           ">الخصوصية</a>"
         ],
         [
-          "Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
-          "البريد أولاً: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. المكالمات بالموعد فقط."
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>",
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>"
         ],
         [
           ">Open source</a>",
@@ -531,8 +531,8 @@
           ">الخصوصية</a>"
         ],
         [
-          "Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
-          "البريد أولاً: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. المكالمات بالموعد فقط."
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>",
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>"
         ],
         [
           ">Open source</a>",
@@ -567,12 +567,12 @@
           "الخطوط تُقدَّم من هذا الموقع. تحمّل الصفحة الرئيسية أيضاً زر تسجيل فعالية من Luma، وقد يستقبل تفاصيل اتصال عند تحميل الصفحة. إن سجّلت في فعالية، يحدث ذلك على Luma بسياسة خصوصية Luma."
         ],
         [
-          "Contact form",
-          "نموذج التواصل"
+          "Email",
+          "البريد"
         ],
         [
-          "If you use the <a href=\"/contact.html\">contact form</a>, the name, email, order number and message you type are sent to our inbox through FormSubmit (formsubmit.co), which handles them under its own privacy policy. We use them to reply to you.",
-          "إن استخدمت <a href=\"/contact.html\">نموذج التواصل</a>، يُرسل الاسم والبريد ورقم الطلب والرسالة إلى صندوق الوارد عبر FormSubmit (formsubmit.co) بسياسة خصوصيتها. نستخدمها للرد عليك."
+          "If you email us, we use your address and message only to reply to you.",
+          "إن راسلتنا بالبريد، نستخدم عنوانك ورسالتك للرد عليك فقط."
         ],
         [
           "Purchases",
@@ -647,8 +647,8 @@
           ">Конфиденциальность</a>"
         ],
         [
-          "Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
-          "Сначала email: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Звонки только по записи."
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>",
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>"
         ],
         [
           ">Open source</a>",
@@ -733,8 +733,8 @@
           ">Конфиденциальность</a>"
         ],
         [
-          "Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
-          "Сначала email: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Звонки только по записи."
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>",
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>"
         ],
         [
           ">Open source</a>",
@@ -761,8 +761,8 @@
           "Пишите на <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a> по продажам, заказам, возвратам и поддержке. Отвечаем по email."
         ],
         [
-          "Contact form",
-          "Форма связи"
+          "Email",
+          "Email"
         ],
         [
           "Your name ",
@@ -789,8 +789,8 @@
           "Спасибо, сообщение отправлено. Ответим по email."
         ],
         [
-          "The form sends your message to our inbox through FormSubmit (formsubmit.co). See the <a href=\"/privacy.html\">privacy policy</a>.",
-          "Форма отправляет сообщение в наш inbox через FormSubmit (formsubmit.co). См. <a href=\"/privacy.html\">политику конфиденциальности</a>."
+          "Email <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>.",
+          "Пишите на <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>."
         ],
         [
           "Help with an order",
@@ -831,8 +831,8 @@
           ">Конфиденциальность</a>"
         ],
         [
-          "Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
-          "Сначала email: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Звонки только по записи."
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>",
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>"
         ],
         [
           ">Open source</a>",
@@ -937,8 +937,8 @@
           ">Конфиденциальность</a>"
         ],
         [
-          "Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
-          "Сначала email: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Звонки только по записи."
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>",
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>"
         ],
         [
           ">Open source</a>",
@@ -1031,8 +1031,8 @@
           ">Конфиденциальность</a>"
         ],
         [
-          "Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
-          "Сначала email: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Звонки только по записи."
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>",
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>"
         ],
         [
           ">Open source</a>",
@@ -1149,8 +1149,8 @@
           ">Конфиденциальность</a>"
         ],
         [
-          "Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
-          "Сначала email: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Звонки только по записи."
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>",
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>"
         ],
         [
           ">Open source</a>",
@@ -1185,12 +1185,12 @@
           "Шрифты с этого сайта. На главной кнопка регистрации Luma может получать connection details при загрузке. Регистрация на событие — на Luma по их политике конфиденциальности."
         ],
         [
-          "Contact form",
-          "Форма связи"
+          "Email",
+          "Email"
         ],
         [
-          "If you use the <a href=\"/contact.html\">contact form</a>, the name, email, order number and message you type are sent to our inbox through FormSubmit (formsubmit.co), which handles them under its own privacy policy. We use them to reply to you.",
-          "Если используете <a href=\"/contact.html\">форму связи</a>, имя, email, номер заказа и сообщение отправляются в inbox через FormSubmit (formsubmit.co) по их политике. Мы используем их для ответа."
+          "If you email us, we use your address and message only to reply to you.",
+          "Если вы пишете нам, мы используем ваш адрес и сообщение только для ответа."
         ],
         [
           "Purchases",
@@ -1265,8 +1265,8 @@
           ">隐私</a>"
         ],
         [
-          "Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
-          "优先邮件：<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。通话仅限预约。"
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>",
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>"
         ],
         [
           ">Open source</a>",
@@ -1351,8 +1351,8 @@
           ">隐私</a>"
         ],
         [
-          "Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
-          "优先邮件：<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。通话仅限预约。"
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>",
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>"
         ],
         [
           ">Open source</a>",
@@ -1379,8 +1379,8 @@
           "销售、订单、退款和支持请写信至 <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。我们通过邮件回复。"
         ],
         [
-          "Contact form",
-          "联系表单"
+          "Email",
+          "电子邮件"
         ],
         [
           "Your name ",
@@ -1407,8 +1407,8 @@
           "谢谢，你的消息已发送。我们会通过邮件回复。"
         ],
         [
-          "The form sends your message to our inbox through FormSubmit (formsubmit.co). See the <a href=\"/privacy.html\">privacy policy</a>.",
-          "表单通过 FormSubmit (formsubmit.co) 将消息发送到我们的收件箱。请参阅<a href=\"/privacy.html\">隐私政策</a>。"
+          "Email <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>.",
+          "请发邮件至 <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。"
         ],
         [
           "Help with an order",
@@ -1449,8 +1449,8 @@
           ">隐私</a>"
         ],
         [
-          "Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
-          "优先邮件：<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。通话仅限预约。"
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>",
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>"
         ],
         [
           ">Open source</a>",
@@ -1555,8 +1555,8 @@
           ">隐私</a>"
         ],
         [
-          "Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
-          "优先邮件：<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。通话仅限预约。"
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>",
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>"
         ],
         [
           ">Open source</a>",
@@ -1649,8 +1649,8 @@
           ">隐私</a>"
         ],
         [
-          "Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
-          "优先邮件：<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。通话仅限预约。"
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>",
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>"
         ],
         [
           ">Open source</a>",
@@ -1767,8 +1767,8 @@
           ">隐私</a>"
         ],
         [
-          "Email first: <a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>. Calls only by appointment.",
-          "优先邮件：<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>。通话仅限预约。"
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>",
+          "<a href=\"mailto:support@elghaly.dev\">support@elghaly.dev</a>"
         ],
         [
           ">Open source</a>",
@@ -1803,12 +1803,12 @@
           "字体由本网站提供。首页还会加载 Luma 的活动报名按钮，页面加载时可能收到连接详情。若在 Luma 报名，则适用 Luma 自身的隐私政策。"
         ],
         [
-          "Contact form",
-          "联系表单"
+          "Email",
+          "电子邮件"
         ],
         [
-          "If you use the <a href=\"/contact.html\">contact form</a>, the name, email, order number and message you type are sent to our inbox through FormSubmit (formsubmit.co), which handles them under its own privacy policy. We use them to reply to you.",
-          "若使用<a href=\"/contact.html\">联系表单</a>，你填写的姓名、邮箱、订单号与消息会通过 FormSubmit (formsubmit.co) 发送到我们的收件箱，由其隐私政策管辖。我们仅用于回复你。"
+          "If you email us, we use your address and message only to reply to you.",
+          "如果你给我们发邮件，我们只用你的地址和消息来回复你。"
         ],
         [
           "Purchases",
