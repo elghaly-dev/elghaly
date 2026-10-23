@@ -8,6 +8,8 @@
  * Use: put <div class="page-menu" data-page-menu></div> where the button
  * goes (reserve 44px of height inline, so nothing moves when it fills in),
  * and load this file with <script src="/page-menu.js" defer></script>.
+ * Optional on the slot: data-label (the button text, default "Ask ChatGPT")
+ * and data-prompt (the question sent, default "Read <this page> and help me").
  * One copy of this file is shared by every elghaly site; edit them together.
  */
 (function () {
@@ -442,7 +444,7 @@
   ];
 
   function build(slot) {
-    var q = encodeURIComponent(prompt());
+    var q = encodeURIComponent(slot.getAttribute("data-prompt") || prompt());
     var box = document.createElement("div");
     box.className = "pm";
     box.setAttribute("role", "group");
@@ -453,7 +455,8 @@
     main.href = chatgptUrl(q);
     main.target = "_blank";
     main.rel = "noopener noreferrer";
-    main.innerHTML = SPARK + "<span>Ask ChatGPT</span>";
+    main.innerHTML = SPARK + "<span></span>";
+    main.lastChild.textContent = slot.getAttribute("data-label") || "Ask ChatGPT";
 
     var details = document.createElement("details");
     details.className = "pm-more";
