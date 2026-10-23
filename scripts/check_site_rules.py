@@ -8,7 +8,7 @@ from html.parser import HTMLParser
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 FOOTER_URLS = [
-    'href="/chatting"',
+    'href="https://chatting.elghaly.dev/"',
     'href="/about.html"',
     'href="mailto:support@elghaly.dev"',
     'href="/refund.html"',
