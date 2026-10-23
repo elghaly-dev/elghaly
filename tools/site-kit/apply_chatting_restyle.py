@@ -343,6 +343,12 @@ def apply_subpage_translations(html: str, lang: str, page: str, meta: dict) -> s
 
 
 def main() -> None:
+    # One-shot restyle from Oct 8, 2026. Since then the home page was rebuilt
+    # (night and gold), the Arabic pages and the contact page were removed, and
+    # nothing redirects. Running this again would bring all of that back.
+    if "--force-legacy" not in sys.argv[1:]:
+        sys.exit("apply_chatting_restyle.py is retired: it would rebuild the old home, "
+                 "ar/ and contact.html. Pass --force-legacy only if you mean that.")
     index_path = os.path.join(ROOT, "index.html")
     with open(index_path, encoding="utf-8") as f:
         index_html = f.read()

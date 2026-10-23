@@ -4,13 +4,8 @@
     <loc>https://elghaly.dev/</loc>
     <lastmod>2026-10-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://elghaly.dev/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://elghaly.dev/ar/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://elghaly.dev/ru/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://elghaly.dev/zh/"/>
-  </url>
-  <url>
-    <loc>https://elghaly.dev/ar/</loc>
-    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://elghaly.dev/ru/</loc>
@@ -22,10 +17,6 @@
   </url>
   <url>
     <loc>https://elghaly.dev/about.html</loc>
-    <lastmod>2026-10-13</lastmod>
-  </url>
-  <url>
-    <loc>https://elghaly.dev/ar/about.html</loc>
     <lastmod>2026-10-13</lastmod>
   </url>
   <url>
@@ -41,10 +32,6 @@
     <lastmod>2026-10-13</lastmod>
   </url>
   <url>
-    <loc>https://elghaly.dev/ar/contact.html</loc>
-    <lastmod>2026-10-13</lastmod>
-  </url>
-  <url>
     <loc>https://elghaly.dev/ru/contact.html</loc>
     <lastmod>2026-10-13</lastmod>
   </url>
@@ -54,10 +41,6 @@
   </url>
   <url>
     <loc>https://elghaly.dev/privacy.html</loc>
-    <lastmod>2026-10-13</lastmod>
-  </url>
-  <url>
-    <loc>https://elghaly.dev/ar/privacy.html</loc>
     <lastmod>2026-10-13</lastmod>
   </url>
   <url>
@@ -73,10 +56,6 @@
     <lastmod>2026-10-13</lastmod>
   </url>
   <url>
-    <loc>https://elghaly.dev/ar/terms.html</loc>
-    <lastmod>2026-10-13</lastmod>
-  </url>
-  <url>
     <loc>https://elghaly.dev/ru/terms.html</loc>
     <lastmod>2026-10-13</lastmod>
   </url>
@@ -89,10 +68,6 @@
     <lastmod>2026-10-13</lastmod>
   </url>
   <url>
-    <loc>https://elghaly.dev/ar/refund.html</loc>
-    <lastmod>2026-10-13</lastmod>
-  </url>
-  <url>
     <loc>https://elghaly.dev/ru/refund.html</loc>
     <lastmod>2026-10-13</lastmod>
   </url>
@@ -102,10 +77,6 @@
   </url>
   <url>
     <loc>https://elghaly.dev/delivery.html</loc>
-    <lastmod>2026-10-13</lastmod>
-  </url>
-  <url>
-    <loc>https://elghaly.dev/ar/delivery.html</loc>
     <lastmod>2026-10-13</lastmod>
   </url>
   <url>

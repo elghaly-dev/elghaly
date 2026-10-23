@@ -8,7 +8,6 @@
   <title>elghaly — Linux 服务器、Solana 工具</title>
   <link rel="canonical" href="https://elghaly.dev/">
   <link rel="alternate" hreflang="en" href="https://elghaly.dev/">
-  <link rel="alternate" hreflang="ar" href="https://elghaly.dev/ar/">
   <link rel="alternate" hreflang="ru" href="https://elghaly.dev/ru/">
   <link rel="alternate" hreflang="zh-Hans" href="https://elghaly.dev/zh/">
   <link rel="alternate" hreflang="x-default" href="https://elghaly.dev/">
@@ -242,17 +241,6 @@
   font-display: swap;
   src: url("/fonts/cormorant-garamond-latin-400-italic.woff2") format("woff2");
 }
-@font-face {
-  /* Cairo for Arabic letters only; unicode-range means only a page
-     showing Arabic downloads it. */
-  font-family: "Cairo";
-  font-style: normal;
-  font-weight: 200 1000;
-  font-display: swap;
-  src: url("/fonts/cairo-arabic-wght.woff2") format("woff2");
-  unicode-range: U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC;
-}
-
 /* Night and gold: a near-black night, Anubis's gold and lapis, ivory text. */
 :root {
   --night: #07080c;
@@ -279,11 +267,10 @@ body {
     radial-gradient(80% 50% at 50% 110%, rgba(212, 175, 90, .10), transparent 70%),
     var(--night);
   color: var(--ivory);
-  font-family: "Outfit", "Cairo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
   font-size: 16px;
   line-height: 1.55;
 }
-html[lang="ar"] body { font-family: "Cairo", "Outfit", system-ui, sans-serif; }
 a { color: inherit; }
 img { display: block; max-width: 100%; }
 
@@ -487,7 +474,6 @@ img { display: block; max-width: 100%; }
   font-weight: 400;
   font-size: clamp(1.3rem, 5.5vw, 1.7rem);
 }
-html[lang="ar"] .team__title,
 html[lang="zh-Hans"] .team__title { font-family: inherit; font-style: normal; font-weight: 500; }
 .team__names {
   margin: 10px 0 0;
@@ -495,7 +481,7 @@ html[lang="zh-Hans"] .team__title { font-family: inherit; font-style: normal; fo
   font-size: 1rem;
   letter-spacing: .02em;
 }
-/* The signs read left to right on the Arabic page too. */
+/* The signs always read left to right. */
 .signs,
 .team__signs { direction: ltr; unicode-bidi: isolate; }
 .team__signs {
@@ -576,7 +562,6 @@ html[lang="zh-Hans"] .team__title { font-family: inherit; font-style: normal; fo
   <header class="top wrap">
       <nav class="lang-switch" aria-label="Language">
         <a class="lang-btn" href="/" hreflang="en" lang="en">English</a>
-        <a class="lang-btn" href="/ar/" hreflang="ar" lang="ar">العربية</a>
         <a class="lang-btn" href="/ru/" hreflang="ru" lang="ru">Русский</a>
         <a class="lang-btn" href="/zh/" hreflang="zh-Hans" lang="zh-Hans" aria-current="page">中文</a>
       </nav>
