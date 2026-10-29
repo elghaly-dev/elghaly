@@ -6,6 +6,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://elghaly.dev/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://elghaly.dev/ru/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://elghaly.dev/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://elghaly.dev/ar/"/>
+  </url>
+  <url>
+    <loc>https://elghaly.dev/ar/</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://elghaly.dev/ru/</loc>

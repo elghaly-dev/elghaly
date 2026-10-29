@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy-Report-Only" content="default-src 'self'; base-uri 'self'; form-action 'self' mailto: https:; object-src 'none'; frame-ancestors 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net; frame-src 'self' https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://www.googletagmanager.com">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="We set up Linux servers and make tools for Solana.">
   <meta name="theme-color" content="#07080c">
@@ -445,6 +446,25 @@ img { display: block; max-width: 100%; }
   object-fit: cover;
   object-position: 50% 50%;
 }
+.tile--copy {
+  gap: 0.45rem;
+  padding: 12px 10px;
+  text-align: center;
+}
+.tile--copy .tile__name {
+  font-family: Cinzel, serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #e8e4ff;
+  letter-spacing: 0.04em;
+}
+.tile--copy .tile__line {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: #a39b88;
+  font-weight: 400;
+}
 
 /* Ask AI. */
 .ask {
@@ -588,8 +608,9 @@ html[lang="zh-Hans"] .team__title { font-family: inherit; font-style: normal; fo
         <li><a class="tile tile--picture" href="https://glance.elghaly.dev/" rel="noopener noreferrer" aria-label="Glance"><img class="tile__photo" src="/assets/emblem-glance-480.webp" width="480" height="480" alt="Glance" loading="lazy" decoding="async"></a></li>
         <li><a class="tile tile--picture" href="https://iris-35.elghaly.dev/" rel="noopener noreferrer" aria-label="Iris"><img class="tile__photo" src="/assets/emblem-iris-480.webp" width="480" height="480" alt="Iris" loading="lazy" decoding="async"></a></li>
         <li><a class="tile tile--picture" href="https://stocklana.elghaly.dev/" rel="noopener noreferrer" aria-label="Stocklana"><img class="tile__photo" src="/assets/emblem-stocklana-480.webp" width="480" height="480" alt="Stocklana" loading="lazy" decoding="async"></a></li>
+        <li><a class="tile tile--made tile--copy" href="https://999.elghaly.dev/" rel="noopener noreferrer" aria-label="Satar — Check a forward before you trust it."><span class="tile__name">Satar</span><span class="tile__line">Check a forward before you trust it.</span></a></li>
       </ol>
-      <div class="ask page-menu" data-page-menu data-label="Try asking AI to reveal who we are" data-prompt="Read https://elghaly.dev/ and tell me who elghaly are."></div>
+      <div class="ask page-menu" data-page-menu data-label="Faithful Servant" data-prompt="Read https://elghaly.dev/ and tell me who elghaly are."></div>
     </section>
 
     <section class="team wrap" aria-labelledby="team-title">

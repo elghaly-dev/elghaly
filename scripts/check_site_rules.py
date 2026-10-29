@@ -33,6 +33,25 @@ EXEMPT_FRAGMENTS = (
     "tools/site-kit/head.html",
 )
 
+CSP_FILE = ROOT / "csp-report-only.txt"
+CSP_META = re.compile(
+    r'<meta[^>]+http-equiv=["\']Content-Security-Policy-Report-Only["\'][^>]+content="([^"]*)"',
+    re.I,
+)
+SITEMAP_AR = "https://elghaly.dev/ar/"
+SATAR_HREF = "https://999.elghaly.dev/"
+SATAR_LINE = "Check a forward before you trust it."
+
+
+def csp_policy_expected() -> str:
+    if not CSP_FILE.is_file():
+        return ""
+    for line in CSP_FILE.read_text(encoding="utf-8").splitlines():
+        s = line.strip()
+        if s and not s.startswith("#"):
+            return s
+    return ""
+
 
 class _VisibleStrip(HTMLParser):
     __slots__ = ("_skip", "out")
@@ -116,12 +135,44 @@ def main():
                 errors.append("index.html: forbidden %s" % label)
         for match in FORBIDDEN_WORDS.finditer(vis):
             errors.append("index.html: forbidden word %r" % match.group(0))
+        if 'data-label="Faithful Servant"' not in text:
+            errors.append('index.html: AI label must be data-label="Faithful Servant"')
+        if SATAR_HREF not in text or SATAR_LINE not in text:
+            errors.append("index.html: missing Satar card (999.elghaly.dev + tagline)")
+
+    expected_csp = csp_policy_expected()
+    if not expected_csp:
+        errors.append("csp-report-only.txt: missing policy line")
+    else:
+        headers = ROOT / "_headers"
+        if not headers.is_file() or expected_csp not in headers.read_text(encoding="utf-8"):
+            errors.append("_headers: missing Content-Security-Policy-Report-Only policy")
+
+    sitemap = ROOT / "sitemap.xml"
+    if sitemap.is_file():
+        sm = sitemap.read_text(encoding="utf-8")
+        if f"<loc>{SITEMAP_AR}</loc>" not in sm:
+            errors.append("sitemap.xml: missing /ar/ URL")
+        if 'hreflang="ar"' not in sm:
+            errors.append("sitemap.xml: missing hreflang ar alternate on home")
+    else:
+        errors.append("sitemap.xml: missing")
 
     for path in html_pages():
         rel = path.relative_to(ROOT)
         raw = path.read_text(encoding="utf-8")
-        if is_full_page(path, raw) and not footer_has_llc(raw):
-            errors.append("%s: footer missing elghaly, LLC" % rel)
+        if is_full_page(path, raw):
+            if not footer_has_llc(raw):
+                errors.append("%s: footer missing elghaly, LLC" % rel)
+            if expected_csp:
+                m = CSP_META.search(raw)
+                if not m:
+                    errors.append("%s: missing Content-Security-Policy-Report-Only meta" % rel)
+                elif m.group(1) != expected_csp:
+                    errors.append("%s: CSP report-only meta does not match csp-report-only.txt" % rel)
+        if path.name == "index.html" and path.parent.name in ("ar", "ru", "zh"):
+            if SATAR_HREF not in raw or SATAR_LINE not in raw:
+                errors.append("%s: missing Satar card" % rel)
         if path.name == "index.html" and path.parent == ROOT:
             continue
         if rel.parts[0] in ("ar", "ru", "zh") and len(rel.parts) == 2 and rel.name == "index.html":
