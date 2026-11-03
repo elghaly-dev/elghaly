@@ -1,13 +1,15 @@
 /* page-menu.js — the "Ask ChatGPT | ⌄" button at the top of a content page.
  *
  * One split button: the main half opens this page in ChatGPT; the ⌄ half
- * opens a menu with Open in Cursor and Copy page. Plain JS. No tracking, no
+ * opens a menu with Copy page. Plain JS. No tracking, no
  * cookies, no network calls: the Markdown is built from the page in this tab,
  * so it is always the page as it is now.
  *
  * Use: put <div class="page-menu" data-page-menu></div> where the button
  * goes (reserve 44px of height inline, so nothing moves when it fills in),
  * and load this file with <script src="/page-menu.js" defer></script>.
+ * Optional on the slot: data-label (the button text, default "Ask ChatGPT")
+ * and data-prompt (the question sent, default "Read <this page> and help me").
  * One copy of this file is shared by every elghaly site; edit them together.
  */
 (function () {
@@ -436,14 +438,13 @@
   // ── render ──────────────────────────────────────────────────────────────
   function chatgptUrl(q) { return "https://chatgpt.com/?q=" + q; }
 
-  // The ⌄ menu: Cursor, then Copy. ChatGPT is the button itself.
+  // The ⌄ menu: Copy. ChatGPT is the button itself.
   var ITEMS = [
-    { href: function (q) { return "https://cursor.com/link/prompt?text=" + q; }, label: "Open in Cursor" },
     { act: "copy", label: "Copy page", sub: "Markdown for AI tools" }
   ];
 
   function build(slot) {
-    var q = encodeURIComponent(prompt());
+    var q = encodeURIComponent(slot.getAttribute("data-prompt") || prompt());
     var box = document.createElement("div");
     box.className = "pm";
     box.setAttribute("role", "group");
@@ -454,12 +455,13 @@
     main.href = chatgptUrl(q);
     main.target = "_blank";
     main.rel = "noopener noreferrer";
-    main.innerHTML = SPARK + "<span>Ask ChatGPT</span>";
+    main.innerHTML = SPARK + "<span></span>";
+    main.lastChild.textContent = slot.getAttribute("data-label") || "Ask ChatGPT";
 
     var details = document.createElement("details");
     details.className = "pm-more";
     var summary = document.createElement("summary");
-    summary.setAttribute("aria-label", "More AI options: open in Cursor, copy page");
+    summary.setAttribute("aria-label", "More options: copy page");
     summary.innerHTML = CHEV;
     var panel = document.createElement("div");
     panel.className = "pm-panel";

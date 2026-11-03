@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- IAB GPP CMP API (v1.1): no privacy section applies on this site -->
+  <script src="/gpp-stub.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Plumb is Solana bot software that runs on your own Linux server, controlled from a private, encrypted chat on your phone. One-time seats: Starter US$350, Pro US$699, Source US$1,999.">
-  <meta name="theme-color" content="#352373">
+  <meta name="theme-color" content="#07080c">
   <title>Plumb — Solana bot software on your own server · elghaly</title>
   <link rel="canonical" href="https://elghaly.dev/plumb">
   <link rel="icon" href="/favicon.ico?v=e1" sizes="any">
@@ -133,6 +135,8 @@
       }
     })();
   </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8644709535803917"
+       crossorigin="anonymous"></script>
   <style id="elghaly-consent-css">
     #elghaly-consent {
       position: fixed;
@@ -149,7 +153,7 @@
       font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
       font-size: 0.95rem;
       line-height: 1.5;
-      box-shadow: 0 -12px 32px rgba(16, 10, 58, 0.45);
+      box-shadow: 0 -12px 32px rgba(0, 0, 0, 0.45);
     }
     #elghaly-consent .ec-inner {
       max-width: 40rem;
@@ -163,9 +167,13 @@
     #elghaly-consent .ec-text {
       flex: 1 1 16rem;
       margin: 0;
-      color: #b9b3e6;
+      color: #a39b88;
     }
     #elghaly-consent .ec-text a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 0.25rem;
       color: #ffffff;
       text-underline-offset: 2px;
     }
@@ -186,13 +194,13 @@
       transition: background 0.25s ease, color 0.25s ease;
     }
     #elghaly-consent .ec-btn--primary {
-      background: #c9c2ff;
-      border-color: #c9c2ff;
-      color: #17123d;
+      background: #d4af5a;
+      border-color: #d4af5a;
+      color: #07080c;
     }
     #elghaly-consent .ec-btn--primary:hover,
     #elghaly-consent .ec-btn--primary:focus-visible {
-      background: #e2deff;
+      background: #ecd9a0;
     }
     #elghaly-consent .ec-btn--ghost {
       background: #17142f;
@@ -209,11 +217,11 @@
   </style>
   <!-- inline:css/glass.css — edit css/glass.css, then: python3 tools/site-kit/sitekit.py inline plumb.html css/glass.css -->
   <style>
-/* elghaly.dev home, /plumb and /quay: palette 5b.
-   A soft indigo-purple page, solid near-black cards, white bold headings,
-   lavender for the quieter text on cards, and light indigo (token --gold, #c9c2ff) for the one thing to
-   press on each screen. Lavender is for cards only: on the purple it is
-   3.2:1, so text on the purple is white (5:1 or more).
+/* elghaly.dev pages: night and gold, the palette of the home page.
+   A near-black night, dark lapis cards, ivory headings and text, warm grey
+   for the quieter text, and gold (token --gold, #d4af5a) for the one thing
+   to press on each screen. Ivory on the night is 16:1, warm grey 7:1,
+   gold 9:1.
    Phones first: everything below is the iPhone layout, and the
    min-width queries widen it. Inlined into each page by
    tools/site-kit/sitekit.py, so this file is the one to edit. */
@@ -265,21 +273,21 @@
 
 :root {
   color-scheme: dark;
-  --bg: #5a4fc0;
-  --bg-2: #6a5fd0;
-  --card: #0d0b1f;
-  --card-2: #17142f;
-  --line: #1c1838;
-  --line-2: #2e2856;
-  --text: #ffffff;
-  --muted: #b9b3e6;
-  --gold: #c9c2ff;
-  --gold-2: #e2deff;
-  --gold-ink: #17123d;
+  --bg: #07080c;
+  --bg-2: #0d1120;
+  --card: #10131f;
+  --card-2: #161a2a;
+  --line: #1c2030;
+  --line-2: #2b2f40;
+  --text: #efe8d8;
+  --muted: #a39b88;
+  --gold: #d4af5a;
+  --gold-2: #ecd9a0;
+  --gold-ink: #07080c;
   --pos: #7be3b0; /* mint: small positive numbers only, and sparingly */
-  --on-bg-line: rgba(255, 255, 255, 0.2);
-  --shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 18px 40px -20px rgba(16, 10, 58, 0.6);
-  --shadow-hi: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 26px 52px -22px rgba(16, 10, 58, 0.75);
+  --on-bg-line: rgba(212, 175, 90, 0.22);
+  --shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 18px 40px -20px rgba(0, 0, 0, 0.6);
+  --shadow-hi: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 26px 52px -22px rgba(0, 0, 0, 0.75);
   --radius: 22px;
   --radius-sm: 20px;
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
@@ -359,13 +367,13 @@ a {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(90, 79, 192, 0.94);
+  background: rgba(7, 8, 12, 0.94);
   border-bottom: 1px solid var(--on-bg-line);
 }
 
 @supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
   .nav {
-    background: rgba(90, 79, 192, 0.78);
+    background: rgba(7, 8, 12, 0.78);
     -webkit-backdrop-filter: saturate(160%) blur(16px);
     backdrop-filter: saturate(160%) blur(16px);
   }
@@ -383,6 +391,9 @@ a {
 
 .brand {
   flex: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-family: "Cinzel Wordmark", Georgia, serif;
   font-size: 1.05rem;
   font-weight: 500;
@@ -394,13 +405,49 @@ a {
   unicode-bidi: isolate;
 }
 
+.nav__badge {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--text);
+  font: 500 0.85rem/1 var(--font);
+  text-decoration: none;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+.nav__badge-dot {
+  color: var(--pos);
+  font-size: 0.55rem;
+  line-height: 1;
+}
+
 .nav__links {
   display: none;
-  gap: 0.25rem;
+  gap: 0.125rem;
   margin-inline-start: auto;
 }
 
+/* Dark pill: links sit on the near-black bar, like chatting.elghaly.dev. */
+.nav__pill {
+  padding: 0.2rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+}
+
 .nav__links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   padding: 0.5rem 0.8rem;
   border-radius: 999px;
   color: var(--text);
@@ -411,7 +458,7 @@ a {
 
 .nav__links a:hover,
 .nav__links a[aria-current="page"] {
-  background: var(--card);
+  background: var(--card-2);
 }
 
 .nav__shop {
@@ -431,28 +478,36 @@ a {
   display: none;
 }
 
-.lang-btn {
+.lang-btn,
+a.lang-btn {
   flex: none;
-  min-width: 40px;
-  min-height: 36px;
-  padding: 4px 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 4px 10px;
   border: 1px solid transparent;
   border-radius: 999px;
   background: transparent;
   color: var(--text);
-  font: 500 12px var(--font);
+  font: 500 0.75rem var(--font);
   cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-.lang-btn[aria-pressed="true"] {
+.lang-btn[aria-pressed="true"],
+a.lang-btn[aria-current="page"] {
   border-color: var(--line);
   background: var(--card);
 }
 
-/* Phones: the wordmark and all six languages fit on one line at 360px. */
+/* Phones: badge, pill nav and four languages share one row. */
 @media (max-width: 420px) {
   .nav__in {
-    gap: 0.5rem;
+    gap: 0.4rem;
+    flex-wrap: wrap;
   }
 
   .brand {
@@ -460,13 +515,26 @@ a {
     letter-spacing: 0.14em;
   }
 
-  .lang-switch {
-    gap: 2px;
+  .nav__badge {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
   }
 
-  .lang-btn {
-    min-width: 34px;
-    padding: 4px 5px;
+  .nav__links--always {
+    order: 3;
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+
+  .lang-switch {
+    gap: 2px;
+    margin-inline-start: auto;
+  }
+
+  .lang-btn,
+  a.lang-btn {
+    padding: 4px 6px;
+    font-size: 0.7rem;
   }
 }
 
@@ -530,7 +598,7 @@ a {
   background: var(--card);
   border-color: var(--line);
   color: var(--text);
-  box-shadow: 0 12px 26px -16px rgba(16, 10, 58, 0.7);
+  box-shadow: 0 12px 26px -16px rgba(0, 0, 0, 0.7);
 }
 
 .btn--dark:hover {
@@ -547,12 +615,12 @@ a {
 }
 
 .card .btn--dark:hover {
-  background: #201c3e;
-  border-color: #3b3470;
+  background: #161a2a;
+  border-color: #3a3424;
 }
 
 .btn--sm {
-  min-height: 40px;
+  min-height: 44px;
   padding: 0 1rem;
   font-size: 0.95rem;
 }
@@ -613,7 +681,7 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(90, 79, 192, 0.2) 0%, rgba(90, 79, 192, 0.45) 60%);
+  background: linear-gradient(180deg, rgba(7, 8, 12, 0.2) 0%, rgba(7, 8, 12, 0.45) 60%);
 }
 
 .hero__in {
@@ -648,7 +716,7 @@ a {
   height: 7px;
   border-radius: 50%;
   background: var(--gold);
-  box-shadow: 0 0 10px rgba(201, 194, 255, 0.6);
+  box-shadow: 0 0 10px rgba(212, 175, 90, 0.6);
 }
 
 .hero__title {
@@ -684,7 +752,7 @@ a {
   border: 1px solid var(--line);
   border-radius: 24px;
   background: var(--card);
-  box-shadow: 0 30px 70px -30px rgba(16, 10, 58, 0.8);
+  box-shadow: 0 30px 70px -30px rgba(0, 0, 0, 0.8);
 }
 
 .hero__shot img {
@@ -706,7 +774,7 @@ a {
   border-color: var(--line);
   background: var(--card);
   color: var(--text);
-  box-shadow: 0 12px 26px -16px rgba(16, 10, 58, 0.7);
+  box-shadow: 0 12px 26px -16px rgba(0, 0, 0, 0.7);
 }
 
 .hero__ask .pm-more {
@@ -823,6 +891,13 @@ a {
   line-height: 1.15;
   letter-spacing: -0.02em;
   text-wrap: balance;
+}
+
+.section__lead a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.2rem 0;
 }
 
 .section__lead {
@@ -979,8 +1054,8 @@ a.card:hover .card__media img {
 }
 
 .event a.event__btn:hover {
-  background: #201c3e;
-  border-color: #3b3470;
+  background: #161a2a;
+  border-color: #3a3424;
 }
 
 /* Links: a picture or a letter, the name, and the address. */
@@ -1008,7 +1083,7 @@ a.card:hover .card__media img {
   background: var(--card-2);
 }
 
-/* A letter on a small tile of the page purple: white on #5a4fc0 is 6.3:1. */
+/* A letter on a small tile of the page night: ivory on #0d1120 is 15:1. */
 .link__thumb--letter {
   display: grid;
   place-items: center;
@@ -1353,7 +1428,7 @@ a.card:hover .card__media img {
   width: 2.4rem;
   height: 2.4rem;
   border-radius: 50%;
-  background: rgba(201, 194, 255, 0.14);
+  background: rgba(212, 175, 90, 0.14);
   color: var(--gold);
   font-weight: 700;
 }
@@ -1499,6 +1574,10 @@ a.card:hover .card__media img {
 }
 
 .footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.2rem 0.35rem;
   color: var(--text);
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.45);
@@ -1509,8 +1588,10 @@ a.card:hover .card__media img {
 }
 
 .footer__nav a {
-  display: inline-block;
-  padding: 0.35rem 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.35rem 0.5rem;
 }
 
 .lic-badges {
@@ -1522,9 +1603,10 @@ a.card:hover .card__media img {
 .lic-badges > a {
   display: inline-flex;
   align-items: center;
-  min-height: 24px;
+  box-sizing: border-box;
+  min-height: 44px;
   margin: 0.2rem 0.15rem;
-  padding: 0 0.6rem;
+  padding: 0.35rem 0.65rem;
   border: 1px solid currentColor;
   border-radius: 999px;
   vertical-align: middle;
@@ -1627,6 +1709,136 @@ html[lang|="ar"] .btn {
   a.card:hover .card__media img {
     transform: none;
   }
+}
+
+/* ── About, contact, legal sub-pages ─────────────────────────────────── */
+.page-head {
+  width: 100%;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2.5rem var(--gutter) 1.25rem;
+  text-align: center;
+}
+
+.page-head__title {
+  margin: 0;
+  font: 700 clamp(2rem, 7vw, 2.75rem) / 1.08 var(--font);
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+.page-head__tag {
+  margin: 0.65rem 0 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+main.policy {
+  width: calc(100% - 2rem);
+  max-width: 44rem;
+  margin: 0 auto 3rem;
+  padding: 1.75rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+main.policy .section {
+  text-align: center;
+}
+
+main.policy .section__label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+main.policy .build__text {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--muted);
+  max-width: 32rem;
+  margin-inline: auto;
+}
+
+main.policy .build__text + .build__text,
+main.policy ul + .build__text {
+  margin-top: 0.75rem;
+}
+
+main.policy ul {
+  max-width: 32rem;
+  margin: 0.5rem auto 0;
+  padding-inline-start: 1.2rem;
+  text-align: start;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+main.policy li + li {
+  margin-top: 0.35rem;
+}
+
+main.policy a {
+  color: var(--text);
+}
+
+main.policy strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.footer__contact {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  /* Muted lavender fails 4.5:1 on --bg; footer sits on the page gradient. */
+  color: var(--text);
+}
+
+.footer__contact a {
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 0.2rem;
+  margin: -0.5rem 0;
+}
+
+/* Add to Chromebook badge: white (primary) badge, unaltered, >= 50px tall,
+   15px clear space on every side (chromeos.dev badge rules). */
+.cb-badge {
+  margin: 1rem 0 0.5rem;
+}
+
+.footer .cb-badge a {
+  display: inline-block;
+  min-height: 0;
+  padding: 0;
+  margin: 15px;
+  line-height: 0;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.cb-badge img {
+  display: block;
+  width: 200px;
+  height: 60px;
+}
+
+.cb-legal {
+  font-size: 0.75rem;
+  opacity: 0.8;
 }
   </style>
   <!-- /inline:css/glass.css -->
@@ -2002,7 +2214,7 @@ html[lang|="ar"] .btn {
             "name": "What exactly do I get after I pay?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A ready bot built for the pairs you name in your brief, delivered within 3.35 hours of confirmed payment and brief, plus a handover call to get it running on your machine. Starter and Pro ship the running program; Source ships the source code as well. Every seat is controlled from a private, encrypted chat on your phone and starts in dry mode (HOLD)."
+              "text": "A ready bot built for the pairs you name in your brief, delivered within 5–7 days of confirmed payment and brief, plus a handover call to get it running on your machine. Starter and Pro ship the running program; Source ships the source code as well. Every seat is controlled from a private, encrypted chat on your phone and starts in dry mode (HOLD)."
             }
           },
           {
@@ -2053,14 +2265,22 @@ html[lang|="ar"] .btn {
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+  <div id="elghaly-maintenance" role="note" lang="en" dir="ltr" style="background:#d4af5a;color:#07080c;text-align:center;font:600 15px/1.4 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;padding:10px 16px;position:relative;z-index:1000">This site is under maintenance until 11/11.</div>
 
-  <header class="nav">
+                                  <header class="nav">
     <div class="nav__in">
       <a class="brand" href="/" aria-label="elghaly home">elghaly</a>
-      <nav class="nav__links nav__links--always" aria-label="Main">
+      <a class="nav__badge" href="https://35.elghaly.dev/" rel="noopener noreferrer" title="35 desk"><span class="nav__badge-dot" aria-hidden="true">●</span> 35</a>
+      <nav class="nav__links nav__links--always nav__pill" aria-label="Main">
+        <a href="/#products">Products</a>
+        <a href="https://chatting.elghaly.dev/">Chatting</a>
         <a href="/plumb" aria-current="page">Plumb</a>
         <a href="/quay">QUAY</a>
-        <a href="/contact.html">Contact</a>
+      </nav>
+      <nav class="lang-switch" aria-label="Language">
+        <a class="lang-btn" href="/" hreflang="en" lang="en">English</a>
+        <a class="lang-btn" href="/ru/" hreflang="ru" lang="ru">Русский</a>
+        <a class="lang-btn" href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
       </nav>
     </div>
   </header>
@@ -2079,7 +2299,6 @@ html[lang|="ar"] .btn {
       <figure class="phero__art">
         <!-- ART PLACEHOLDER: plumb. Swap with tools/art/build_art.py; prompts in tools/art/PROMPTS.md -->
         <picture>
-          <source type="image/avif" srcset="/assets/art/plumb-400.avif 400w, /assets/art/plumb-800.avif 800w, /assets/art/plumb-1200.avif 1200w" sizes="(min-width: 900px) 560px, calc(100vw - 32px)">
           <img src="/assets/art/plumb-800.webp" srcset="/assets/art/plumb-400.webp 400w, /assets/art/plumb-800.webp 800w, /assets/art/plumb-1200.webp 1200w" sizes="(min-width: 900px) 560px, calc(100vw - 32px)" width="1200" height="750" alt="" fetchpriority="high">
         </picture>
       </figure>
@@ -2178,7 +2397,7 @@ html[lang|="ar"] .btn {
       <ol class="steps">
         <li><div><b>Choose a seat</b> <span>from the plan table and check out on our store.</span></div></li>
         <li><div><b>Send your brief:</b> <span>the seat tier, the pairs you name, and an email we can reach.</span></div></li>
-        <li><div><b>We deliver within 3.35 hours</b> <span>of your confirmed payment and brief: the software, set up for your brief, on your server or as a download.</span></div></li>
+        <li><div><b>We deliver within 5–7 days</b> <span>of your confirmed payment and brief: the software, set up for your brief, on your server or as a download.</span></div></li>
         <li><div><b>Handover call</b> <span>within 24 hours of delivery, to get it running on your machine.</span></div></li>
       </ol>
       <p class="note">Full details are on the <a href="/delivery.html">delivery page</a>.</p>
@@ -2196,7 +2415,7 @@ html[lang|="ar"] .btn {
         </details>
         <details>
           <summary>What exactly do I get after I pay?</summary>
-          <p>A ready bot built for the pairs you name in your brief, delivered within 3.35 hours of confirmed payment and brief, plus a handover call to get it running on your machine. Starter and Pro ship the running program; Source ships the source code as well. Every seat is controlled from a private, encrypted chat on your phone and starts in dry mode (HOLD).</p>
+          <p>A ready bot built for the pairs you name in your brief, delivered within 5–7 days of confirmed payment and brief, plus a handover call to get it running on your machine. Starter and Pro ship the running program; Source ships the source code as well. Every seat is controlled from a private, encrypted chat on your phone and starts in dry mode (HOLD).</p>
         </details>
         <details>
           <summary>What do I need on my side?</summary>
@@ -2229,8 +2448,10 @@ html[lang|="ar"] .btn {
   </main>
 
   <footer class="footer">
-    <p class="footer__nav"><a href="/">elghaly.dev</a> · <a href="/chatting">Chatting</a> · <a href="/plumb">Plumb</a> · <a href="/quay">QUAY</a> · <a href="/about.html">About</a> · <a href="/contact.html">Contact</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a></p>
-    <p>elghaly · <a href="mailto:support@elghaly.dev">support@elghaly.dev</a></p>
+    <p class="footer__nav"><a href="/">elghaly.dev</a> · <a href="https://chatting.elghaly.dev/">Chatting</a> · <a href="/plumb">Plumb</a> · <a href="/quay">QUAY</a> · <a href="/about.html">About</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a></p>
+    <p class="footer__mail"><a href="mailto:support@elghaly.dev">support@elghaly.dev</a></p>
+    <p class="footer__only"><span aria-hidden="true">🚨</span> This is our only address. We never reach out by DM, chat app or unplanned phone call, and we never ask for keys or seed phrases. Anyone else using our name is not us.</p>
+    <p>elghaly, LLC</p>
     <p class="lic-badges"><a href="https://creativecommons.org/licenses/by/4.0/" rel="license">© elghaly · CC BY 4.0</a> <a href="https://github.com/Alarm2024/elghaly/blob/main/LICENSE">Code: MIT</a> <a href="https://github.com/Alarm2024">Open source</a></p>
   </footer>
 </body>
