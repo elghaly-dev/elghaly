@@ -337,6 +337,10 @@ img { display: block; max-width: 100%; }
   padding: 40px 0 8px;
   text-align: center;
 }
+.head.wrap {
+  /* Extra side room so the skewed italic wordmark does not kiss the viewport. */
+  width: min(100% - clamp(40px, 11vw, 56px), 980px);
+}
 .motto {
   margin: 0 auto;
   max-width: 34ch;
@@ -348,15 +352,20 @@ img { display: block; max-width: 100%; }
   line-height: 1.35;
 }
 .mark {
+  display: inline-block;
   margin: 18px 0 0;
+  padding: 0.14em 0.22em 0.18em;
+  max-width: 100%;
+  white-space: nowrap;
   font-family: "Cormorant Garamond", Georgia, serif;
   font-style: italic;
   font-weight: 400;
-  font-size: clamp(4.5rem, 22vw, 7rem);
-  line-height: 1;
+  font-size: clamp(2.6rem, 17vw, 7rem);
+  line-height: 1.16;
   letter-spacing: .01em;
   /* A little extra lean on top of the italic. */
   transform: skewX(-6deg);
+  transform-origin: center center;
   background: linear-gradient(100deg, var(--gold-soft) 0%, var(--gold) 45%, #b8893a 100%);
   -webkit-background-clip: text;
   background-clip: text;
