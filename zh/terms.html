@@ -139,7 +139,7 @@
     #elghaly-consent .ec-text {
       flex: 1 1 16rem;
       margin: 0;
-      color: #a39b88;
+      color: #d4bc7a;
     }
     #elghaly-consent .ec-text a {
       display: inline-flex;
@@ -166,13 +166,13 @@
       transition: background 0.25s ease, color 0.25s ease;
     }
     #elghaly-consent .ec-btn--primary {
-      background: #d4af5a;
-      border-color: #d4af5a;
+      background: #ffc828;
+      border-color: #ffc828;
       color: #07080c;
     }
     #elghaly-consent .ec-btn--primary:hover,
     #elghaly-consent .ec-btn--primary:focus-visible {
-      background: #ecd9a0;
+      background: #ffe566;
     }
     #elghaly-consent .ec-btn--ghost {
       background: #17142f;
@@ -198,14 +198,11 @@
   <link rel="preload" href="/fonts/outfit-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
   <!-- inline:css/glass.css — edit css/glass.css, then: python3 tools/site-kit/sitekit.py inline zh/terms.html css/glass.css -->
   <style>
-/* elghaly.dev pages: night and gold, the palette of the home page.
-   A near-black night, dark lapis cards, ivory headings and text, warm grey
-   for the quieter text, and gold (token --gold, #d4af5a) for the one thing
-   to press on each screen. Ivory on the night is 16:1, warm grey 7:1,
-   gold 9:1.
-   Phones first: everything below is the iPhone layout, and the
-   min-width queries widen it. Inlined into each page by
-   tools/site-kit/sitekit.py, so this file is the one to edit. */
+/* elghaly.dev pages: night and molten gold.
+   Near-black night, lapis cards, warm gold body copy, vivid yellow-gold
+   accents (token --gold, #ffc828), orange depth in metallic gradients.
+   Phones first: everything below is the iPhone layout; wider breakpoints
+   follow. Inlined into each page by tools/site-kit/sitekit.py — edit here. */
 
 /* Fonts are served from /fonts (SIL OFL 1.1, see fonts/OFL-*.txt). */
 @font-face {
@@ -260,26 +257,29 @@
   --card-2: #161a2a;
   --line: #1c2030;
   --line-2: #2b2f40;
-  --text: #efe8d8;
-  --muted: #a39b88;
-  --gold: #d4af5a;
-  --gold-2: #ecd9a0;
-  --gold-bronze: #8b6914;
-  --gold-highlight: #f2e4b8;
+  --text: #f8e9c8;
+  --muted: #d4bc7a;
+  --gold: #ffc828;
+  --gold-2: #ffe566;
+  --gold-deep: #e07810;
+  --gold-highlight: #fff6b8;
   --gold-ink: #07080c;
+  --gold-a: 255, 186, 48;
   --metallic-heading: linear-gradient(
     168deg,
-    var(--gold-bronze) 0%,
-    #a67c1a 18%,
-    #c49a3c 32%,
-    var(--gold-highlight) 44%,
-    var(--gold-2) 52%,
-    var(--gold) 62%,
-    #b8893a 78%,
-    var(--gold-bronze) 100%
+    #c45a08 0%,
+    var(--gold-deep) 14%,
+    #ff9f1a 28%,
+    var(--gold) 40%,
+    var(--gold-highlight) 48%,
+    #fffbe6 52%,
+    var(--gold-2) 58%,
+    var(--gold) 66%,
+    #f09018 80%,
+    #c45a08 100%
   );
   --pos: #7be3b0; /* mint: small positive numbers only, and sparingly */
-  --on-bg-line: rgba(212, 175, 90, 0.22);
+  --on-bg-line: rgba(var(--gold-a), 0.28);
   --shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 18px 40px -20px rgba(0, 0, 0, 0.6);
   --shadow-hi: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 26px 52px -22px rgba(0, 0, 0, 0.75);
   --radius: 22px;
@@ -511,7 +511,7 @@ a.lang-btn:focus-visible {
 .lang-btn[aria-pressed="true"],
 a.lang-btn[aria-current="page"] {
   border-color: var(--line);
-  background: rgba(212, 175, 90, 0.14);
+  background: rgba(var(--gold-a), 0.14);
   color: var(--gold-2);
 }
 
@@ -608,7 +608,7 @@ a.lang-btn[aria-current="page"] {
 
 .btn--dark {
   background: var(--card);
-  border-color: rgba(212, 175, 90, 0.35);
+  border-color: rgba(var(--gold-a), 0.35);
   color: var(--gold);
   font-weight: 600;
   box-shadow: 0 12px 26px -16px rgba(0, 0, 0, 0.7);
@@ -631,7 +631,7 @@ a.lang-btn[aria-current="page"] {
 
 .card .btn--dark:hover {
   background: #161a2a;
-  border-color: #3a3424;
+  border-color: #5c3a12;
 }
 
 .btn--sm {
@@ -731,7 +731,7 @@ a.lang-btn[aria-current="page"] {
   height: 7px;
   border-radius: 50%;
   background: var(--gold);
-  box-shadow: 0 0 10px rgba(212, 175, 90, 0.6);
+  box-shadow: 0 0 12px rgba(var(--gold-a), 0.55), 0 0 24px rgba(224, 120, 16, 0.22);
 }
 
 .hero__title {
@@ -938,7 +938,7 @@ a.lang-btn[aria-current="page"] {
   min-height: 44px;
   padding: 0.2rem 0;
   color: var(--gold);
-  text-decoration-color: rgba(212, 175, 90, 0.55);
+  text-decoration-color: rgba(var(--gold-a), 0.55);
 }
 .section__lead a:hover,
 .section__lead a:focus-visible {
@@ -1101,7 +1101,7 @@ a.card:hover .card__media img {
 
 .event a.event__btn:hover {
   background: #161a2a;
-  border-color: #3a3424;
+  border-color: #5c3a12;
 }
 
 /* Links: a picture or a letter, the name, and the address. */
@@ -1474,7 +1474,7 @@ a.card:hover .card__media img {
   width: 2.4rem;
   height: 2.4rem;
   border-radius: 50%;
-  background: rgba(212, 175, 90, 0.14);
+  background: rgba(var(--gold-a), 0.14);
   color: var(--gold);
   font-weight: 700;
 }
@@ -1854,7 +1854,7 @@ main.policy li + li {
 
 main.policy a {
   color: var(--gold);
-  text-decoration-color: rgba(212, 175, 90, 0.55);
+  text-decoration-color: rgba(var(--gold-a), 0.55);
 }
 
 main.policy a:hover,
@@ -1925,7 +1925,7 @@ main.policy strong {
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <div id="elghaly-maintenance" role="note" lang="en" dir="ltr" style="background:#d4af5a;color:#07080c;text-align:center;font:600 15px/1.4 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;padding:10px 16px;position:relative;z-index:1000">This site is under maintenance until 11/11.</div>
+  <div id="elghaly-maintenance" role="note" lang="en" dir="ltr" style="background:#ffc828;color:#07080c;text-align:center;font:600 15px/1.4 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;padding:10px 16px;position:relative;z-index:1000">This site is under maintenance until 11/11.</div>
 
       <header class="nav">
     <div class="nav__in">

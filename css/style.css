@@ -1,5 +1,4 @@
-/* elghaly.dev Iris policy pages: night and champagne gold, aligned with
-   css/glass.css. Ivory on the night is 16:1, warm grey 7:1, gold 9:1. */
+/* elghaly.dev Iris policy pages: night and molten gold, aligned with css/glass.css. */
 
 @font-face {
   font-family: "Cinzel Wordmark";
@@ -42,27 +41,30 @@
   --card-2: #161a2a;
   --line: #1c2030;
   --line-2: #2b2f40;
-  --text: #efe8d8;
-  --text-muted: #a39b88;
+  --text: #f8e9c8;
+  --text-muted: #d4bc7a;
   --muted: var(--text-muted);
-  --gold: #d4af5a;
-  --gold-2: #ecd9a0;
-  --gold-bronze: #8b6914;
-  --gold-highlight: #f2e4b8;
+  --gold: #ffc828;
+  --gold-2: #ffe566;
+  --gold-deep: #e07810;
+  --gold-highlight: #fff6b8;
   --gold-ink: #07080c;
+  --gold-a: 255, 186, 48;
   --metallic-heading: linear-gradient(
     168deg,
-    var(--gold-bronze) 0%,
-    #a67c1a 18%,
-    #c49a3c 32%,
-    var(--gold-highlight) 44%,
-    var(--gold-2) 52%,
-    var(--gold) 62%,
-    #b8893a 78%,
-    var(--gold-bronze) 100%
+    #c45a08 0%,
+    var(--gold-deep) 14%,
+    #ff9f1a 28%,
+    var(--gold) 40%,
+    var(--gold-highlight) 48%,
+    #fffbe6 52%,
+    var(--gold-2) 58%,
+    var(--gold) 66%,
+    #f09018 80%,
+    #c45a08 100%
   );
   --accent: var(--gold);
-  --accent-dim: rgba(212, 175, 90, 0.22);
+  --accent-dim: rgba(var(--gold-a), 0.28);
   --font-sans: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
   --space-xs: 0.5rem;
   --space-sm: 1rem;
@@ -247,7 +249,7 @@ body {
 
 .btn--dark {
   background: var(--card-2);
-  border-color: rgba(212, 175, 90, 0.35);
+  border-color: rgba(var(--gold-a), 0.35);
   color: var(--gold);
   font-weight: 600;
 }
@@ -292,7 +294,7 @@ main strong {
 
 main a {
   color: var(--gold);
-  text-decoration-color: rgba(212, 175, 90, 0.55);
+  text-decoration-color: rgba(var(--gold-a), 0.55);
 }
 
 main a:hover,
@@ -312,7 +314,7 @@ footer {
 
 footer a {
   color: var(--gold-2);
-  text-decoration-color: rgba(212, 175, 90, 0.45);
+  text-decoration-color: rgba(var(--gold-a), 0.45);
 }
 
 footer a:hover,

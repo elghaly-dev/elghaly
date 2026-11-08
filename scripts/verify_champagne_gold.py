@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify champagne-gold theme: token contrast + rendered colors + screenshots."""
+"""Verify molten-gold theme: token contrast + rendered colors + screenshots."""
 from __future__ import annotations
 
 import math
@@ -13,10 +13,10 @@ ARTIFACTS.mkdir(parents=True, exist_ok=True)
 # Design tokens (must match css/glass.css)
 BG = "#07080c"
 CARD = "#10131f"
-TEXT = "#efe8d8"
-MUTED = "#a39b88"
-GOLD = "#d4af5a"
-GOLD_2 = "#ecd9a0"
+TEXT = "#f8e9c8"
+MUTED = "#d4bc7a"
+GOLD = "#ffc828"
+GOLD_2 = "#ffe566"
 GOLD_INK = "#07080c"
 
 PAGES = [
