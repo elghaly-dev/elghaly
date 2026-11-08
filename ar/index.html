@@ -336,7 +336,7 @@ img { display: block; max-width: 100%; }
   font-size: .9rem;
   text-decoration: none;
 }
-.lang-btn:hover { color: var(--ivory); }
+.lang-btn:hover { color: var(--gold-soft); }
 .lang-btn[aria-current="page"] {
   background: rgba(212, 175, 90, .14);
   color: var(--gold-soft);
@@ -350,6 +350,10 @@ img { display: block; max-width: 100%; }
   text-align: center;
   overflow-x: clip;
 }
+.head.wrap {
+  /* Extra side room so the skewed italic wordmark does not kiss the viewport. */
+  width: min(100% - clamp(40px, 11vw, 56px), 980px);
+}
 .motto {
   margin: 0 auto;
   max-width: 34ch;
@@ -361,16 +365,20 @@ img { display: block; max-width: 100%; }
   line-height: 1.35;
 }
 .mark {
+  display: inline-block;
   margin: 18px auto 0;
+  padding: 0.14em 0.22em 0.18em;
   max-width: 100%;
+  white-space: nowrap;
   font-family: "Cormorant Garamond", Georgia, serif;
   font-style: italic;
   font-weight: 400;
-  font-size: clamp(2.75rem, 15.5vw, 7rem);
-  line-height: 1.05;
+  font-size: clamp(2.6rem, 17vw, 7rem);
+  line-height: 1.16;
   letter-spacing: .01em;
   /* A little extra lean on top of the italic. */
   transform: skewX(-6deg);
+  transform-origin: center center;
   color: transparent;
   background: linear-gradient(
     168deg,
@@ -418,6 +426,7 @@ img { display: block; max-width: 100%; }
   font-weight: 500;
   font-size: clamp(1.2rem, 5vw, 1.6rem);
   letter-spacing: .01em;
+  color: var(--gold-soft);
 }
 .tiles {
   display: grid;
@@ -543,7 +552,8 @@ html[lang="zh-Hans"] .team__title { font-family: inherit; font-style: normal; fo
   color: var(--muted);
   text-decoration: none;
 }
-.footer a:hover { color: var(--ivory); }
+.footer a:hover,
+.footer a:focus-visible { color: var(--gold-soft); }
 .footer .signs { font-size: 1rem; letter-spacing: .25em; }
 .footer__only {
   max-width: 44ch;

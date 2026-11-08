@@ -283,7 +283,20 @@
   --muted: #a39b88;
   --gold: #d4af5a;
   --gold-2: #ecd9a0;
+  --gold-bronze: #8b6914;
+  --gold-highlight: #f2e4b8;
   --gold-ink: #07080c;
+  --metallic-heading: linear-gradient(
+    168deg,
+    var(--gold-bronze) 0%,
+    #a67c1a 18%,
+    #c49a3c 32%,
+    var(--gold-highlight) 44%,
+    var(--gold-2) 52%,
+    var(--gold) 62%,
+    #b8893a 78%,
+    var(--gold-bronze) 100%
+  );
   --pos: #7be3b0; /* mint: small positive numbers only, and sparingly */
   --on-bg-line: rgba(212, 175, 90, 0.22);
   --shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 18px 40px -20px rgba(0, 0, 0, 0.6);
@@ -457,7 +470,12 @@ a {
 }
 
 .nav__links a:hover,
+.nav__links a:focus-visible {
+  color: var(--gold-2);
+  background: var(--card-2);
+}
 .nav__links a[aria-current="page"] {
+  color: var(--gold-2);
   background: var(--card-2);
 }
 
@@ -727,6 +745,18 @@ a.lang-btn[aria-current="page"] {
   line-height: 1.07;
   letter-spacing: -0.03em;
   text-wrap: balance;
+  color: transparent;
+  background: var(--metallic-heading);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+  .hero__title {
+    background: none;
+    -webkit-text-fill-color: unset;
+    color: var(--gold);
+  }
 }
 
 .hero__sub {
@@ -891,6 +921,18 @@ a.lang-btn[aria-current="page"] {
   line-height: 1.15;
   letter-spacing: -0.02em;
   text-wrap: balance;
+  color: transparent;
+  background: var(--metallic-heading);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+  .section__title {
+    background: none;
+    -webkit-text-fill-color: unset;
+    color: var(--gold);
+  }
 }
 
 .section__lead a {
@@ -898,6 +940,12 @@ a.lang-btn[aria-current="page"] {
   align-items: center;
   min-height: 44px;
   padding: 0.2rem 0;
+  color: var(--gold);
+  text-decoration-color: rgba(212, 175, 90, 0.55);
+}
+.section__lead a:hover,
+.section__lead a:focus-visible {
+  color: var(--gold-2);
 }
 
 .section__lead {
@@ -990,6 +1038,7 @@ a.card:hover .card__media img {
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: -0.01em;
+  color: var(--gold-2);
 }
 
 .card__text {
@@ -1476,7 +1525,9 @@ a.card:hover .card__media img {
   color: var(--muted);
 }
 
-.store a:hover {
+.store a:hover,
+.store a:focus-visible {
+  color: var(--gold-2);
   background: var(--card-2);
   border-color: var(--line-2);
 }
@@ -1583,8 +1634,10 @@ a.card:hover .card__media img {
   text-decoration-color: rgba(255, 255, 255, 0.45);
 }
 
-.footer a:hover {
-  text-decoration-color: var(--text);
+.footer a:hover,
+.footer a:focus-visible {
+  color: var(--gold-2);
+  text-decoration-color: var(--gold-2);
 }
 
 .footer__nav a {
@@ -1840,6 +1893,7 @@ main.policy strong {
   font-size: 0.75rem;
   opacity: 0.8;
 }
+
   </style>
   <!-- /inline:css/glass.css -->
   <script type="application/ld+json">
