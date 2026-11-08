@@ -334,7 +334,7 @@ a {
 }
 
 :focus-visible {
-  outline: 2px solid var(--text);
+  outline: 2px solid var(--gold);
   outline-offset: 3px;
   border-radius: 6px;
 }
@@ -393,10 +393,15 @@ a {
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--text);
+  color: var(--gold);
   text-decoration: none;
   direction: ltr;
   unicode-bidi: isolate;
+}
+
+.brand:hover,
+.brand:focus-visible {
+  color: var(--gold-2);
 }
 
 .nav__badge {
@@ -444,7 +449,7 @@ a {
   min-height: 44px;
   padding: 0.5rem 0.8rem;
   border-radius: 999px;
-  color: var(--text);
+  color: var(--gold-2);
   font-size: 0.95rem;
   text-decoration: none;
   transition: color 0.2s, background-color 0.2s;
@@ -496,10 +501,18 @@ a.lang-btn {
   white-space: nowrap;
 }
 
+.lang-btn:hover,
+a.lang-btn:hover,
+.lang-btn:focus-visible,
+a.lang-btn:focus-visible {
+  color: var(--gold-2);
+}
+
 .lang-btn[aria-pressed="true"],
 a.lang-btn[aria-current="page"] {
   border-color: var(--line);
-  background: var(--card);
+  background: rgba(212, 175, 90, 0.14);
+  color: var(--gold-2);
 }
 
 /* Phones: badge, pill nav and four languages share one row. */
@@ -595,14 +608,17 @@ a.lang-btn[aria-current="page"] {
 
 .btn--dark {
   background: var(--card);
-  border-color: var(--line);
-  color: var(--text);
+  border-color: rgba(212, 175, 90, 0.35);
+  color: var(--gold);
+  font-weight: 600;
   box-shadow: 0 12px 26px -16px rgba(0, 0, 0, 0.7);
 }
 
-.btn--dark:hover {
+.btn--dark:hover,
+.btn--dark:focus-visible {
   background: var(--card-2);
-  border-color: var(--line-2);
+  border-color: var(--gold);
+  color: var(--gold-2);
   transform: translateY(-1px);
 }
 
@@ -1758,16 +1774,29 @@ html[lang|="ar"] .btn {
   margin: 0;
   font: 700 clamp(2rem, 7vw, 2.75rem) / 1.08 var(--font);
   letter-spacing: -0.03em;
-  color: var(--text);
+  text-wrap: balance;
+  color: transparent;
+  background: var(--metallic-heading);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+  .page-head__title {
+    background: none;
+    -webkit-text-fill-color: unset;
+    color: var(--gold);
+  }
 }
 
 .page-head__tag {
   margin: 0.65rem 0 0;
   font-size: 0.85rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--gold);
 }
 
 main.policy {
@@ -1793,7 +1822,7 @@ main.policy .section__label {
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--text);
+  color: var(--gold);
   margin-bottom: 1rem;
 }
 
@@ -1824,7 +1853,14 @@ main.policy li + li {
 }
 
 main.policy a {
-  color: var(--text);
+  color: var(--gold);
+  text-decoration-color: rgba(212, 175, 90, 0.55);
+}
+
+main.policy a:hover,
+main.policy a:focus-visible {
+  color: var(--gold-2);
+  text-decoration-color: var(--gold-2);
 }
 
 main.policy strong {
@@ -1874,16 +1910,15 @@ main.policy strong {
   font-size: 0.75rem;
   opacity: 0.8;
 }
-
   </style>
   <!-- /inline:css/glass.css -->
   <link rel="preload" href="/fonts/cinzel-500-wordmark.woff2" as="font" type="font/woff2" crossorigin>
   <style>
     .policy p + p, .policy ul + p { margin-top: .75rem; }
-    .policy ul { max-width: 32rem; margin: .5rem auto 0; padding-left: 1.2rem; text-align: left; color: var(--text-muted); line-height: 1.7; }
+    .policy ul { max-width: 32rem; margin: .5rem auto 0; padding-left: 1.2rem; text-align: left; color: var(--muted); line-height: 1.7; }
     .policy li + li { margin-top: .35rem; }
     .policy strong { color: var(--text); font-weight: 600; }
-    .policy a { color: var(--accent); text-underline-offset: 2px; }
+    .policy a { color: var(--gold); text-underline-offset: 2px; }
     .footer__biz { margin-top: .4rem; font-size: .85rem; }
   </style>
 <style id="lic-badges-css">.lic-badges{margin:.75rem 0 0;font-size:.75rem;line-height:1.2}.lic-badges>a,.lic-badges>span{display:inline-flex;align-items:center;min-height:24px;margin:.2rem .15rem;padding:0 .6rem;border:1px solid currentColor;border-radius:999px;color:inherit;vertical-align:middle}.lic-badges>a{text-decoration:underline;text-underline-offset:2px}.lic-badges>span{text-decoration:none}</style>
