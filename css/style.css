@@ -1,10 +1,5 @@
-/* elghaly.dev sub-pages (About, Contact, Delivery, Refunds, Terms,
-   Privacy, 404 and the Iris policies): palette 5b, as on the home page.
-   A soft indigo-purple page, one near-black card that holds the words,
-   white bold headings, lavender for the quieter text on the card, and
-   gold for the one button. Lavender is 3.2:1 on the purple, so text on
-   the purple is white (5:1 or more) and lavender stays on the card
-   (9.8:1). */
+/* elghaly.dev Iris policy pages (hotlinked from iris.* subdomains):
+   soot-black and gold, aligned with css/glass.css tokens. */
 
 /* Fonts are served from /fonts (SIL OFL 1.1, see fonts/OFL-*.txt), the latin subset,
    so no third-party request sits on the critical path. */
@@ -44,21 +39,20 @@
 
 :root {
   color-scheme: dark;
-  --bg: #5a4fc0;
-  --bg-2: #6a5fd0;
-  --card: #0d0b1f;
-  --card-2: #17142f;
-  --line: #1c1838;
-  --line-2: #2e2856;
-  --text: #ffffff;
-  --text-muted: #b9b3e6;
-  --gold: #c9c2ff;
-  --gold-2: #e2deff;
-  --gold-ink: #17123d;
-  /* The names the pages' own small style blocks use: links and focus
-     rings are white, input borders a faint white. */
-  --accent: var(--text);
-  --accent-dim: rgba(255, 255, 255, 0.22);
+  --bg: #0b0b0c;
+  --bg-2: #0f0f11;
+  --card: #141416;
+  --card-2: #1a1a1d;
+  --line: rgba(255, 255, 255, 0.1);
+  --line-2: rgba(255, 255, 255, 0.16);
+  --text: #e8e4d8;
+  --text-muted: #808080;
+  --gold: #d4af37;
+  --gold-2: #f3e5ab;
+  --gold-ink: #0b0b0c;
+  --border-gold: rgba(212, 175, 55, 0.3);
+  --accent: var(--gold);
+  --accent-dim: var(--border-gold);
   --font-sans: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
   --space-xs: 0.5rem;
   --space-sm: 1rem;
@@ -92,13 +86,44 @@ body {
   color: var(--text);
   font-family: var(--font-sans);
   font-weight: 400;
-  font-size: 1.0625rem;
-  line-height: 1.65;
+  font-size: 1rem;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
+::selection {
+  background: var(--gold);
+  color: #000;
+}
+
+a {
+  color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: var(--border-gold);
+  text-underline-offset: 3px;
+}
+
+a:visited {
+  color: #b8922e;
+}
+
+a:hover {
+  color: var(--gold-2);
+  text-decoration-color: var(--gold-2);
+}
+
+.hero__brand a,
+.btn {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn--primary:visited {
+  color: var(--gold-ink);
+}
+
 :focus-visible {
-  outline: 2px solid var(--text);
+  outline: 2px solid var(--gold);
   outline-offset: 3px;
 }
 
@@ -123,7 +148,7 @@ body {
   margin-top: auto;
 }
 
-/* Hero: on the purple, so everything here is white. */
+/* Hero */
 .hero {
   width: 100%;
   max-width: calc(var(--max-width) + var(--space-md) * 2);
@@ -137,19 +162,12 @@ body {
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.2em;
-  /* Tracking also lands after the last letter; this balances it so the
-     word sits centred. The wordmark is Latin, so it stays left-to-right. */
   padding-left: 0.2em;
   direction: ltr;
   unicode-bidi: isolate;
   text-transform: uppercase;
   color: var(--text);
   margin-bottom: var(--space-md);
-}
-
-.hero__brand a {
-  color: inherit;
-  text-decoration: none;
 }
 
 .hero__title {
@@ -173,7 +191,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--text);
+  color: var(--gold);
 }
 
 .hero__cta {
@@ -184,14 +202,11 @@ body {
   gap: var(--space-sm);
 }
 
-/* page-menu.js draws a see-through button; here it is a near-black
-   secondary button. Its panel takes the colour of the page behind it
-   from a script, hence the !important. */
 .page-menu .pm {
   border-color: var(--line);
   background: var(--card);
   color: var(--text);
-  box-shadow: 0 12px 26px -16px rgba(16, 10, 58, 0.7);
+  box-shadow: 0 12px 26px -16px rgba(0, 0, 0, 0.7);
 }
 
 .page-menu .pm-more {
@@ -216,7 +231,6 @@ body {
   font-family: var(--font-sans);
   font-size: 1rem;
   font-weight: 700;
-  text-decoration: none;
   cursor: pointer;
   transition: background var(--transition), border-color var(--transition);
 }
@@ -232,6 +246,12 @@ body {
   background: var(--gold-2);
 }
 
+.btn--primary:disabled,
+.btn--primary[aria-disabled="true"] {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
 .btn--dark {
   background: var(--card-2);
   border-color: var(--line-2);
@@ -241,10 +261,9 @@ body {
 
 .btn--dark:hover,
 .btn--dark:focus-visible {
-  background: #201c3e;
+  background: var(--card);
 }
 
-/* The words: one near-black card, like the cards on the home page. */
 main {
   width: calc(100% - 2rem);
   max-width: 44rem;
@@ -256,7 +275,7 @@ main {
   border: 1px solid var(--line);
   border-radius: 24px;
   background: var(--card);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 24px 52px -24px rgba(16, 10, 58, 0.7);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 24px 52px -24px rgba(0, 0, 0, 0.7);
 }
 
 .section {
@@ -268,7 +287,7 @@ main {
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--text);
+  color: var(--gold);
   margin-bottom: var(--space-sm);
 }
 
@@ -280,7 +299,6 @@ main {
   margin-inline: auto;
 }
 
-/* Footer: on the purple, so white. */
 .footer {
   width: 100%;
   max-width: calc(var(--max-width) + var(--space-md) * 2);
@@ -294,16 +312,17 @@ main {
 }
 
 .footer a {
-  color: var(--text);
+  color: var(--gold);
   text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 0.45);
+  text-decoration-color: var(--border-gold);
   text-underline-offset: 3px;
-  transition: text-decoration-color var(--transition);
+  transition: color var(--transition), text-decoration-color var(--transition);
 }
 
 .footer a:hover,
 .footer a:focus-visible {
-  text-decoration-color: var(--text);
+  color: var(--gold-2);
+  text-decoration-color: var(--gold-2);
 }
 
 @media (min-width: 768px) {
@@ -326,5 +345,27 @@ main {
   *::before,
   *::after {
     transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  :root {
+    color-scheme: light;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #111 !important;
+  }
+
+  a {
+    color: #000 !important;
+  }
+
+  main {
+    border-color: #ccc !important;
+    background: #fff !important;
+    box-shadow: none !important;
   }
 }

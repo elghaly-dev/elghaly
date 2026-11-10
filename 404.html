@@ -8,7 +8,7 @@
        crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#07080c">
+  <meta name="theme-color" content="#0B0B0C">
   <title>Not found · elghaly</title>
   <link rel="icon" href="/favicon.ico?v=e1" sizes="any">
   <link rel="icon" href="/favicon.svg?v=e1" type="image/svg+xml">
@@ -18,13 +18,11 @@
   <link rel="preload" href="/fonts/outfit-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/outfit-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <!-- inline:css/glass.css — edit css/glass.css, then: python3 tools/site-kit/sitekit.py inline 404.html css/glass.css -->
-  <!-- inline:css/glass.css — edit css/glass.css, then: python3 tools/site-kit/sitekit.py inline 404.html css/glass.css -->
   <style>
-/* elghaly.dev pages: night and gold, the palette of the home page.
-   A near-black night, dark lapis cards, ivory headings and text, warm grey
-   for the quieter text, and gold (token --gold, #d4af5a) for the one thing
-   to press on each screen. Ivory on the night is 16:1, warm grey 7:1,
-   gold 9:1.
+/* elghaly.dev pages: soot-black and gold.
+   Soot (#0B0B0C), surface cards (#141416), parchment text (#E8E4D8),
+   muted grey (#808080, ≥4.5:1 on soot), accent gold (#D4AF37, ~8.5:1 on soot).
+   Button ink on gold is #0B0B0C (~12:1 on #D4AF37).
    Phones first: everything below is the iPhone layout, and the
    min-width queries widen it. Inlined into each page by
    tools/site-kit/sitekit.py, so this file is the one to edit. */
@@ -76,19 +74,20 @@
 
 :root {
   color-scheme: dark;
-  --bg: #07080c;
-  --bg-2: #0d1120;
-  --card: #10131f;
-  --card-2: #161a2a;
-  --line: #1c2030;
-  --line-2: #2b2f40;
-  --text: #efe8d8;
-  --muted: #a39b88;
-  --gold: #d4af5a;
-  --gold-2: #ecd9a0;
-  --gold-ink: #07080c;
+  --bg: #0b0b0c;
+  --bg-2: #0f0f11;
+  --card: #141416;
+  --card-2: #1a1a1d;
+  --line: rgba(255, 255, 255, 0.1);
+  --line-2: rgba(255, 255, 255, 0.16);
+  --text: #e8e4d8;
+  --muted: #808080;
+  --gold: #d4af37;
+  --gold-2: #f3e5ab;
+  --gold-ink: #0b0b0c;
+  --border-gold: rgba(212, 175, 55, 0.3);
   --pos: #7be3b0; /* mint: small positive numbers only, and sparingly */
-  --on-bg-line: rgba(212, 175, 90, 0.22);
+  --on-bg-line: var(--border-gold);
   --shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 18px 40px -20px rgba(0, 0, 0, 0.6);
   --shadow-hi: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 26px 52px -22px rgba(0, 0, 0, 0.75);
   --radius: 22px;
@@ -115,9 +114,14 @@ body {
   margin: 0;
   min-height: 100dvh;
   color: var(--text);
-  font: 400 1.0625rem/1.6 var(--font);
+  font: 400 1rem/1.6 var(--font);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+}
+
+::selection {
+  background: var(--gold);
+  color: #000;
 }
 
 /* The page colour: a fixed layer, because background-attachment: fixed
@@ -138,12 +142,56 @@ img {
 }
 
 a {
-  color: var(--text);
+  color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: var(--border-gold);
   text-underline-offset: 3px;
 }
 
+a:visited {
+  color: #b8922e;
+}
+
+a:hover {
+  color: var(--gold-2);
+  text-decoration-color: var(--gold-2);
+}
+
+.brand,
+.nav__links a,
+.lang-btn,
+a.lang-btn,
+a.card,
+.link,
+.store a,
+.event a.event__btn,
+.tile,
+.btn,
+.skip,
+.lic-badges > a {
+  text-decoration: none;
+}
+
+.brand,
+.nav__links a,
+.lang-btn,
+a.lang-btn,
+a.card,
+.link,
+.store a,
+.event a.event__btn,
+.tile,
+.btn--dark {
+  color: var(--text);
+}
+
+a.card:hover,
+.link:hover {
+  color: var(--text);
+}
+
 :focus-visible {
-  outline: 2px solid var(--text);
+  outline: 2px solid var(--gold);
   outline-offset: 3px;
   border-radius: 6px;
 }
@@ -170,13 +218,13 @@ a {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(7, 8, 12, 0.94);
+  background: rgba(11, 11, 12, 0.94);
   border-bottom: 1px solid var(--on-bg-line);
 }
 
 @supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
   .nav {
-    background: rgba(7, 8, 12, 0.78);
+    background: rgba(11, 11, 12, 0.78);
     -webkit-backdrop-filter: saturate(160%) blur(16px);
     backdrop-filter: saturate(160%) blur(16px);
   }
@@ -391,10 +439,24 @@ a.lang-btn[aria-current="page"] {
   box-shadow: 0 12px 26px -14px rgba(26, 20, 5, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.45);
 }
 
-.btn--primary:hover {
+.btn--primary:hover,
+.btn--primary:focus-visible {
   background: var(--gold-2);
+  color: var(--gold-ink);
   transform: translateY(-1px);
   box-shadow: 0 16px 32px -14px rgba(26, 20, 5, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.btn--primary:visited {
+  color: var(--gold-ink);
+}
+
+.btn--primary:disabled,
+.btn--primary[aria-disabled="true"] {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
 }
 
 .btn--dark {
@@ -418,8 +480,8 @@ a.lang-btn[aria-current="page"] {
 }
 
 .card .btn--dark:hover {
-  background: #161a2a;
-  border-color: #3a3424;
+  background: var(--card-2);
+  border-color: var(--border-gold);
 }
 
 .btn--sm {
@@ -484,7 +546,7 @@ a.lang-btn[aria-current="page"] {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(7, 8, 12, 0.2) 0%, rgba(7, 8, 12, 0.45) 60%);
+  background: linear-gradient(180deg, rgba(11, 11, 12, 0.2) 0%, rgba(11, 11, 12, 0.45) 60%);
 }
 
 .hero__in {
@@ -519,7 +581,7 @@ a.lang-btn[aria-current="page"] {
   height: 7px;
   border-radius: 50%;
   background: var(--gold);
-  box-shadow: 0 0 10px rgba(212, 175, 90, 0.6);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.6);
 }
 
 .hero__title {
@@ -857,8 +919,8 @@ a.card:hover .card__media img {
 }
 
 .event a.event__btn:hover {
-  background: #161a2a;
-  border-color: #3a3424;
+  background: var(--card-2);
+  border-color: var(--line-2);
 }
 
 /* Links: a picture or a letter, the name, and the address. */
@@ -1231,7 +1293,7 @@ a.card:hover .card__media img {
   width: 2.4rem;
   height: 2.4rem;
   border-radius: 50%;
-  background: rgba(212, 175, 90, 0.14);
+  background: rgba(212, 175, 55, 0.14);
   color: var(--gold);
   font-weight: 700;
 }
@@ -1381,13 +1443,19 @@ a.card:hover .card__media img {
   align-items: center;
   min-height: 44px;
   padding: 0.2rem 0.35rem;
-  color: var(--text);
+  color: var(--gold);
   text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 0.45);
+  text-decoration-color: var(--border-gold);
 }
 
 .footer a:hover {
-  text-decoration-color: var(--text);
+  color: var(--gold-2);
+  text-decoration-color: var(--gold-2);
+}
+
+.footer .cb-badge a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .footer__nav a {
@@ -1536,7 +1604,7 @@ html[lang|="ar"] .btn {
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--gold);
 }
 
 main.policy {
@@ -1593,7 +1661,14 @@ main.policy li + li {
 }
 
 main.policy a {
-  color: var(--text);
+  color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: var(--border-gold);
+}
+
+main.policy a:hover {
+  color: var(--gold-2);
+  text-decoration-color: var(--gold-2);
 }
 
 main.policy strong {
@@ -1609,7 +1684,9 @@ main.policy strong {
 }
 
 .footer__contact a {
-  color: var(--text);
+  color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: var(--border-gold);
   display: inline-flex;
   align-items: center;
   min-height: 44px;
@@ -1642,6 +1719,43 @@ main.policy strong {
 .cb-legal {
   font-size: 0.75rem;
   opacity: 0.8;
+}
+
+@media print {
+  :root {
+    color-scheme: light;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #111 !important;
+  }
+
+  body::before {
+    display: none;
+  }
+
+  .nav,
+  .hero__bg,
+  #elghaly-consent,
+  .skip {
+    display: none !important;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: underline !important;
+  }
+
+  main,
+  main.policy,
+  .card {
+    border-color: #ccc !important;
+    background: #fff !important;
+    box-shadow: none !important;
+    color: #111 !important;
+  }
 }
   </style>
   <!-- /inline:css/glass.css -->
