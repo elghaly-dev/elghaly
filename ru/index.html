@@ -450,6 +450,137 @@ img { display: block; max-width: 100%; }
   object-position: 50% 50%;
 }
 
+/* Locked coming-soon product cards: not links, no price, no form. */
+.coming {
+  padding: 28px 0 8px;
+}
+.coming__title {
+  margin: 0 0 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: clamp(1.2rem, 5vw, 1.6rem);
+  letter-spacing: .01em;
+}
+html[lang="ar"] .coming__title { font-family: "Cairo", sans-serif; }
+html[lang="zh-Hans"] .coming__title { font-family: inherit; font-style: normal; font-weight: 500; }
+.coming-cards {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 760px) {
+  .coming-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 920px; }
+}
+.coming-card {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, var(--night-2), var(--tile));
+}
+.coming-card__media {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: #05060a;
+}
+.coming-card__photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  filter: blur(2px);
+  transform: scale(1.04);
+}
+.coming-card__star {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background:
+    radial-gradient(55% 35% at 12% 72%, rgba(40, 130, 210, .22), transparent 70%),
+    radial-gradient(55% 35% at 88% 28%, rgba(140, 80, 230, .22), transparent 70%),
+    radial-gradient(60% 60% at 50% 42%, rgba(212, 175, 90, .16), transparent 70%),
+    #05060a;
+}
+.coming-card__star::before {
+  content: "";
+  position: absolute;
+  inset: 11%;
+  border-radius: 50%;
+  border: 2px solid rgba(52, 184, 172, .55);
+  box-shadow: 0 0 0 7px rgba(52, 184, 172, .08), 0 0 28px rgba(52, 184, 172, .25);
+  pointer-events: none;
+}
+.coming-card__star-glyph {
+  color: var(--gold);
+  font-size: clamp(3.2rem, 16vw, 4.8rem);
+  line-height: 1;
+  text-shadow: 0 0 22px rgba(212, 175, 90, .45);
+}
+.coming-card__star-num {
+  color: var(--gold-soft);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.6rem, 7vw, 2.2rem);
+  letter-spacing: .08em;
+  line-height: 1;
+}
+html[lang="zh-Hans"] .coming-card__star-num { font-family: inherit; font-style: normal; }
+.coming-card__curtain {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  background: rgba(7, 8, 12, .58);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  pointer-events: none;
+  text-align: center;
+}
+.coming-card__curtain-text {
+  color: var(--gold-soft);
+  font-weight: 500;
+  font-size: clamp(0.95rem, 3.6vw, 1.15rem);
+  letter-spacing: .02em;
+  line-height: 1.4;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, .7);
+}
+.coming-card__body {
+  padding: 14px 16px 16px;
+  text-align: center;
+}
+.coming-card__line {
+  margin: 0;
+  color: var(--ivory);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.coming-card__host {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.4;
+  cursor: default;
+}
+.coming-card__lock { margin-inline-end: 0.3em; }
+
+@media (prefers-reduced-motion: reduce) {
+  .coming-card__photo { filter: none; transform: none; }
+}
+
+
 /* Ask AI. */
 .ask {
   display: flex;
@@ -594,6 +725,40 @@ html[lang="zh-Hans"] .team__title { font-family: inherit; font-style: normal; fo
         <li><a class="tile tile--picture" href="https://iris-35.elghaly.dev/" rel="noopener noreferrer" aria-label="Iris"><img class="tile__photo" src="/assets/emblem-iris-480.webp" width="480" height="480" alt="Iris" loading="lazy" decoding="async"></a></li>
         <li><a class="tile tile--picture" href="https://stocklana.elghaly.dev/" rel="noopener noreferrer" aria-label="Stocklana"><img class="tile__photo" src="/assets/emblem-stocklana-480.webp" width="480" height="480" alt="Stocklana" loading="lazy" decoding="async"></a></li>
       </ol>
+      <section class="coming wrap" aria-labelledby="coming-title">
+        <h2 id="coming-title" class="coming__title">Скоро</h2>
+        <ul class="coming-cards">
+          <li class="coming-card">
+            <div class="coming-card__media">
+        <picture>
+          <source type="image/webp" srcset="/assets/emblem-ra-480.webp">
+          <img class="coming-card__photo" src="/assets/emblem-ra-480.jpg" width="480" height="480" alt="Ra (رع): египетская цифра 35, замок и знак Solana на ночном небе" loading="lazy" decoding="async">
+        </picture>
+              <div class="coming-card__curtain">
+                <span class="coming-card__curtain-text" lang="en" dir="ltr">Coming soon — قريباً</span>
+              </div>
+            </div>
+            <div class="coming-card__body">
+              <p class="coming-card__line">Ra — видит то, что другие упускают. Скоро.</p>
+          <p class="coming-card__host"><span class="coming-card__lock" aria-hidden="true">🔒</span><span translate="no">ra.elghaly.dev</span></p>
+            </div>
+          </li>
+          <li class="coming-card">
+            <div class="coming-card__media" role="img" aria-label="Эмблема Star 999, закрыта">
+              <div class="coming-card__star" aria-hidden="true">
+                <span class="coming-card__star-glyph">★</span>
+                <span class="coming-card__star-num">999</span>
+              </div>
+              <div class="coming-card__curtain">
+                <span class="coming-card__curtain-text" lang="en" dir="ltr">Coming soon — قريباً</span>
+              </div>
+            </div>
+            <div class="coming-card__body">
+              <p class="coming-card__line">Star 999 — Скоро.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
       <div class="ask page-menu" data-page-menu data-label="Спросите ИИ, кто мы" data-prompt="Прочитай https://elghaly.dev/ru/ и расскажи, кто такие elghaly."></div>
     </section>
 
