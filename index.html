@@ -450,7 +450,7 @@ img { display: block; max-width: 100%; }
   object-position: 50% 50%;
 }
 
-/* Locked coming-soon product cards: not links, no price, no form. */
+/* Coming seats: RA is free by email request; Star stays locked. No price. */
 .coming {
   padding: 28px 0 8px;
 }
@@ -463,7 +463,7 @@ img { display: block; max-width: 100%; }
 }
 .coming__lede {
   margin: 0 auto 20px;
-  max-width: 34ch;
+  max-width: 36ch;
   text-align: center;
   color: var(--muted);
   font-size: 1rem;
@@ -503,6 +503,8 @@ html[lang="zh-Hans"] .coming__title { font-family: inherit; font-style: normal; 
   height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
+}
+.coming-card--locked .coming-card__photo {
   filter: blur(2px);
   transform: scale(1.04);
 }
@@ -544,6 +546,21 @@ html[lang="zh-Hans"] .coming__title { font-family: inherit; font-style: normal; 
   font-size: 1rem;
   line-height: 1.5;
 }
+.coming-card__request {
+  margin: 10px 0 0;
+}
+.coming-card__request a {
+  display: inline-block;
+  padding: 10px 4px;
+  min-height: 44px;
+  color: var(--gold-soft);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.coming-card__request a:hover,
+.coming-card__request a:focus-visible {
+  color: var(--gold);
+}
 .coming-card__host {
   margin: 8px 0 0;
   color: var(--muted);
@@ -554,7 +571,7 @@ html[lang="zh-Hans"] .coming__title { font-family: inherit; font-style: normal; 
 .coming-card__lock { margin-inline-end: 0.3em; }
 
 @media (prefers-reduced-motion: reduce) {
-  .coming-card__photo { filter: none; transform: none; }
+  .coming-card--locked .coming-card__photo { filter: none; transform: none; }
 }
 
 /* Ask AI. */
@@ -702,8 +719,8 @@ html[lang="zh-Hans"] .team__title { font-family: inherit; font-style: normal; fo
         <li><a class="tile tile--picture" href="https://stocklana.elghaly.dev/" rel="noopener noreferrer" aria-label="Stocklana"><img class="tile__photo" src="/assets/emblem-stocklana-480.webp" width="480" height="480" alt="Stocklana" loading="lazy" decoding="async"></a></li>
       </ol>
       <section class="coming wrap" aria-labelledby="coming-title">
-        <h2 id="coming-title" class="coming__title">Two seats in the making.</h2>
-        <p class="coming__lede">Two seats, both locked for now.</p>
+        <h2 id="coming-title" class="coming__title">Two seats.</h2>
+        <p class="coming__lede">RA is free, by email request. Star is still locked.</p>
         <ul class="coming-cards">
           <li class="coming-card">
             <div class="coming-card__media">
@@ -711,17 +728,15 @@ html[lang="zh-Hans"] .team__title { font-family: inherit; font-style: normal; fo
                 <source type="image/webp" srcset="/assets/emblem-ra-480.webp">
                 <img class="coming-card__photo" src="/assets/emblem-ra-480.jpg" width="480" height="480" alt="RA emblem: Egyptian numeral 35, a lock, and the Solana mark, on a night sky" loading="lazy" decoding="async">
               </picture>
-              <div class="coming-card__curtain">
-                <span class="coming-card__curtain-text" lang="en" dir="ltr">Coming soon — قريباً</span>
-              </div>
             </div>
             <div class="coming-card__body">
               <h3 class="coming-card__name">RA</h3>
-              <p class="coming-card__line">RA — sees what others miss. Coming soon.</p>
+              <p class="coming-card__line">RA — free. Access opens by email request.</p>
+              <p class="coming-card__request"><a href="mailto:support@elghaly.dev?subject=RA%20access%20request">Request access</a></p>
               <p class="coming-card__host"><span class="coming-card__lock" aria-hidden="true">🔒</span><span translate="no">ra.elghaly.dev</span></p>
             </div>
           </li>
-          <li class="coming-card">
+          <li class="coming-card coming-card--locked">
             <div class="coming-card__media">
               <picture>
                 <source type="image/webp" srcset="/assets/emblem-star999-480.webp">
