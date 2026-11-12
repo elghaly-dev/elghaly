@@ -455,13 +455,22 @@ img { display: block; max-width: 100%; }
   padding: 28px 0 8px;
 }
 .coming__title {
-  margin: 0 0 20px;
+  margin: 0 0 8px;
   text-align: center;
   font-weight: 500;
   font-size: clamp(1.2rem, 5vw, 1.6rem);
   letter-spacing: .01em;
 }
-html[lang="ar"] .coming__title { font-family: "Cairo", sans-serif; }
+.coming__lede {
+  margin: 0 auto 20px;
+  max-width: 34ch;
+  text-align: center;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+html[lang="ar"] .coming__title,
+html[lang="ar"] .coming__lede { font-family: "Cairo", sans-serif; }
 html[lang="zh-Hans"] .coming__title { font-family: inherit; font-style: normal; font-weight: 500; }
 .coming-cards {
   display: grid;
@@ -497,45 +506,13 @@ html[lang="zh-Hans"] .coming__title { font-family: inherit; font-style: normal; 
   filter: blur(2px);
   transform: scale(1.04);
 }
-.coming-card__star {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  background:
-    radial-gradient(55% 35% at 12% 72%, rgba(40, 130, 210, .22), transparent 70%),
-    radial-gradient(55% 35% at 88% 28%, rgba(140, 80, 230, .22), transparent 70%),
-    radial-gradient(60% 60% at 50% 42%, rgba(212, 175, 90, .16), transparent 70%),
-    #05060a;
-}
-.coming-card__star::before {
-  content: "";
-  position: absolute;
-  inset: 11%;
-  border-radius: 50%;
-  border: 2px solid rgba(52, 184, 172, .55);
-  box-shadow: 0 0 0 7px rgba(52, 184, 172, .08), 0 0 28px rgba(52, 184, 172, .25);
-  pointer-events: none;
-}
-.coming-card__star-glyph {
-  color: var(--gold);
-  font-size: clamp(3.2rem, 16vw, 4.8rem);
-  line-height: 1;
-  text-shadow: 0 0 22px rgba(212, 175, 90, .45);
-}
-.coming-card__star-num {
+.coming-card__name {
+  margin: 0 0 6px;
   color: var(--gold-soft);
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: clamp(1.6rem, 7vw, 2.2rem);
-  letter-spacing: .08em;
-  line-height: 1;
+  font-weight: 500;
+  font-size: 1.05rem;
+  line-height: 1.3;
 }
-html[lang="zh-Hans"] .coming-card__star-num { font-family: inherit; font-style: normal; }
 .coming-card__curtain {
   position: absolute;
   inset: 0;
@@ -726,35 +703,38 @@ html[lang="zh-Hans"] .team__title { font-family: inherit; font-style: normal; fo
         <li><a class="tile tile--picture" href="https://stocklana.elghaly.dev/" rel="noopener noreferrer" aria-label="Stocklana"><img class="tile__photo" src="/assets/emblem-stocklana-480.webp" width="480" height="480" alt="Stocklana" loading="lazy" decoding="async"></a></li>
       </ol>
       <section class="coming wrap" aria-labelledby="coming-title">
-        <h2 id="coming-title" class="coming__title">即将推出</h2>
+        <h2 id="coming-title" class="coming__title">两个席位正在筹备。</h2>
+        <p class="coming__lede">两个席位，目前均已锁定。</p>
         <ul class="coming-cards">
           <li class="coming-card">
             <div class="coming-card__media">
-        <picture>
-          <source type="image/webp" srcset="/assets/emblem-ra-480.webp">
-          <img class="coming-card__photo" src="/assets/emblem-ra-480.jpg" width="480" height="480" alt="Ra（رع）：埃及数字 35、一把锁和 Solana 标记，夜空背景" loading="lazy" decoding="async">
-        </picture>
+              <picture>
+                <source type="image/webp" srcset="/assets/emblem-ra-480.webp">
+                <img class="coming-card__photo" src="/assets/emblem-ra-480.jpg" width="480" height="480" alt="Ra（رع）：埃及数字 35、一把锁和 Solana 标记，夜空背景" loading="lazy" decoding="async">
+              </picture>
               <div class="coming-card__curtain">
                 <span class="coming-card__curtain-text" lang="en" dir="ltr">Coming soon — قريباً</span>
               </div>
             </div>
             <div class="coming-card__body">
+              <h3 class="coming-card__name">Ra (رع)</h3>
               <p class="coming-card__line">Ra — 看见别人看不见的。即将推出。</p>
-          <p class="coming-card__host"><span class="coming-card__lock" aria-hidden="true">🔒</span><span translate="no">ra.elghaly.dev</span></p>
+              <p class="coming-card__host"><span class="coming-card__lock" aria-hidden="true">🔒</span><span translate="no">ra.elghaly.dev</span></p>
             </div>
           </li>
           <li class="coming-card">
-            <div class="coming-card__media" role="img" aria-label="Star 999 标志，已锁定">
-              <div class="coming-card__star" aria-hidden="true">
-                <span class="coming-card__star-glyph">★</span>
-                <span class="coming-card__star-num">999</span>
-              </div>
+            <div class="coming-card__media">
+              <picture>
+                <source type="image/webp" srcset="/assets/emblem-satar-480.webp">
+                <img class="coming-card__photo" src="/assets/emblem-satar-480.jpg" width="480" height="480" alt="Satar（ستار）标志：霓虹环中的四角星，以及锁和 Solana 标记" loading="lazy" decoding="async">
+              </picture>
               <div class="coming-card__curtain">
                 <span class="coming-card__curtain-text" lang="en" dir="ltr">Coming soon — قريباً</span>
               </div>
             </div>
             <div class="coming-card__body">
-              <p class="coming-card__line">Star 999 — 即将推出。</p>
+              <h3 class="coming-card__name">Satar (ستار)</h3>
+              <p class="coming-card__line">Satar — 即将推出。</p>
             </div>
           </li>
         </ul>
